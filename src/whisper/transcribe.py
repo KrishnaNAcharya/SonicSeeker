@@ -86,10 +86,10 @@ def run_whisper(input_path):
         logging.info("Loading Whisper model...")
         # Adjust model size and compute type as needed
         # model_size = args.model or "base"
-        model_size = "turbo" # Or choose based on args
+        model_size = os.environ.get("WHISPER_MODEL_SIZE") # Or choose based on args
         # For CPU: compute_type="int8"
         # For GPU: compute_type="float16" (or "int8_float16")
-        model = WhisperModel(model_size, device="cuda", compute_type="float16")
+        model = WhisperModel(model_size, device=os.environ.get("WHISPER_DEVICE_TYPE"), compute_type=os.environ.get("WHISPER_COMPUTE_TYPE"))
         logging.info(f"Starting Whisper transcription for '{input_path}'...")
         # Use word_timestamps=True
         segments_gen, info = model.transcribe(input_path, beam_size=5, word_timestamps=True)

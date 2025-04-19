@@ -54,7 +54,7 @@ export default function SummarizeControls({ transcriptText }: SummarizeControlsP
             console.error("Summarization error:", err);
             const message = err instanceof Error ? err.message : "Unknown error";
             setError(message);
-            toast.error(Summarization failed: ${message});
+            toast.error(`Summarization failed: ${message}`);
         } finally {
             setIsSummarizing(false);
         }

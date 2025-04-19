@@ -10,7 +10,7 @@ def format_time(seconds):
     return str(timedelta(seconds=seconds))
 
 # Load Whisper model
-model = WhisperModel("turbo", device="cuda", compute_type="float16")
+model = WhisperModel(os.environ.get("WHISPER_MODEL_SIZE"), device = os.environ.get("WHISPER_DEVICE_TYPE"), compute_type=os.environ.get("WHISPER_COMPUTE_TYPE"))
 
 # Transcribe audio
 segments, _ = model.transcribe("src/Hackfest.m4a")

@@ -156,10 +156,10 @@ def transcribe_media(file_path, enable_diarization=False):
         print("Speaker diarization is disabled in this version", file=sys.stderr)
 
     # Load Whisper model (consider loading only once if possible for performance)
-    model_size = "turbo"
+    model_size = os.environ.get("WHISPER_MODEL_SIZE") 
     # Use "cpu" if CUDA is not available or causing issues
-    device_type = "cuda"
-    compute_type = "float16" # Use "int8" or "float32" if float16 causes issues
+    device_type = os.environ.get("WHISPER_DEVICE_TYPE")
+    compute_type = os.environ.get("WHISPER_COMPUTE_TYPE") # Use "int8" or "float32" if float16 causes issues
 
     try:
         print(f"Loading whisper model: {model_size} on {device_type}", file=sys.stderr)
