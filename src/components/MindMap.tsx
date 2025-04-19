@@ -66,9 +66,6 @@ export default function MindMapGenerator() {
                             />
                         </div>
                     )}
-                    <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
-                        {plantuml}
-                    </pre>
                 </div>
             )}
         </div>
