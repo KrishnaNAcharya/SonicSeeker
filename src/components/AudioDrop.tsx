@@ -159,7 +159,15 @@ const AudioDrop = () => {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to transcribe media');
+        let errorMessage = errorData.error || 'Failed to transcribe media';
+        if (response.status === 504) {
+            errorMessage = 'Transcription timed out. The file might be too long or the server is busy.';
+        } else if (response.status === 413) {
+            errorMessage = 'File is too large. Please upload a smaller file.';
+        } else if (errorData.details) {
+            errorMessage += ` Details: ${errorData.details}`;
+        }
+        throw new Error(errorMessage);
       }
 
       const data = await response.json();
@@ -174,12 +182,15 @@ const AudioDrop = () => {
             (typeof segment.end === 'string' ? Math.round(parseFloat(segment.end)) :
               typeof segment.end === 'number' ? Math.round(segment.end) : 0);
 
+
           const startFormatted = toHHMMSS(startSeconds);
           const endFormatted = toHHMMSS(endSeconds);
 
+          const speaker = segment.speaker || `SPEAKER ${index % 2}`;
+
           return {
             ...segment,
-            speaker: segment.speaker,
+            speaker: speaker,
             start_seconds: startSeconds,
             end_seconds: endSeconds,
             start: startFormatted,
@@ -201,13 +212,14 @@ const AudioDrop = () => {
         toast.success("Transcription completed!");
         setTranscriptionProgress(100);
       } else {
-        throw new Error('No valid transcription data returned');
+        throw new Error(data.error || 'No valid transcription data returned from the server.');
       }
     } catch (error) {
       console.error('Transcription error:', error);
       const message = error instanceof Error ? error.message : 'Unknown error occurred';
       setTranscriptionError(message);
       toast.error(`Transcription failed: ${message}`);
+      setTranscriptionProgress(0);
     } finally {
       stopProgressTracking();
       setIsTranscribing(false);

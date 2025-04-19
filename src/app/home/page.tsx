@@ -13,7 +13,7 @@ export default function Home() {
   return (
     // Remove min-height from the main content div if Hero takes full screen
     <div> 
-      <Hero /> {/* Add the Hero component here */}
+     {/* Add the Hero component here */}
       
       {/* Wrap existing content in a separate div for padding/margin */}
       <div className="flex flex-col items-start justify-center p-8 gap-8">
