@@ -9,6 +9,7 @@ import { BarChart, PieChart } from "@/components/ui/charts";
 import SentimentAnalysis from "./SentimentAnalysis";
 import EntityAnalysis from "./EntityAnalysis";
 import GrammarAnalysis from "./GrammarAnalysis";
+import SummarizeControls from "./SummarizeControls";
 import TranslationControls from "./TranslationControls";
 import { analyzeSentimentDetailed, getSentimentCategory } from "@/lib/sentiment-analyzer";
 import { toast } from "sonner";
@@ -271,6 +272,7 @@ export default function Transcript({
         <TabsList className="grid w-full grid-cols-6">
           <TabsTrigger value="transcript">Transcript</TabsTrigger>
           <TabsTrigger value="translation">Translation</TabsTrigger>
+          <TabsTrigger value="summary">Summary</TabsTrigger>
           <TabsTrigger value="analysis">Analysis</TabsTrigger>
           <TabsTrigger value="sentiment">Sentiment</TabsTrigger>
           <TabsTrigger value="entities">Entities</TabsTrigger>
@@ -344,6 +346,10 @@ export default function Transcript({
         
         <TabsContent value="translation" className="mt-0">
           <TranslationControls transcriptText={fullTranscriptText} />
+        </TabsContent>
+
+        <TabsContent value="summary" className="mt-0">
+          <SummarizeControls transcriptText={fullTranscriptText} />
         </TabsContent>
         
         <TabsContent value="analysis" className="mt-0 space-y-4">
