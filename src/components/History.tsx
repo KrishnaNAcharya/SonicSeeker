@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Transcription } from "@/lib/models/Transcription";
 
-export default function HistoryPage() {
+export default function History() {
     const [transcriptions, setTranscriptions] = useState<Transcription[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -261,3 +261,4 @@ export default function HistoryPage() {
         </div>
     );
 }
+
