@@ -119,7 +119,7 @@ export default function Header() {
       );
     } else {
       return (
-        <NavbarButton href="/Authentication" variant="gradient">
+        <NavbarButton href="/Authentication" variant="primary">
           Login / Sign Up
         </NavbarButton>
       );
