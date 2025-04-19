@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import tempImage from './temp/temp.png';
+import History from "@/components/History";
 import { FaFileAudio, FaFileVideo, FaTimes } from 'react-icons/fa';
 // Correct the import path to point to the WaveSurfer component file
 import WaveformPlayer from '@/components/WaveSurfer'; // Changed import path
@@ -27,39 +28,18 @@ const ProfilePage = () => {
   const username = "ExampleUser";
   const email = "user@example.com";
 
-  // Dummy User History Data with corrected source URLs
-  const userHistory: HistoryItem[] = [
-    // Corrected path to point to the public directory
-    { id: '1', name: 'audio1.mp3', type: 'audio', date: '2024-07-28', sourceUrl: '/audio/abhijna.wav', dummyTranscription: 'This is a dummy transcription for audio1.mp3. It contains some sample text.' },
-    { id: '2', name: 'video1.mp4', type: 'video', thumbnailUrl: '/path/to/video1-thumb.jpg', date: '2024-07-27', dummyTranscription: 'Dummy transcription for video1.mp4. This video talks about technology trends.' },
-    // Assuming dummy_audio2.wav is also moved to public/audio
-    { id: '3', name: 'audio2.wav', type: 'audio', date: '2024-07-26', sourceUrl: '/audio/dummy_audio2.wav', dummyTranscription: 'Transcription for audio2.wav. Discusses project updates and next steps.' },
-    { id: '4', name: 'video2.webm', type: 'video', thumbnailUrl: '/path/to/video2-thumb.jpg', date: '2024-07-25', dummyTranscription: 'Video2.webm transcription: A tutorial on using the new software features.' },
-  ];
-
-  // Function to handle opening the modal
-  const handleItemClick = (item: HistoryItem) => {
-    setSelectedItem(item);
-    setIsModalOpen(true);
-  };
-
-  // Function to handle closing the modal
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setSelectedItem(null);
-  };
-
   return (
-    <div className="flex flex-grow p-4 gap-4 relative">
+    // Added px-8 for horizontal padding
+    <div className="flex flex-grow p-4 px-8 gap-4 relative"> 
       {/* Left Column (Inline Sidebar) */}
-      <div className="w-64 flex-shrink-0 bg-neutral-800 rounded-lg p-4 flex flex-col items-center">
+      <div className="w-64 flex-shrink-0 bg-neutral-800 backdrop-blur-lg bg-white/10 rounded-lg p-4 flex flex-col items-center">
         {/* Avatar */}
         <div className="mb-6 mt-4">
           <Image
             src={tempImage}
             alt="User Avatar"
-            width={128}
-            height={128}
+            width={150}
+            height={150}
             className="rounded-full object-cover border-2 border-neutral-600"
           />
         </div>
@@ -76,16 +56,16 @@ const ProfilePage = () => {
               Profile
             </span>
           </Link>
-          <Link href="/audio-fetch" passHref>
+          <Link href="/home" passHref>
             <span className="block w-full text-left px-4 py-2 rounded hover:bg-neutral-700 cursor-pointer">
-              Audio Fetch
+              Audio Analysis
             </span>
           </Link>
         </nav>
       </div>
 
       {/* Right Column (Main Content) */}
-      <div className="flex-grow p-6 md:p-10 bg-neutral-800 rounded-lg overflow-y-auto">
+      <div className="flex-grow p-6 md:p-10 bg-neutral-800 backdrop-blur-lg bg-white/10 rounded-lg overflow-y-auto">
         {/* User Info Section */}
         <div className="mb-8">
           <p className="text-2xl font-semibold">{username}</p>
@@ -95,39 +75,7 @@ const ProfilePage = () => {
         {/* User History Section */}
         <div>
           <h2 className="text-xl font-semibold mb-4 border-b border-neutral-700 pb-2">User History</h2>
-          <ul className="space-y-4">
-            {userHistory.length > 0 ? (
-              userHistory.map((item) => (
-                <li
-                  key={item.id}
-                  onClick={() => handleItemClick(item)}
-                  className="flex items-center gap-4 p-3 bg-neutral-700/50 rounded-md hover:bg-neutral-700 transition-colors cursor-pointer"
-                >
-                  {item.type === 'video' ? (
-                    <div className="w-16 h-10 rounded flex-shrink-0 overflow-hidden">
-                      <Image
-                        src={tempImage}
-                        alt={`${item.name} thumbnail`}
-                        width={64}
-                        height={40}
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
-                  ) : (
-                    <div className="w-16 h-10 flex items-center justify-center flex-shrink-0">
-                      <FaFileAudio className="text-neutral-400 text-3xl" />
-                    </div>
-                  )}
-                  <div className="flex-grow overflow-hidden">
-                    <p className="text-sm font-medium truncate" title={item.name}>{item.name}</p>
-                    <p className="text-xs text-neutral-400">{item.date}</p>
-                  </div>
-                </li>
-              ))
-            ) : (
-              <p className="text-neutral-500">No history found.</p>
-            )}
-          </ul>
+            <History/>
         </div>
       </div>
 

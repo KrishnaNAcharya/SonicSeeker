@@ -60,15 +60,7 @@ export default function Home() {
         </p>
       ),
     },
-    {
-      title: "Deepfake Detection",
-      icon: <FaUserSecret className="text-red-400 text-3xl mb-3" />,
-      content: (
-        <p className="text-sm text-neutral-300">
-          Analyze audio authenticity and detect potential deepfakes or manipulated voice recordings using advanced AI models.
-        </p>
-      ),
-    },
+    
     {
       title: "Text Summarisation",
       icon: <FaFileAlt className="text-green-400 text-3xl mb-3" />,
@@ -182,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="min-h-screen p-10 bg-neutral-800 flex flex-col items-center justify-center">
+      <section id="about" className="min-h-screen p-10 bg-transparent flex flex-col items-center justify-center">
         <h2 className="text-3xl font-bold text-center text-white mb-12">
           {/* Wrap Typewriter in ClientOnly */}
           <ClientOnly>

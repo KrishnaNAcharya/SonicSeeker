@@ -27,17 +27,20 @@ const SentimentItem: React.FC<SentimentItemProps> = ({
       onClick={onClick}
     >
       <div className="flex items-center justify-center w-12">
-        <span
-          className={`text-lg font-bold ${
-            sentiment === "positive" 
-              ? "text-green-500" 
-              : sentiment === "negative" 
-                ? "text-red-500" 
-                : "text-gray-500"
-          }`}
-        >
-          {score > 0 ? "+" : ""}{score}
-        </span>
+        {/* Conditionally render the score */}
+        {score !== 0 && (
+          <span
+            className={`text-lg font-bold ${
+              sentiment === "positive" 
+                ? "text-green-500" 
+                : sentiment === "negative" 
+                  ? "text-red-500" 
+                  : "text-gray-500" // Should ideally not happen if score is non-zero
+            }`}
+          >
+            {score > 0 ? "+" : ""}{score}
+          </span>
+        )}
       </div>
       <div className="flex-1">
         <h3 className="text-sm font-medium">

@@ -9,6 +9,7 @@ import { BarChart, PieChart } from "@/components/ui/charts";
 import SentimentAnalysis from "./SentimentAnalysis";
 import EntityAnalysis from "./EntityAnalysis";
 import GrammarAnalysis from "./GrammarAnalysis";
+import SummarizeControls from "./SummarizeControls";
 import TranslationControls from "./TranslationControls";
 import { analyzeSentimentDetailed, getSentimentCategory } from "@/lib/sentiment-analyzer";
 import { toast } from "sonner";
@@ -271,6 +272,7 @@ export default function Transcript({
         <TabsList className="grid w-full grid-cols-6">
           <TabsTrigger value="transcript">Transcript</TabsTrigger>
           <TabsTrigger value="translation">Translation</TabsTrigger>
+          <TabsTrigger value="summary">Summary</TabsTrigger>
           <TabsTrigger value="analysis">Analysis</TabsTrigger>
           <TabsTrigger value="sentiment">Sentiment</TabsTrigger>
           <TabsTrigger value="entities">Entities</TabsTrigger>
@@ -345,6 +347,10 @@ export default function Transcript({
         <TabsContent value="translation" className="mt-0">
           <TranslationControls transcriptText={fullTranscriptText} />
         </TabsContent>
+
+        <TabsContent value="summary" className="mt-0">
+          <SummarizeControls transcriptText={fullTranscriptText} />
+        </TabsContent>
         
         <TabsContent value="analysis" className="mt-0 space-y-4">
           <CardContent>
@@ -399,16 +405,6 @@ export default function Transcript({
                 ) : (
                   <p className="text-muted-foreground">Speaker identification not available or not performed.</p>
                 )}
-                
-                <h3 className="text-lg font-medium mt-4 text-foreground">Top Tags</h3>
-                <div className="flex flex-wrap gap-2">
-                  {Object.entries(stats.allTags)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, 10)
-                    .map(([tag, count]) => (
-                      <Badge key={tag} variant="secondary">{tag} ({count})</Badge>
-                    ))}
-                </div>
               </div>
             </div>
           </CardContent>

@@ -128,7 +128,7 @@ export const NavItems = ({
           href: item.link,
           onMouseEnter: () => {}, // Placeholder or actual logic
           onClick: onItemClick,
-          className: "text-sm font-medium text-neutral-400 hover:text-white",
+          className: "text-sm font-medium text-white hover:text-white",
         };
 
         return (
@@ -273,7 +273,7 @@ export const NavbarButton = ({
   // Dark theme aware variant styles
   const variantStyles = {
     primary: // Light button on dark background
-      "bg-white text-black shadow-[0_0_24px_rgba(0,0,0,0.1),_0_1px_1px_rgba(0,0,0,0.05),_0_0_0_1px_rgba(255,255,255,0.1)]",
+      "bg-gray-200 text-black shadow-[0_0_24px_rgba(0,0,0,0.1),_0_1px_1px_rgba(0,0,0,0.05),_0_0_0_1px_rgba(255,255,255,0.1)]",
     secondary: // Transparent button, light text
       "bg-transparent shadow-none text-neutral-300 hover:text-white",
     dark: // Dark button, light text
