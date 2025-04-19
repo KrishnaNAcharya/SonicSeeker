@@ -7,18 +7,40 @@ import { NavbarButton } from "@/components/ui/resizable-navbar";
 import { Vortex } from "@/components/ui/vortex"; // Import Vortex
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"; // Import the new component
 
+// Define the breakpoint for small screens (Tailwind's md breakpoint is 768px)
+const SMALL_SCREEN_BREAKPOINT = 767; 
+
 export const Hero = () => {
   const targetRef = useRef<HTMLDivElement>(null);
   const router = useRouter(); // Initialize router
   const [getStartedUrl, setGetStartedUrl] = useState("/Authentication"); // Default URL
   const [isLoadingAuth, setIsLoadingAuth] = useState(true); // State to manage auth check loading
+  const [isSmallScreen, setIsSmallScreen] = useState(false); // State for screen size
+
+  // Effect to check screen size on mount and resize
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= SMALL_SCREEN_BREAKPOINT);
+    };
+
+    // Check on initial mount
+    checkScreenSize();
+
+    // Add resize listener
+    window.addEventListener('resize', checkScreenSize);
+
+    // Cleanup listener on unmount
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []); // Empty dependency array ensures this runs only on mount and unmount
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start end", "end start"], // Adjust offset if needed
   });
-  const yLeft = useTransform(scrollYProgress, [0, 1], [-200, 200]); // Increased range
-  const yRight = useTransform(scrollYProgress, [0, 1], [-200, 200]); // Increased range
+  
+  // Only apply parallax transforms if not on a small screen
+  const yLeft = useTransform(scrollYProgress, [0, 1], [-200, 200]); 
+  const yRight = useTransform(scrollYProgress, [0, 1], [-200, 200]); 
 
   // Check authentication on component mount
   useEffect(() => {
@@ -94,10 +116,10 @@ export const Hero = () => {
         </motion.div>
 
         <div className="w-full flex justify-center mx-auto" style={{ height: "auto" }}>
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between w-full max-w-6xl gap-10 md:gap-16 px-2 md:px-6">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between w-full max-w-6xl gap-6 md:gap-16 px-2 md:px-6">
             <motion.div
-              className="w-80 h-60 bg-neutral-900/80 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 shadow-lg shadow-blue-500/30 flex flex-col justify-center"
-              style={{ y: yLeft }}
+              className="w-full md:w-80 h-auto md:h-60 bg-neutral-900/80 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 shadow-lg shadow-blue-500/30 flex flex-col justify-center"
+              style={{ y: isSmallScreen ? 0 : yLeft }}
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
@@ -110,8 +132,8 @@ export const Hero = () => {
             </motion.div>
 
             <motion.div
-              className="w-80 h-60 bg-neutral-900/80 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 shadow-lg shadow-purple-500/30 flex flex-col justify-center"
-              style={{ y: yRight }}
+              className="w-full md:w-80 h-auto md:h-60 bg-neutral-900/80 backdrop-blur-sm rounded-lg p-6 border border-neutral-700 shadow-lg shadow-purple-500/30 flex flex-col justify-center"
+              style={{ y: isSmallScreen ? 0 : yRight }}
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >

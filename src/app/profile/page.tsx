@@ -50,16 +50,17 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="flex flex-grow p-4 gap-4 relative">
+    // Added px-8 for horizontal padding
+    <div className="flex flex-grow p-4 px-8 gap-4 relative"> 
       {/* Left Column (Inline Sidebar) */}
-      <div className="w-64 flex-shrink-0 bg-neutral-800 rounded-lg p-4 flex flex-col items-center">
+      <div className="w-64 flex-shrink-0 bg-neutral-800 backdrop-blur-lg bg-white/10 rounded-lg p-4 flex flex-col items-center">
         {/* Avatar */}
         <div className="mb-6 mt-4">
           <Image
             src={tempImage}
             alt="User Avatar"
-            width={128}
-            height={128}
+            width={150}
+            height={150}
             className="rounded-full object-cover border-2 border-neutral-600"
           />
         </div>
@@ -76,16 +77,16 @@ const ProfilePage = () => {
               Profile
             </span>
           </Link>
-          <Link href="/audio-fetch" passHref>
+          <Link href="/home" passHref>
             <span className="block w-full text-left px-4 py-2 rounded hover:bg-neutral-700 cursor-pointer">
-              Audio Fetch
+              Audio Analysis
             </span>
           </Link>
         </nav>
       </div>
 
       {/* Right Column (Main Content) */}
-      <div className="flex-grow p-6 md:p-10 bg-neutral-800 rounded-lg overflow-y-auto">
+      <div className="flex-grow p-6 md:p-10 bg-neutral-800 backdrop-blur-lg bg-white/10 rounded-lg overflow-y-auto">
         {/* User Info Section */}
         <div className="mb-8">
           <p className="text-2xl font-semibold">{username}</p>

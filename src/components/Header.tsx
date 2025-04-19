@@ -110,8 +110,8 @@ export default function Header() {
             <Image
               src={tempAvatar}
               alt="Profile Avatar"
-              width={32} // Adjust size as needed
-              height={32}
+              width={50} // Adjust size as needed
+              height={50}
               className="rounded-full border-2 border-neutral-600 hover:border-blue-500 transition-colors"
             />
           </span>
@@ -147,14 +147,9 @@ export default function Header() {
         {/* Mobile Menu Content */}
         <MobileNavMenu isOpen={isOpen} onClose={() => setIsOpen(false)}>
           {/* Render NavItems specifically for mobile */}
-          <NavItems
-            items={navItems}
-            onItemClick={() => setIsOpen(false)} // Close menu on item click
-            // Override default NavItems styles for mobile layout
-            className="!relative !flex !flex-col !items-start !space-x-0 !space-y-4 !inset-auto !text-base"
-          />
+          
           {/* Conditionally render AuthElement in mobile menu */}
-          <div className="w-full mt-4 flex justify-start">
+          <div className="w-full mt-4 flex justify-start pl-4">
              <AuthElement />
           </div>
         </MobileNavMenu>

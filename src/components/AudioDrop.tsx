@@ -552,7 +552,7 @@ const AudioDrop = () => {
             <input type="checkbox" id="diarize-checkbox" checked={requestDiarization} onChange={(e) => setRequestDiarization(e.target.checked)} className="h-4 w-4 rounded border-border bg-input text-blue-600 focus:ring-blue-500" />
             <label htmlFor="diarize-checkbox" className="text-sm font-medium text-muted-foreground">Identify Speakers (Diarize)</label>
           </div>
-          <Button onClick={handleTranscribe} disabled={isTranscribing || !currentAudioSource} className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-medium disabled:opacity-50 disabled:cursor-not-allowed">
+          <Button onClick={handleTranscribe} disabled={isTranscribing || !currentAudioSource} className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-black font-medium disabled:opacity-50 disabled:cursor-not-allowed">
             {isTranscribing ? 'Transcribing...' : 'Transcribe Media'}
           </Button>
         </div>
