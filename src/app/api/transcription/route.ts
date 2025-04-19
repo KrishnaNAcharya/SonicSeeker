@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { ObjectId } from "mongodb";
 import clientPromise from "@/lib/mongodb";
 
-// Update your /api/transcription route:
 export async function POST(req: Request) {
     try {
         const formData = await req.formData();
@@ -19,11 +18,8 @@ export async function POST(req: Request) {
 
         const transcript = JSON.parse(transcriptRaw);
         
-        // Generate a unique file ID
         const fileId = new ObjectId();
         
-        // Here you would normally upload the file to external storage
-        // For this example, we'll simulate by creating a URL that would point to the file
         const mediaUrl = `/api/media/${fileId}`; // This would be a real URL in production
         
         const client = await clientPromise;

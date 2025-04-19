@@ -68,6 +68,63 @@ const AudioDrop = () => {
     });
   };
 
+  // Fixed saveTranscriptionToDB function
+  const saveTranscriptionToDB = async (segments: any[], mediaFile: File) => {
+    try {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        console.warn("No token found for saving transcription");
+        return;
+      }
+  
+      const payload = JSON.parse(atob(token.split('.')[1]));
+      const userId = payload.userId;
+  
+      // Create FormData object
+      const formData = new FormData();
+      formData.append("userId", userId);
+      formData.append("fileName", mediaFile.name);
+      formData.append("fileType", mediaFile.type.startsWith("video/") ? "video" : "audio");
+      
+      // Format and append transcript data
+      const transcriptData = segments.map(seg => ({
+        start: seg.start_seconds,
+        end: seg.end_seconds,
+        text: seg.text,
+        ...(seg.speaker ? { speaker: seg.speaker } : {})
+      }));
+      formData.append("transcript", JSON.stringify(transcriptData));
+      
+      // Append the actual media file
+      formData.append("mediaFile", mediaFile);
+  
+      // Send to API
+      const response = await fetch("/api/transcription", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${token}`
+        },
+        body: formData
+      });
+      
+      const result = await response.json();
+      
+      if (!response.ok) {
+        console.error("Error saving transcription:", result.message || result.error);
+        toast.error("Failed to save transcription to your history");
+        throw new Error(result.message || result.error);
+      } else {
+        console.log("Transcription saved successfully!");
+        toast.success("Transcription saved to your history");
+        return result;
+      }
+    } catch (error) {
+      console.error("Failed to save transcription:", error);
+      toast.error("Could not save transcription to history");
+      throw error;
+    }
+  };
+
   const handleTranscribe = async () => {
     const fileToTranscribe = currentAudioSource instanceof File ? currentAudioSource : null;
     if (!fileToTranscribe) {
@@ -119,25 +176,15 @@ const AudioDrop = () => {
 
       const data = await response.json();
 
-      if (data.error) {
-          throw new Error(`Transcription failed on server: ${data.error}`);
-      }
+      if (data.transcription && Array.isArray(data.transcription)) {
+        const processedSegments = data.transcription.map((segment: any, index: number) => {
+          const startSeconds = segment.start_seconds ||
+            (typeof segment.start === 'string' ? Math.round(parseFloat(segment.start)) :
+              typeof segment.start === 'number' ? Math.round(segment.start) : 0);
 
-      if (data.diarization_warning) {
-          toast.warning(`Diarization issue: ${data.diarization_warning}`, { duration: 5000 });
-      }
-
-      const transcriptionResult = data.transcription || data;
-
-      if (transcriptionResult && Array.isArray(transcriptionResult)) {
-        const processedSegments = transcriptionResult.map((segment: any, index: number) => {
-          const startSeconds = segment.start_seconds ??
-                              (typeof segment.start === 'string' ? Math.round(parseFloat(segment.start)) :
-                               typeof segment.start === 'number' ? Math.round(segment.start) : 0);
-
-          const endSeconds = segment.end_seconds ??
-                            (typeof segment.end === 'string' ? Math.round(parseFloat(segment.end)) :
-                             typeof segment.end === 'number' ? Math.round(segment.end) : 0);
+          const endSeconds = segment.end_seconds ||
+            (typeof segment.end === 'string' ? Math.round(parseFloat(segment.end)) :
+              typeof segment.end === 'number' ? Math.round(segment.end) : 0);
 
 
           const startFormatted = toHHMMSS(startSeconds);
@@ -154,8 +201,18 @@ const AudioDrop = () => {
             end: endFormatted,
           };
         });
+
         const segmentsWithWordTimestamps = generateWordTimestampsForTranscript(processedSegments);
         setTranscription(segmentsWithWordTimestamps);
+
+        // Save transcription to database
+        try {
+          await saveTranscriptionToDB(segmentsWithWordTimestamps, fileToTranscribe);
+        } catch (saveError) {
+          console.error("Failed to save transcription to database:", saveError);
+          // Don't block the UI flow on save error, just log it
+        }
+
         toast.success("Transcription completed!");
         setTranscriptionProgress(100);
       } else {
@@ -186,7 +243,7 @@ const AudioDrop = () => {
         console.warn("Seek function not available on media player ref.");
       }
     } else {
-       console.warn("Media player ref is null.");
+      console.warn("Media player ref is null.");
     }
   };
 
@@ -197,7 +254,7 @@ const AudioDrop = () => {
     for (let i = 0; i < transcription.length; i++) {
       const segment = transcription[i];
       const start = segment.start_seconds;
-      const end = segment.end_seconds || (i < transcription.length - 1 ? transcription[i+1].start_seconds : Infinity);
+      const end = segment.end_seconds || (i < transcription.length - 1 ? transcription[i + 1].start_seconds : Infinity);
       if (roundedTime >= start && roundedTime < end) {
         if (activeSegmentIndex !== i) setActiveSegmentIndex(i);
         break;
@@ -206,7 +263,7 @@ const AudioDrop = () => {
   }, [transcription, activeSegmentIndex]);
 
   const handlePlayerReady = useCallback((playerInstance: Player | WaveSurfer) => {
-     mediaPlayerRef.current = playerInstance;
+    mediaPlayerRef.current = playerInstance;
   }, []);
 
   const handleWordClick = useCallback((timestamp: number) => {
@@ -214,11 +271,14 @@ const AudioDrop = () => {
   }, [handleSeekTo]);
 
   const handleFileUpload = (uploadedFiles: File[]) => {
+    if (!uploadedFiles || uploadedFiles.length === 0) {
+      return;
+    }
+
     setFiles(uploadedFiles);
-    const firstMedia = uploadedFiles.find(file => 
-      file.type.startsWith('audio/') || file.type.startsWith('video/')
-    );
-    if (firstMedia) {
+    const firstMedia = uploadedFiles[0]; // Get the first file
+
+    if (firstMedia && (firstMedia.type.startsWith('audio/') || firstMedia.type.startsWith('video/'))) {
       setCurrentAudioSource(firstMedia);
       setTranscription([]);
       setTranscriptionError(null);
@@ -227,6 +287,7 @@ const AudioDrop = () => {
       mediaPlayerRef.current = null;
     } else {
       setCurrentAudioSource(null);
+      toast.error("Selected file is not a valid audio or video file");
     }
   };
 
@@ -243,7 +304,7 @@ const AudioDrop = () => {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const options = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
         ? { mimeType: 'audio/webm;codecs=opus' }
-        : MediaRecorder.isTypeSupported('audio/mp4') 
+        : MediaRecorder.isTypeSupported('audio/mp4')
           ? { mimeType: 'audio/mp4' }
           : {};
       mediaRecorderRef.current = new MediaRecorder(stream, options);
@@ -257,7 +318,7 @@ const AudioDrop = () => {
         const audioBlob = new Blob(audioChunksRef.current, { type: mimeType });
         const fileExtension = mimeType.split('/')[1]?.split(';')[0] || 'wav';
         const recordedFile = new File([audioBlob], `recording-${Date.now()}.${fileExtension}`, { type: mimeType });
-        
+
         setFiles([recordedFile]);
         setCurrentAudioSource(recordedFile);
         stream.getTracks().forEach(track => track.stop());
@@ -269,7 +330,7 @@ const AudioDrop = () => {
       toast.info("Recording started...");
     } catch (err) {
       console.error("Error accessing microphone:", err);
-      alert("Could not access microphone. Please check permissions.");
+      toast.error("Could not access microphone. Please check permissions.");
       setIsRecording(false);
     }
   };
@@ -298,7 +359,7 @@ const AudioDrop = () => {
       setCurrentPlaybackTime(0);
       mediaPlayerRef.current = null;
     } else {
-      alert("Selected file is not an audio or video file and cannot be played.");
+      toast.error("Selected file is not an audio or video file and cannot be played.");
     }
   };
 
@@ -488,7 +549,7 @@ const AudioDrop = () => {
       {currentAudioSource && (
         <div className="flex justify-center items-center gap-4 px-10 py-6">
           <div className="flex items-center space-x-2">
-            <input type="checkbox" id="diarize-checkbox" checked={requestDiarization} onChange={(e) => setRequestDiarization(e.target.checked)} className="h-4 w-4 rounded border-border bg-input text-blue-600 focus:ring-blue-500"/>
+            <input type="checkbox" id="diarize-checkbox" checked={requestDiarization} onChange={(e) => setRequestDiarization(e.target.checked)} className="h-4 w-4 rounded border-border bg-input text-blue-600 focus:ring-blue-500" />
             <label htmlFor="diarize-checkbox" className="text-sm font-medium text-muted-foreground">Identify Speakers (Diarize)</label>
           </div>
           <Button onClick={handleTranscribe} disabled={isTranscribing || !currentAudioSource} className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-medium disabled:opacity-50 disabled:cursor-not-allowed">
@@ -524,9 +585,9 @@ const AudioDrop = () => {
               currentTime={currentPlaybackTime}
             />
           ) : (
-             <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
-               <p>Upload or record audio and click "Transcribe Media".</p>
-             </div>
+            <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
+              <p>Upload or record audio and click "Transcribe Media".</p>
+            </div>
           )}
         </div>
       </div>
