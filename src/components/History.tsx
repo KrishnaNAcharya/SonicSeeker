@@ -109,7 +109,7 @@ export default function History() {
                         <input
                             type="text"
                             placeholder="Search transcriptions..."
-                            className="pl-10 pr-4 py-2 border rounded-lg w-full sm:w-64"
+                            className="pl-10 pr-4 py-2 border rounded-lg w-full sm:w-64 bg-black"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -124,21 +124,21 @@ export default function History() {
                         </svg>
                     </div>
 
-                    <div className="flex rounded-lg overflow-hidden border">
+                    <div className="flex rounded-lg overflow-hidden border text-white">
                         <button
-                            className={`px-4 py-2 text-sm ${activeTab === 'all' ? 'bg-blue-500 text-black' : 'bg-white hover:bg-yellow-500'}`}
+                            className={`px-4 py-2 text-sm ${activeTab === 'all' ? 'bg-blue-500 text-black' : 'bg-black hover:bg-gray-500'}`}
                             onClick={() => setActiveTab('all')}
                         >
                             All
                         </button>
                         <button
-                            className={`px-4 py-2 text-sm border-l ${activeTab === 'audio' ? 'bg-blue-500 text-black' : 'bg-white hover:bg-gray-50'}`}
+                            className={`px-4 py-2 text-sm border-l ${activeTab === 'audio' ? 'bg-blue-500 text-black' : 'bg-black hover:bg-gray-500'}`}
                             onClick={() => setActiveTab('audio')}
                         >
                             Audio
                         </button>
                         <button
-                            className={`px-4 py-2 text-sm border-l ${activeTab === 'video' ? 'bg-blue-500 text-black' : 'bg-white hover:bg-gray-50'}`}
+                            className={`px-4 py-2 text-sm border-l ${activeTab === 'video' ? 'bg-blue-500 text-black' : 'bg-black hover:bg-gray-500'}`}
                             onClick={() => setActiveTab('video')}
                         >
                             Video
@@ -148,7 +148,7 @@ export default function History() {
             </div>
 
             {filteredTranscriptions.length === 0 ? (
-                <div className="text-center py-16 bg-gray-50 rounded-xl">
+                <div className="text-center py-16 bg-gray-500 rounded-xl">
                     <svg
                         className="mx-auto h-12 w-12 text-gray-400"
                         xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@ export default function History() {
                         const isExpanded = expandedItems[entry._id] || false;
 
                         return (
-                            <div key={entry._id} className="border rounded-xl shadow-sm bg-white overflow-hidden">
+                            <div key={entry._id} className="border rounded-xl shadow-sm bg-gray-300 overflow-hidden">
                                 <div className="p-4 sm:p-5">
                                     <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                         <div>

@@ -1,12 +1,14 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import tempImage from './temp/temp.png';
 import History from "@/components/History";
-import { FaFileAudio, FaFileVideo, FaTimes } from 'react-icons/fa';
-// Correct the import path to point to the WaveSurfer component file
-import WaveformPlayer from '@/components/WaveSurfer'; // Changed import path
+import { FaFileAudio, FaFileVideo, FaTimes, FaSignOutAlt } from 'react-icons/fa';
+import WaveformPlayer from '@/components/WaveSurfer';
+import { useRouter } from 'next/navigation';
+import jwt from "jsonwebtoken";
+
 
 // Update structure for history items
 interface HistoryItem {
@@ -14,12 +16,13 @@ interface HistoryItem {
   name: string;
   type: 'audio' | 'video';
   thumbnailUrl?: string;
-  sourceUrl?: string; // Add source URL for playback
+  sourceUrl?: string;
   date: string;
   dummyTranscription: string;
 }
 
 const ProfilePage = () => {
+  const router = useRouter();
   // State for modal
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<HistoryItem | null>(null);
@@ -28,8 +31,28 @@ const ProfilePage = () => {
   const username = "ExampleUser";
   const email = "user@example.com";
 
+  // Function to handle logout
+  const handleLogout = () => {
+    // Remove the JWT token from localStorage
+    localStorage.removeItem('token');
+    
+    // You can also clear any other user-related data from localStorage
+    localStorage.removeItem('user_data');
+    
+    // Optional: Clear any state related to the user
+    // For example, if you have user state in context or Redux
+    
+    // Redirect to login page
+    router.push('/');
+  };
+
+  // Function to close modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedItem(null);
+  };
+
   return (
-    // Added px-8 for horizontal padding
     <div className="flex flex-grow p-4 px-8 gap-4 relative"> 
       {/* Left Column (Inline Sidebar) */}
       <div className="w-64 flex-shrink-0 bg-neutral-800 backdrop-blur-lg bg-white/10 rounded-lg p-4 flex flex-col items-center">
@@ -61,6 +84,15 @@ const ProfilePage = () => {
               Audio Analysis
             </span>
           </Link>
+          
+          {/* Logout Button - Added right after Audio Analysis */}
+          <button 
+            onClick={handleLogout}
+            className="flex items-center w-full gap-2 px-4 py-2 text-left rounded hover:bg-red-700 text-red-400 hover:text-white transition-colors mt-2"
+          >
+            <FaSignOutAlt />
+            <span>Logout</span>
+          </button>
         </nav>
       </div>
 
@@ -75,7 +107,7 @@ const ProfilePage = () => {
         {/* User History Section */}
         <div>
           <h2 className="text-xl font-semibold mb-4 border-b border-neutral-700 pb-2">User History</h2>
-            <History/>
+          <History/>
         </div>
       </div>
 
@@ -92,26 +124,21 @@ const ProfilePage = () => {
             </div>
 
             {/* Modal Body */}
-            <div className="p-6 overflow-y-auto space-y-6 flex flex-col min-h-0"> {/* Ensure flex-col and min-h-0 for flex-grow */}
+            <div className="p-6 overflow-y-auto space-y-6 flex flex-col min-h-0">
               {/* Conditionally render WaveformPlayer for audio files */}
               {selectedItem.type === 'audio' && selectedItem.sourceUrl && (
-                <div className="flex-grow p-4 border border-neutral-700 rounded-lg bg-neutral-850 flex flex-col min-h-[200px]"> {/* Added min-height */}
+                <div className="flex-grow p-4 border border-neutral-700 rounded-lg bg-neutral-850 flex flex-col min-h-[200px]">
                   <h2 className="text-xl font-semibold mb-4 flex-shrink-0 text-neutral-300">Playback</h2>
                   <div className="flex-grow min-h-0">
-                    {/* Pass the sourceUrl to the audioSource prop */}
                     <WaveformPlayer
                       audioSource={selectedItem.sourceUrl}
-                      // Add any other necessary props expected by WaveformPlayer from WaveSurfer.tsx
-                      // For example, if onReady or onTimeUpdate are needed:
-                      // onReady={(instance) => console.log("Player ready:", instance)}
-                      // onTimeUpdate={(time) => console.log("Current time:", time)}
                     />
                   </div>
                 </div>
               )}
 
               {/* Transcription */}
-              <div className="flex-shrink-0"> {/* Prevent transcription from growing excessively if player is present */}
+              <div className="flex-shrink-0">
                 <h4 className="text-md font-medium mb-2 text-neutral-300">Transcription:</h4>
                 <p className="text-neutral-200 whitespace-pre-wrap">
                   {selectedItem.dummyTranscription}
