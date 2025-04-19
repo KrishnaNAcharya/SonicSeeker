@@ -4,11 +4,13 @@ import { FileUpload } from "@/components/FileUpload";
 import MediaPlayer from '@/components/MediaPlayer';
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input"; // Import Input component
 import Transcript from './Transcript';
 import { toast } from "sonner";
 import toHHMMSS from '@/helpers/getMinuteFormat';
 import type Player from "video.js/dist/types/player";
 import WaveSurfer from 'wavesurfer.js';
+import { Loader2, Youtube } from "lucide-react"; // Import Youtube icon
 
 const AudioDrop = () => {
   const [files, setFiles] = useState<File[]>([]);
@@ -24,6 +26,8 @@ const AudioDrop = () => {
   const [currentPlaybackTime, setCurrentPlaybackTime] = useState<number>(0);
   const [activeSegmentIndex, setActiveSegmentIndex] = useState(-1);
   const mediaPlayerRef = useRef<Player | WaveSurfer | null>(null);
+  const [youtubeUrl, setYoutubeUrl] = useState(""); // State for YouTube URL input
+  const [isFetchingYoutube, setIsFetchingYoutube] = useState(false); // State for YouTube fetch loading
 
   const trackTranscriptionProgress = useCallback((file: File) => {
     const fileSizeInMB = file.size / (1024 * 1024);
@@ -298,6 +302,104 @@ const AudioDrop = () => {
     }
   };
 
+  const handleFetchYouTubeTranscript = useCallback(async () => {
+    if (!youtubeUrl) {
+      toast.warning("Please enter a YouTube URL.");
+      return;
+    }
+
+    // --- URL Cleaning ---
+    let cleanedUrl = youtubeUrl.trim();
+    // Attempt to fix common duplication issues like "https:https://"
+    if (cleanedUrl.startsWith("https:https://")) {
+      cleanedUrl = cleanedUrl.substring(6); // Remove the extra "https:"
+    } else if (cleanedUrl.startsWith("http:http://")) {
+      cleanedUrl = cleanedUrl.substring(5); // Remove the extra "http:"
+    }
+    // Basic validation: ensure it starts with http:// or https://
+    if (!cleanedUrl.startsWith("http://") && !cleanedUrl.startsWith("https://")) {
+       // Try prepending https:// if no protocol is present
+       if (!cleanedUrl.includes("://")) {
+           cleanedUrl = "https://" + cleanedUrl;
+       } else {
+           toast.error("Invalid URL format. Please enter a valid YouTube URL starting with http:// or https://");
+           return;
+       }
+    }
+    // --- End URL Cleaning ---
+
+    setIsFetchingYoutube(true);
+    setIsTranscribing(true); // Use main loading indicator
+    setCurrentAudioSource(null); // Clear any selected file
+    setTranscription([]); // Clear previous transcription
+    toast.info("Fetching YouTube transcript...");
+
+    try {
+      const response = await fetch("/api/youtube-transcript", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        // Send the cleaned URL
+        body: JSON.stringify({ youtubeUrl: cleanedUrl }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        console.error("YouTube Transcript API error:", result);
+        throw new Error(result.error || `HTTP error! status: ${response.status}`);
+      }
+
+      // Use the same handler as file uploads
+      const transcriptionResult = result.transcription || result;
+
+      // --- Check if transcriptionResult is an array before mapping ---
+      if (!Array.isArray(transcriptionResult?.segments)) {
+          console.error("Invalid transcription data received from YouTube API:", transcriptionResult);
+          throw new Error("Received invalid data format from YouTube transcript fetch.");
+      }
+      // --- End Check ---
+
+      const processedSegments = transcriptionResult.segments.map((segment: any, index: number) => {
+        // ... (rest of the segment processing logic remains the same) ...
+        const startSeconds = segment.start_seconds ??
+                            (typeof segment.start === 'string' ? Math.round(parseFloat(segment.start)) :
+                             typeof segment.start === 'number' ? Math.round(segment.start) : 0);
+
+        const endSeconds = segment.end_seconds ??
+                          (typeof segment.end === 'string' ? Math.round(parseFloat(segment.end)) :
+                           typeof segment.end === 'number' ? Math.round(segment.end) : 0);
+
+        const startFormatted = toHHMMSS(startSeconds);
+        const endFormatted = toHHMMSS(endSeconds);
+
+        const speaker = segment.speaker || `SPEAKER ${index % 2}`; // Default speaker if not provided
+
+        return {
+          ...segment,
+          speaker: speaker,
+          start_seconds: startSeconds,
+          end_seconds: endSeconds,
+          start: startFormatted,
+          end: endFormatted,
+        };
+      });
+      const segmentsWithWordTimestamps = generateWordTimestampsForTranscript(processedSegments);
+      setTranscription(segmentsWithWordTimestamps);
+      toast.success("YouTube transcript fetched successfully!");
+      // Optionally, try to display video info or thumbnail if needed later
+      // For now, just clear the URL input after success
+      setYoutubeUrl("");
+
+    } catch (error: any) {
+      console.error("Fetching YouTube transcript failed:", error);
+      toast.error(`Failed to fetch YouTube transcript: ${error.message}`);
+      setTranscription([]);
+    } finally {
+      setIsFetchingYoutube(false);
+      setIsTranscribing(false);
+    }
+  }, [youtubeUrl]);
+
   return (
     <>
       <div className="flex flex-col lg:flex-row flex-grow gap-8">
@@ -305,6 +407,37 @@ const AudioDrop = () => {
           <div className="flex-grow border border-dashed border-border bg-card rounded-lg flex items-center justify-center p-4 min-h-[200px]">
             <FileUpload onChange={handleFileUpload} />
           </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl font-semibold text-foreground">Fetch from YouTube</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex w-full items-center space-x-2">
+                 <Input
+                   id="youtube-url"
+                   type="url"
+                   placeholder="https://www.youtube.com/watch?v=..."
+                   value={youtubeUrl}
+                   onChange={(e) => setYoutubeUrl(e.target.value)}
+                   className="flex-grow" // Use Shadcn Input
+                   disabled={isFetchingYoutube || isTranscribing}
+                 />
+                 <Button
+                   onClick={handleFetchYouTubeTranscript}
+                   disabled={isFetchingYoutube || isTranscribing || !youtubeUrl}
+                   size="icon" // Make button icon-sized
+                   aria-label="Fetch YouTube Transcript"
+                 >
+                   {isFetchingYoutube ? (
+                     <Loader2 className="h-4 w-4 animate-spin" />
+                   ) : (
+                     <Youtube className="h-4 w-4" /> // YouTube icon
+                   )}
+                 </Button>
+               </div>
+               <p className="text-xs text-muted-foreground mt-2">Enter a YouTube video URL to fetch its transcript.</p>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="w-full lg:w-2/3 flex flex-col gap-8">
