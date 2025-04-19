@@ -33,7 +33,7 @@ export default function AuthPage() {
             if (res.ok && data.token) {
                 localStorage.setItem("token", data.token);
                 alert('Login successful!');
-                window.location.href = '/';
+                window.location.href = '/home'; // Changed redirection to /home
                 // Do further logic like redirect or saving token
             } else {
                 alert(data.message || 'Login failed');

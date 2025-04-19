@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react"; // Import useState and useEffect
+import { useRouter } from 'next/navigation'; // Import useRouter
 import { motion, useScroll, useTransform } from "framer-motion";
 import { NavbarButton } from "@/components/ui/resizable-navbar";
 import { Vortex } from "@/components/ui/vortex"; // Import Vortex
@@ -8,13 +9,57 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 
 export const Hero = () => {
   const targetRef = useRef<HTMLDivElement>(null);
+  const router = useRouter(); // Initialize router
+  const [getStartedUrl, setGetStartedUrl] = useState("/Authentication"); // Default URL
+  const [isLoadingAuth, setIsLoadingAuth] = useState(true); // State to manage auth check loading
+
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start end", "end start"], // Adjust offset if needed
   });
-
   const yLeft = useTransform(scrollYProgress, [0, 1], [-200, 200]); // Increased range
   const yRight = useTransform(scrollYProgress, [0, 1], [-200, 200]); // Increased range
+
+  // Check authentication on component mount
+  useEffect(() => {
+    const checkAuth = () => {
+      const token = localStorage.getItem("token");
+      console.log("Hero: Token from localStorage:", token);
+
+      if (!token) {
+        console.warn("Hero: No token found, defaulting to /Authentication");
+        setGetStartedUrl("/Authentication");
+        setIsLoadingAuth(false);
+        return;
+      }
+
+      try {
+        const payload = JSON.parse(atob(token.split('.')[1]));
+        const userId = payload.userId;
+        console.log("Hero: User ID from token:", userId);
+
+        // Check if token is expired (if it has exp field)
+        const currentTime = Math.floor(Date.now() / 1000);
+        if (payload.exp && payload.exp < currentTime) {
+          console.warn("Hero: Token expired, defaulting to /Authentication");
+          localStorage.removeItem("token"); // Clean up expired token
+          setGetStartedUrl("/Authentication");
+        } else {
+          // User is authenticated
+          console.log("Hero: User authenticated, setting URL to /Home");
+          setGetStartedUrl("/home"); // Redirect authenticated users to /Home
+        }
+      } catch (err) {
+        console.error("Hero: Invalid token:", err);
+        localStorage.removeItem("token"); // Clean up invalid token
+        setGetStartedUrl("/Authentication"); // Default to auth page on error
+      } finally {
+        setIsLoadingAuth(false); // Auth check finished
+      }
+    };
+
+    checkAuth();
+  }, []); // Run only once on mount
 
   return (
     <section ref={targetRef} className="relative flex w-full flex-col items-center overflow-hidden px-4 py-12 md:py-24 border-none h-screen bg-neutral-950">
@@ -45,9 +90,14 @@ export const Hero = () => {
           <p className="mb-4 max-w-2xl text-lg text-neutral-300 md:text-xl"> {/* Adjusted size */}
             Your all in one audio tool
           </p>
-          {/* Call to Action Button */}
-          <NavbarButton href="/Authentication" variant="gradient" className="mt-6 px-6 py-3 text-lg"> {/* Use Authentication link and gradient */}
-            Get Started
+          {/* Call to Action Button - Use dynamic href */}
+          <NavbarButton
+            href={getStartedUrl} // Use state variable for href
+            variant="gradient"
+            className="mt-6 px-6 py-3 text-lg"
+            disabled={isLoadingAuth} // Optionally disable button while checking auth
+          >
+            {isLoadingAuth ? "Loading..." : "Get Started"}
           </NavbarButton>
         </motion.div>
 

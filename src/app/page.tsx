@@ -143,7 +143,7 @@ export default function Home() {
       <Hero />
 
       {/* Features Section */}
-      <section id="features" className="min-h-screen bg-neutral-900 pt-20 pb-20">
+      <section id="features" className="min-h-screen bg-transparent pt-20 pb-20">
         <h2 className="text-3xl font-bold text-center text-white mb-16">
           {/* Wrap Typewriter in ClientOnly */}
           <ClientOnly>
