@@ -28,14 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-background text-foreground`}
       >
         <ClientLayout>
-          <Toaster position="top-center" />
+          <Toaster position="top-center" theme="dark" />
           <Header />
-          <BackgroundBeamsWithCollision className="flex-grow z-0">
+          <BackgroundBeamsWithCollision className="flex-grow z-0 bg-background">
             <main className="relative z-10 w-full">{children}</main>
           </BackgroundBeamsWithCollision>
           <Footer />
