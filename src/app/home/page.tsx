@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import AudioDrop from "@/components/AudioDrop";
 import MindMap from "@/components/MindMap";
+import AudioDrop from "@/components/AudioDrop";
 import Hero from "@/components/Hero"; // Import the Hero component
 
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
@@ -39,6 +39,6 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
- </div>
+</div>
 );
 }

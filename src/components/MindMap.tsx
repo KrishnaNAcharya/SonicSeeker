@@ -1,52 +1,76 @@
-"use client";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+'use client';
 
-type MindMapNode = {
-    id: string;
-    title: string;
-    children?: MindMapNode[];
-    };
+import { useState } from 'react';
+import { paragraphToMindMap, cleanMindMap } from '@/app/utils/nlp';
+import { mindMapToPlantUML } from '@/app/utils/plantuml';
+import plantumlEncoder from 'plantuml-encoder';
 
-    export default function MindMap() {
-    const [mindMapData, setMindMapData] = useState<MindMapNode[]>([]);
-    const [loading, setLoading] = useState(false);
+export default function MindMapGenerator() {
+    const [plantuml, setPlantuml] = useState('');
+    const [imageUrl, setImageUrl] = useState('');
+    const [isProcessing, setIsProcessing] = useState(false);
 
-    // ✅ THIS MUST BE INSIDE THE COMPONENT FUNCTION
-    const generateMindMap = async () => {
-        setLoading(true);
-        const res = await fetch("/api/mindmap");
-        const data = await res.json();
-        setMindMapData(data);
-        setLoading(false);
+    const handleGenerate = async () => {
+        setIsProcessing(true);
+
+        try {
+            // 1. Process transcript (assuming it's already at src/whisper/transcripts/transcript.json)
+            await fetch('/api/transcript', {
+                method: 'POST'
+            });
+
+            // 2. Get generated paragraph
+            const paragraphRes = await fetch('/transcripts/paragraph.txt');
+            const paragraph = await paragraphRes.text();
+
+            // 3. Generate mind map
+            const rawMindMap = paragraphToMindMap(paragraph);
+            const cleanedMindMap = cleanMindMap(rawMindMap);
+            const umlCode = mindMapToPlantUML(cleanedMindMap);
+
+            const encoded = plantumlEncoder.encode(umlCode);
+            setPlantuml(umlCode);
+            setImageUrl(`https://www.plantuml.com/plantuml/svg/${encoded}`);
+
+        } catch (error) {
+            console.error('Processing error:', error);
+        } finally {
+            setIsProcessing(false);
+        }
     };
 
     return (
-        <div className="mt-8">
-        <Button onClick={generateMindMap} disabled={loading}>
-            {loading ? "Generating..." : "Generate Mind Map"}
-        </Button>
+        <div className="max-w-3xl mx-auto p-6 space-y-6">
+            <h1 className="text-3xl font-bold text-center">Transcript to Mind Map</h1>
 
-        {mindMapData.length > 0 && (
-            <div className="mt-6 space-y-4">
-            {mindMapData.map((node) => (
-                <MindMapNodeComponent key={node.id} node={node} />
-            ))}
-            </div>
-        )}
+            <button
+                onClick={handleGenerate}
+                disabled={isProcessing}
+                className={`w-full py-3 px-6 rounded-lg transition
+          ${isProcessing
+                        ? 'bg-gray-300 cursor-not-allowed'
+                        : 'bg-blue-600 hover:bg-blue-700 text-white'}`}
+            >
+                {isProcessing ? 'Generating...' : 'Generate from Transcript'}
+            </button>
+
+            {plantuml && (
+                <div className="space-y-4">
+                    <h2 className="text-xl font-semibold">Generated Mind Map</h2>
+                    {imageUrl && (
+                        <div className="border rounded-lg p-4 bg-gray-50">
+                            <img
+                                src={imageUrl}
+                                alt="Generated Mind Map"
+                                className="mx-auto max-h-[600px]"
+                            />
+                        </div>
+                    )}
+                    <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
+                        {plantuml}
+                    </pre>
+                </div>
+            )}
         </div>
     );
-    }
-
-    function MindMapNodeComponent({ node }: { node: MindMapNode }) {
-    return (
-        <div className="border-l-4 border-blue-500 pl-4">
-        <h2 className="font-semibold text-blue-700 text-lg">{node.title}</h2>
-        <ul className="list-disc ml-4 text-sm text-gray-700 dark:text-gray-300">
-            {node.children?.map((child) => (
-            <li key={child.id}>{child.title}</li>
-            ))}
-        </ul>
-        </div>
-    );
-    }
+}
