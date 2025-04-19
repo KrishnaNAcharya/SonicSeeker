@@ -128,7 +128,7 @@ export const NavItems = ({
           href: item.link,
           onMouseEnter: () => {}, // Placeholder or actual logic
           onClick: onItemClick,
-          className: "text-sm font-medium text-neutral-400 hover:text-white",
+          className: "text-sm font-medium text-white hover:text-white",
         };
 
         return (

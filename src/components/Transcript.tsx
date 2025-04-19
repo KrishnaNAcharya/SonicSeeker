@@ -399,16 +399,6 @@ export default function Transcript({
                 ) : (
                   <p className="text-muted-foreground">Speaker identification not available or not performed.</p>
                 )}
-                
-                <h3 className="text-lg font-medium mt-4 text-foreground">Top Tags</h3>
-                <div className="flex flex-wrap gap-2">
-                  {Object.entries(stats.allTags)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, 10)
-                    .map(([tag, count]) => (
-                      <Badge key={tag} variant="secondary">{tag} ({count})</Badge>
-                    ))}
-                </div>
               </div>
             </div>
           </CardContent>
