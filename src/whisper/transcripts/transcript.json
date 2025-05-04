@@ -1,0 +1,3909 @@
+[
+  {
+    "start_seconds": 1,
+    "end_seconds": 6,
+    "text": "Hey everyone, here's as he outages from NMMIT Karnataka, and today we are super excited",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Hey",
+        "start": 0.5999999999999996,
+        "end": 1.08
+      },
+      {
+        "word": "everyone,",
+        "start": 1.08,
+        "end": 1.52
+      },
+      {
+        "word": "here's",
+        "start": 2.14,
+        "end": 2.38
+      },
+      {
+        "word": "as",
+        "start": 2.38,
+        "end": 2.56
+      },
+      {
+        "word": "he",
+        "start": 2.56,
+        "end": 2.74
+      },
+      {
+        "word": "outages",
+        "start": 2.74,
+        "end": 3.02
+      },
+      {
+        "word": "from",
+        "start": 3.02,
+        "end": 3.22
+      },
+      {
+        "word": "NMMIT",
+        "start": 3.22,
+        "end": 3.92
+      },
+      {
+        "word": "Karnataka,",
+        "start": 3.92,
+        "end": 4.54
+      },
+      {
+        "word": "and",
+        "start": 4.88,
+        "end": 5.38
+      },
+      {
+        "word": "today",
+        "start": 5.38,
+        "end": 5.6
+      },
+      {
+        "word": "we",
+        "start": 5.6,
+        "end": 5.76
+      },
+      {
+        "word": "are",
+        "start": 5.76,
+        "end": 5.82
+      },
+      {
+        "word": "super",
+        "start": 5.82,
+        "end": 6.1
+      },
+      {
+        "word": "excited",
+        "start": 6.1,
+        "end": 6.4
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 6,
+    "end_seconds": 11,
+    "text": "to present a project for Hackfish 2025 under the open innovation track.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "to",
+        "start": 6.4,
+        "end": 6.62
+      },
+      {
+        "word": "present",
+        "start": 6.62,
+        "end": 6.92
+      },
+      {
+        "word": "a",
+        "start": 6.92,
+        "end": 7.14
+      },
+      {
+        "word": "project",
+        "start": 7.14,
+        "end": 7.6
+      },
+      {
+        "word": "for",
+        "start": 7.6,
+        "end": 7.86
+      },
+      {
+        "word": "Hackfish",
+        "start": 7.86,
+        "end": 8.14
+      },
+      {
+        "word": "2025",
+        "start": 8.14,
+        "end": 8.74
+      },
+      {
+        "word": "under",
+        "start": 8.74,
+        "end": 9.72
+      },
+      {
+        "word": "the",
+        "start": 9.72,
+        "end": 9.9
+      },
+      {
+        "word": "open",
+        "start": 9.9,
+        "end": 10.16
+      },
+      {
+        "word": "innovation",
+        "start": 10.16,
+        "end": 10.52
+      },
+      {
+        "word": "track.",
+        "start": 10.52,
+        "end": 10.88
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 12,
+    "end_seconds": 16,
+    "text": "I wish trouble with hearts of record and meetings, lectures or interviews, manually listening,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "I",
+        "start": 11.56,
+        "end": 11.66
+      },
+      {
+        "word": "wish",
+        "start": 11.66,
+        "end": 11.8
+      },
+      {
+        "word": "trouble",
+        "start": 11.8,
+        "end": 12.1
+      },
+      {
+        "word": "with",
+        "start": 12.1,
+        "end": 12.34
+      },
+      {
+        "word": "hearts",
+        "start": 12.34,
+        "end": 12.58
+      },
+      {
+        "word": "of",
+        "start": 12.58,
+        "end": 12.8
+      },
+      {
+        "word": "record",
+        "start": 12.8,
+        "end": 13.04
+      },
+      {
+        "word": "and",
+        "start": 13.04,
+        "end": 13.3
+      },
+      {
+        "word": "meetings,",
+        "start": 13.3,
+        "end": 13.54
+      },
+      {
+        "word": "lectures",
+        "start": 13.88,
+        "end": 14.26
+      },
+      {
+        "word": "or",
+        "start": 14.26,
+        "end": 14.52
+      },
+      {
+        "word": "interviews,",
+        "start": 14.52,
+        "end": 15.04
+      },
+      {
+        "word": "manually",
+        "start": 15.74,
+        "end": 16.02
+      },
+      {
+        "word": "listening,",
+        "start": 16.02,
+        "end": 16.46
+      }
+    ],
+    "sentiment": "negative"
+  },
+  {
+    "start_seconds": 17,
+    "end_seconds": 20,
+    "text": "taking notes and searching for key points is very exhausting right.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "taking",
+        "start": 16.8,
+        "end": 16.96
+      },
+      {
+        "word": "notes",
+        "start": 16.96,
+        "end": 17.3
+      },
+      {
+        "word": "and",
+        "start": 17.3,
+        "end": 17.58
+      },
+      {
+        "word": "searching",
+        "start": 17.58,
+        "end": 17.88
+      },
+      {
+        "word": "for",
+        "start": 17.88,
+        "end": 18.1
+      },
+      {
+        "word": "key",
+        "start": 18.1,
+        "end": 18.34
+      },
+      {
+        "word": "points",
+        "start": 18.34,
+        "end": 18.6
+      },
+      {
+        "word": "is",
+        "start": 18.6,
+        "end": 18.84
+      },
+      {
+        "word": "very",
+        "start": 18.84,
+        "end": 18.96
+      },
+      {
+        "word": "exhausting",
+        "start": 18.96,
+        "end": 19.42
+      },
+      {
+        "word": "right.",
+        "start": 19.42,
+        "end": 19.66
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 21,
+    "end_seconds": 24,
+    "text": "But what if there is a tool that could do the hard work for you?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "But",
+        "start": 20.58,
+        "end": 20.76
+      },
+      {
+        "word": "what",
+        "start": 20.76,
+        "end": 20.98
+      },
+      {
+        "word": "if",
+        "start": 20.98,
+        "end": 21.22
+      },
+      {
+        "word": "there",
+        "start": 21.22,
+        "end": 21.4
+      },
+      {
+        "word": "is",
+        "start": 21.4,
+        "end": 21.58
+      },
+      {
+        "word": "a",
+        "start": 21.58,
+        "end": 21.68
+      },
+      {
+        "word": "tool",
+        "start": 21.68,
+        "end": 21.94
+      },
+      {
+        "word": "that",
+        "start": 21.94,
+        "end": 22.16
+      },
+      {
+        "word": "could",
+        "start": 22.16,
+        "end": 22.38
+      },
+      {
+        "word": "do",
+        "start": 22.38,
+        "end": 22.56
+      },
+      {
+        "word": "the",
+        "start": 22.56,
+        "end": 22.7
+      },
+      {
+        "word": "hard",
+        "start": 22.7,
+        "end": 22.92
+      },
+      {
+        "word": "work",
+        "start": 22.92,
+        "end": 23.24
+      },
+      {
+        "word": "for",
+        "start": 23.24,
+        "end": 23.46
+      },
+      {
+        "word": "you?",
+        "start": 23.46,
+        "end": 23.68
+      }
+    ],
+    "sentiment": "negative"
+  },
+  {
+    "start_seconds": 24,
+    "end_seconds": 29,
+    "text": "Well, that's exactly what you will think about it, every day we attend meetings, listen",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Well,",
+        "start": 24.36,
+        "end": 24.58
+      },
+      {
+        "word": "that's",
+        "start": 24.7,
+        "end": 24.88
+      },
+      {
+        "word": "exactly",
+        "start": 24.88,
+        "end": 25.3
+      },
+      {
+        "word": "what",
+        "start": 25.3,
+        "end": 25.52
+      },
+      {
+        "word": "you",
+        "start": 25.52,
+        "end": 25.72
+      },
+      {
+        "word": "will",
+        "start": 25.72,
+        "end": 25.88
+      },
+      {
+        "word": "think",
+        "start": 25.88,
+        "end": 26.82
+      },
+      {
+        "word": "about",
+        "start": 26.82,
+        "end": 27.18
+      },
+      {
+        "word": "it,",
+        "start": 27.18,
+        "end": 27.38
+      },
+      {
+        "word": "every",
+        "start": 27.78,
+        "end": 27.98
+      },
+      {
+        "word": "day",
+        "start": 27.98,
+        "end": 28.2
+      },
+      {
+        "word": "we",
+        "start": 28.2,
+        "end": 28.38
+      },
+      {
+        "word": "attend",
+        "start": 28.38,
+        "end": 28.58
+      },
+      {
+        "word": "meetings,",
+        "start": 28.58,
+        "end": 28.98
+      },
+      {
+        "word": "listen",
+        "start": 29.32,
+        "end": 29.32
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 29,
+    "end_seconds": 31,
+    "text": "to podcasts and watch lectures.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "to",
+        "start": 29.32,
+        "end": 29.6
+      },
+      {
+        "word": "podcasts",
+        "start": 29.6,
+        "end": 30.08
+      },
+      {
+        "word": "and",
+        "start": 30.08,
+        "end": 30.38
+      },
+      {
+        "word": "watch",
+        "start": 30.38,
+        "end": 30.6
+      },
+      {
+        "word": "lectures.",
+        "start": 30.6,
+        "end": 31.06
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 32,
+    "end_seconds": 34,
+    "text": "But when we need to extract key insights, it's a nightmare.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "But",
+        "start": 31.74,
+        "end": 31.94
+      },
+      {
+        "word": "when",
+        "start": 31.94,
+        "end": 32.1
+      },
+      {
+        "word": "we",
+        "start": 32.1,
+        "end": 32.26
+      },
+      {
+        "word": "need",
+        "start": 32.26,
+        "end": 32.4
+      },
+      {
+        "word": "to",
+        "start": 32.4,
+        "end": 32.56
+      },
+      {
+        "word": "extract",
+        "start": 32.56,
+        "end": 32.84
+      },
+      {
+        "word": "key",
+        "start": 32.84,
+        "end": 33.12
+      },
+      {
+        "word": "insights,",
+        "start": 33.12,
+        "end": 33.54
+      },
+      {
+        "word": "it's",
+        "start": 34.04,
+        "end": 34.08
+      },
+      {
+        "word": "a",
+        "start": 34.08,
+        "end": 34.12
+      },
+      {
+        "word": "nightmare.",
+        "start": 34.12,
+        "end": 34.46
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 35,
+    "end_seconds": 39,
+    "text": "This will be real, listening to an entire recording just to find an important moment,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "This",
+        "start": 35.4,
+        "end": 35.62
+      },
+      {
+        "word": "will",
+        "start": 35.62,
+        "end": 35.76
+      },
+      {
+        "word": "be",
+        "start": 35.76,
+        "end": 35.84
+      },
+      {
+        "word": "real,",
+        "start": 35.84,
+        "end": 36.06
+      },
+      {
+        "word": "listening",
+        "start": 36.4,
+        "end": 36.6
+      },
+      {
+        "word": "to",
+        "start": 36.6,
+        "end": 36.82
+      },
+      {
+        "word": "an",
+        "start": 36.82,
+        "end": 36.92
+      },
+      {
+        "word": "entire",
+        "start": 36.92,
+        "end": 37.16
+      },
+      {
+        "word": "recording",
+        "start": 37.16,
+        "end": 37.62
+      },
+      {
+        "word": "just",
+        "start": 37.62,
+        "end": 37.84
+      },
+      {
+        "word": "to",
+        "start": 37.84,
+        "end": 38
+      },
+      {
+        "word": "find",
+        "start": 38,
+        "end": 38.2
+      },
+      {
+        "word": "an",
+        "start": 38.2,
+        "end": 38.46
+      },
+      {
+        "word": "important",
+        "start": 38.46,
+        "end": 38.78
+      },
+      {
+        "word": "moment,",
+        "start": 38.78,
+        "end": 39.24
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 40,
+    "end_seconds": 41,
+    "text": "it's a huge waste of time right.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "it's",
+        "start": 39.68,
+        "end": 39.76
+      },
+      {
+        "word": "a",
+        "start": 39.76,
+        "end": 39.82
+      },
+      {
+        "word": "huge",
+        "start": 39.82,
+        "end": 39.98
+      },
+      {
+        "word": "waste",
+        "start": 39.98,
+        "end": 40.2
+      },
+      {
+        "word": "of",
+        "start": 40.2,
+        "end": 40.42
+      },
+      {
+        "word": "time",
+        "start": 40.42,
+        "end": 40.62
+      },
+      {
+        "word": "right.",
+        "start": 40.62,
+        "end": 40.88
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 42,
+    "end_seconds": 47,
+    "text": "Manually some amazing long discussions, super inefficient, skipping through videos and",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Manually",
+        "start": 41.5,
+        "end": 41.9
+      },
+      {
+        "word": "some",
+        "start": 41.9,
+        "end": 42.08
+      },
+      {
+        "word": "amazing",
+        "start": 42.08,
+        "end": 42.36
+      },
+      {
+        "word": "long",
+        "start": 42.36,
+        "end": 42.66
+      },
+      {
+        "word": "discussions,",
+        "start": 42.66,
+        "end": 43.14
+      },
+      {
+        "word": "super",
+        "start": 43.86,
+        "end": 44.08
+      },
+      {
+        "word": "inefficient,",
+        "start": 44.08,
+        "end": 44.5
+      },
+      {
+        "word": "skipping",
+        "start": 45.28,
+        "end": 45.62
+      },
+      {
+        "word": "through",
+        "start": 45.62,
+        "end": 45.9
+      },
+      {
+        "word": "videos",
+        "start": 45.9,
+        "end": 46.26
+      },
+      {
+        "word": "and",
+        "start": 46.26,
+        "end": 46.56
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 47,
+    "end_seconds": 49,
+    "text": "I'm hoping to find key parts, it's very frustrating.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "I'm",
+        "start": 46.56,
+        "end": 46.82
+      },
+      {
+        "word": "hoping",
+        "start": 46.82,
+        "end": 46.96
+      },
+      {
+        "word": "to",
+        "start": 46.96,
+        "end": 47.4
+      },
+      {
+        "word": "find",
+        "start": 47.4,
+        "end": 47.62
+      },
+      {
+        "word": "key",
+        "start": 47.62,
+        "end": 47.84
+      },
+      {
+        "word": "parts,",
+        "start": 47.84,
+        "end": 48.1
+      },
+      {
+        "word": "it's",
+        "start": 48.6,
+        "end": 48.66
+      },
+      {
+        "word": "very",
+        "start": 48.66,
+        "end": 48.78
+      },
+      {
+        "word": "frustrating.",
+        "start": 48.78,
+        "end": 49.34
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 50,
+    "end_seconds": 54,
+    "text": "So we ask ourselves, what if an A could take care of this?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "So",
+        "start": 50.12,
+        "end": 50.38
+      },
+      {
+        "word": "we",
+        "start": 50.38,
+        "end": 50.5
+      },
+      {
+        "word": "ask",
+        "start": 50.5,
+        "end": 50.7
+      },
+      {
+        "word": "ourselves,",
+        "start": 50.7,
+        "end": 51.06
+      },
+      {
+        "word": "what",
+        "start": 51.8,
+        "end": 52.04
+      },
+      {
+        "word": "if",
+        "start": 52.04,
+        "end": 52.36
+      },
+      {
+        "word": "an",
+        "start": 52.36,
+        "end": 52.52
+      },
+      {
+        "word": "A",
+        "start": 52.52,
+        "end": 52.66
+      },
+      {
+        "word": "could",
+        "start": 52.66,
+        "end": 52.84
+      },
+      {
+        "word": "take",
+        "start": 52.84,
+        "end": 53.06
+      },
+      {
+        "word": "care",
+        "start": 53.06,
+        "end": 53.3
+      },
+      {
+        "word": "of",
+        "start": 53.3,
+        "end": 53.46
+      },
+      {
+        "word": "this?",
+        "start": 53.46,
+        "end": 53.68
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 54,
+    "end_seconds": 58,
+    "text": "And this is exactly how our A power media processing tool was born.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "And",
+        "start": 54.2,
+        "end": 54.46
+      },
+      {
+        "word": "this",
+        "start": 54.46,
+        "end": 54.6
+      },
+      {
+        "word": "is",
+        "start": 54.6,
+        "end": 54.68
+      },
+      {
+        "word": "exactly",
+        "start": 54.68,
+        "end": 55.14
+      },
+      {
+        "word": "how",
+        "start": 55.14,
+        "end": 55.4
+      },
+      {
+        "word": "our",
+        "start": 55.4,
+        "end": 55.56
+      },
+      {
+        "word": "A",
+        "start": 55.56,
+        "end": 55.72
+      },
+      {
+        "word": "power",
+        "start": 55.72,
+        "end": 56.02
+      },
+      {
+        "word": "media",
+        "start": 56.02,
+        "end": 56.32
+      },
+      {
+        "word": "processing",
+        "start": 56.32,
+        "end": 56.72
+      },
+      {
+        "word": "tool",
+        "start": 56.72,
+        "end": 57.02
+      },
+      {
+        "word": "was",
+        "start": 57.02,
+        "end": 57.26
+      },
+      {
+        "word": "born.",
+        "start": 57.26,
+        "end": 57.54
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 59,
+    "end_seconds": 63,
+    "text": "Our tool makes A and video files are achievable, interactive and insightful.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Our",
+        "start": 58.42,
+        "end": 58.74
+      },
+      {
+        "word": "tool",
+        "start": 58.74,
+        "end": 59
+      },
+      {
+        "word": "makes",
+        "start": 59,
+        "end": 59.22
+      },
+      {
+        "word": "A",
+        "start": 59.22,
+        "end": 59.54
+      },
+      {
+        "word": "and",
+        "start": 59.54,
+        "end": 59.88
+      },
+      {
+        "word": "video",
+        "start": 59.88,
+        "end": 60.18
+      },
+      {
+        "word": "files",
+        "start": 60.18,
+        "end": 60.5
+      },
+      {
+        "word": "are",
+        "start": 60.5,
+        "end": 60.62
+      },
+      {
+        "word": "achievable,",
+        "start": 60.62,
+        "end": 61.06
+      },
+      {
+        "word": "interactive",
+        "start": 61.34,
+        "end": 61.76
+      },
+      {
+        "word": "and",
+        "start": 61.76,
+        "end": 62.1
+      },
+      {
+        "word": "insightful.",
+        "start": 62.1,
+        "end": 62.94
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 64,
+    "end_seconds": 69,
+    "text": "Here's a, we swear A, think of this as a super smart subtitle, swear media files.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Here's",
+        "start": 63.58,
+        "end": 64.1
+      },
+      {
+        "word": "a,",
+        "start": 64.1,
+        "end": 64.24
+      },
+      {
+        "word": "we",
+        "start": 64.92,
+        "end": 65.04
+      },
+      {
+        "word": "swear",
+        "start": 65.04,
+        "end": 65.28
+      },
+      {
+        "word": "A,",
+        "start": 65.28,
+        "end": 65.5
+      },
+      {
+        "word": "think",
+        "start": 65.64,
+        "end": 66
+      },
+      {
+        "word": "of",
+        "start": 66,
+        "end": 66.2
+      },
+      {
+        "word": "this",
+        "start": 66.2,
+        "end": 66.34
+      },
+      {
+        "word": "as",
+        "start": 66.34,
+        "end": 66.52
+      },
+      {
+        "word": "a",
+        "start": 66.52,
+        "end": 66.62
+      },
+      {
+        "word": "super",
+        "start": 66.62,
+        "end": 66.84
+      },
+      {
+        "word": "smart",
+        "start": 66.84,
+        "end": 67.12
+      },
+      {
+        "word": "subtitle,",
+        "start": 67.12,
+        "end": 67.7
+      },
+      {
+        "word": "swear",
+        "start": 67.88,
+        "end": 67.98
+      },
+      {
+        "word": "media",
+        "start": 67.98,
+        "end": 68.3
+      },
+      {
+        "word": "files.",
+        "start": 68.3,
+        "end": 68.68
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 69,
+    "end_seconds": 74,
+    "text": "Isn't the speech and turns it into text with high accuracy, even with background nicer",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Isn't",
+        "start": 69.32,
+        "end": 69.72
+      },
+      {
+        "word": "the",
+        "start": 69.72,
+        "end": 69.94
+      },
+      {
+        "word": "speech",
+        "start": 69.94,
+        "end": 70.12
+      },
+      {
+        "word": "and",
+        "start": 70.12,
+        "end": 70.38
+      },
+      {
+        "word": "turns",
+        "start": 70.38,
+        "end": 70.74
+      },
+      {
+        "word": "it",
+        "start": 70.74,
+        "end": 70.98
+      },
+      {
+        "word": "into",
+        "start": 70.98,
+        "end": 71.3
+      },
+      {
+        "word": "text",
+        "start": 71.3,
+        "end": 71.62
+      },
+      {
+        "word": "with",
+        "start": 71.62,
+        "end": 71.8
+      },
+      {
+        "word": "high",
+        "start": 71.8,
+        "end": 71.96
+      },
+      {
+        "word": "accuracy,",
+        "start": 71.96,
+        "end": 72.54
+      },
+      {
+        "word": "even",
+        "start": 73.24,
+        "end": 73.46
+      },
+      {
+        "word": "with",
+        "start": 73.46,
+        "end": 73.64
+      },
+      {
+        "word": "background",
+        "start": 73.64,
+        "end": 73.96
+      },
+      {
+        "word": "nicer",
+        "start": 73.96,
+        "end": 74.36
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 74,
+    "end_seconds": 75,
+    "text": "multiple accents.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "multiple",
+        "start": 74.36,
+        "end": 74.76
+      },
+      {
+        "word": "accents.",
+        "start": 74.76,
+        "end": 75.24
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 76,
+    "end_seconds": 80,
+    "text": "Where the sentiment analysis, it detects emotions in speech.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Where",
+        "start": 76.06,
+        "end": 76.24
+      },
+      {
+        "word": "the",
+        "start": 76.24,
+        "end": 76.44
+      },
+      {
+        "word": "sentiment",
+        "start": 76.44,
+        "end": 76.76
+      },
+      {
+        "word": "analysis,",
+        "start": 76.76,
+        "end": 77.3
+      },
+      {
+        "word": "it",
+        "start": 77.92,
+        "end": 78.08
+      },
+      {
+        "word": "detects",
+        "start": 78.08,
+        "end": 78.58
+      },
+      {
+        "word": "emotions",
+        "start": 78.58,
+        "end": 78.86
+      },
+      {
+        "word": "in",
+        "start": 78.86,
+        "end": 79.18
+      },
+      {
+        "word": "speech.",
+        "start": 79.18,
+        "end": 79.58
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 80,
+    "end_seconds": 83,
+    "text": "Was the speaker happy, neutral, upset?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Was",
+        "start": 80.3,
+        "end": 80.58
+      },
+      {
+        "word": "the",
+        "start": 80.58,
+        "end": 80.74
+      },
+      {
+        "word": "speaker",
+        "start": 80.74,
+        "end": 81.02
+      },
+      {
+        "word": "happy,",
+        "start": 81.02,
+        "end": 81.44
+      },
+      {
+        "word": "neutral,",
+        "start": 81.96,
+        "end": 82.3
+      },
+      {
+        "word": "upset?",
+        "start": 82.92,
+        "end": 83.1
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 84,
+    "end_seconds": 88,
+    "text": "This is great for analyzing customer calls, debates or interviews.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "This",
+        "start": 84.1,
+        "end": 84.66
+      },
+      {
+        "word": "is",
+        "start": 84.66,
+        "end": 84.8
+      },
+      {
+        "word": "great",
+        "start": 84.8,
+        "end": 85.04
+      },
+      {
+        "word": "for",
+        "start": 85.04,
+        "end": 85.34
+      },
+      {
+        "word": "analyzing",
+        "start": 85.34,
+        "end": 85.7
+      },
+      {
+        "word": "customer",
+        "start": 85.7,
+        "end": 86.22
+      },
+      {
+        "word": "calls,",
+        "start": 86.22,
+        "end": 86.64
+      },
+      {
+        "word": "debates",
+        "start": 86.9,
+        "end": 87.08
+      },
+      {
+        "word": "or",
+        "start": 87.08,
+        "end": 87.34
+      },
+      {
+        "word": "interviews.",
+        "start": 87.34,
+        "end": 87.84
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 89,
+    "end_seconds": 93,
+    "text": "Space in there automatically detects names, places and key topics.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Space",
+        "start": 88.6,
+        "end": 89.16
+      },
+      {
+        "word": "in",
+        "start": 89.16,
+        "end": 89.44
+      },
+      {
+        "word": "there",
+        "start": 89.44,
+        "end": 89.56
+      },
+      {
+        "word": "automatically",
+        "start": 89.56,
+        "end": 90.24
+      },
+      {
+        "word": "detects",
+        "start": 90.24,
+        "end": 90.78
+      },
+      {
+        "word": "names,",
+        "start": 90.78,
+        "end": 91.06
+      },
+      {
+        "word": "places",
+        "start": 91.42,
+        "end": 91.64
+      },
+      {
+        "word": "and",
+        "start": 91.64,
+        "end": 91.94
+      },
+      {
+        "word": "key",
+        "start": 91.94,
+        "end": 92.12
+      },
+      {
+        "word": "topics.",
+        "start": 92.12,
+        "end": 92.5
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 93,
+    "end_seconds": 97,
+    "text": "Let's save someone mentions NASA or a, or let's say Elon Musk.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Let's",
+        "start": 93.32,
+        "end": 93.78
+      },
+      {
+        "word": "save",
+        "start": 93.78,
+        "end": 93.94
+      },
+      {
+        "word": "someone",
+        "start": 93.94,
+        "end": 94.22
+      },
+      {
+        "word": "mentions",
+        "start": 94.22,
+        "end": 94.7
+      },
+      {
+        "word": "NASA",
+        "start": 94.7,
+        "end": 95.08
+      },
+      {
+        "word": "or",
+        "start": 95.08,
+        "end": 95.52
+      },
+      {
+        "word": "a,",
+        "start": 95.52,
+        "end": 95.68
+      },
+      {
+        "word": "or",
+        "start": 95.88,
+        "end": 96.14
+      },
+      {
+        "word": "let's",
+        "start": 96.14,
+        "end": 96.44
+      },
+      {
+        "word": "say",
+        "start": 96.44,
+        "end": 96.54
+      },
+      {
+        "word": "Elon",
+        "start": 96.54,
+        "end": 96.7
+      },
+      {
+        "word": "Musk.",
+        "start": 96.7,
+        "end": 97.1
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 98,
+    "end_seconds": 102,
+    "text": "It highlights them instantly, like it's useful for research and organization purposes.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "It",
+        "start": 97.64,
+        "end": 97.74
+      },
+      {
+        "word": "highlights",
+        "start": 97.74,
+        "end": 97.98
+      },
+      {
+        "word": "them",
+        "start": 97.98,
+        "end": 98.24
+      },
+      {
+        "word": "instantly,",
+        "start": 98.24,
+        "end": 98.84
+      },
+      {
+        "word": "like",
+        "start": 99.12,
+        "end": 99.28
+      },
+      {
+        "word": "it's",
+        "start": 99.28,
+        "end": 99.48
+      },
+      {
+        "word": "useful",
+        "start": 99.48,
+        "end": 99.72
+      },
+      {
+        "word": "for",
+        "start": 99.72,
+        "end": 99.96
+      },
+      {
+        "word": "research",
+        "start": 99.96,
+        "end": 100.26
+      },
+      {
+        "word": "and",
+        "start": 100.26,
+        "end": 100.5
+      },
+      {
+        "word": "organization",
+        "start": 100.5,
+        "end": 101.02
+      },
+      {
+        "word": "purposes.",
+        "start": 101.02,
+        "end": 101.56
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 102,
+    "end_seconds": 106,
+    "text": "But that's not all, they packed this tool with interactive features.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "But",
+        "start": 102.34,
+        "end": 102.58
+      },
+      {
+        "word": "that's",
+        "start": 102.58,
+        "end": 102.86
+      },
+      {
+        "word": "not",
+        "start": 102.86,
+        "end": 103
+      },
+      {
+        "word": "all,",
+        "start": 103,
+        "end": 103.26
+      },
+      {
+        "word": "they",
+        "start": 103.66,
+        "end": 103.78
+      },
+      {
+        "word": "packed",
+        "start": 103.78,
+        "end": 104.08
+      },
+      {
+        "word": "this",
+        "start": 104.08,
+        "end": 104.3
+      },
+      {
+        "word": "tool",
+        "start": 104.3,
+        "end": 104.5
+      },
+      {
+        "word": "with",
+        "start": 104.5,
+        "end": 104.68
+      },
+      {
+        "word": "interactive",
+        "start": 104.68,
+        "end": 105.2
+      },
+      {
+        "word": "features.",
+        "start": 105.2,
+        "end": 105.86
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 107,
+    "end_seconds": 110,
+    "text": "We can search any key word or jump into an important moment.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 106.58,
+        "end": 106.96
+      },
+      {
+        "word": "can",
+        "start": 106.96,
+        "end": 107.1
+      },
+      {
+        "word": "search",
+        "start": 107.1,
+        "end": 107.34
+      },
+      {
+        "word": "any",
+        "start": 107.34,
+        "end": 107.66
+      },
+      {
+        "word": "key",
+        "start": 107.66,
+        "end": 107.9
+      },
+      {
+        "word": "word",
+        "start": 107.9,
+        "end": 108.16
+      },
+      {
+        "word": "or",
+        "start": 108.16,
+        "end": 108.26
+      },
+      {
+        "word": "jump",
+        "start": 108.26,
+        "end": 108.46
+      },
+      {
+        "word": "into",
+        "start": 108.46,
+        "end": 108.76
+      },
+      {
+        "word": "an",
+        "start": 108.76,
+        "end": 108.88
+      },
+      {
+        "word": "important",
+        "start": 108.88,
+        "end": 109.24
+      },
+      {
+        "word": "moment.",
+        "start": 109.24,
+        "end": 109.66
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 110,
+    "end_seconds": 113,
+    "text": "Just type in a word like budget in a meeting and that's it.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Just",
+        "start": 109.66,
+        "end": 110.46
+      },
+      {
+        "word": "type",
+        "start": 110.46,
+        "end": 110.7
+      },
+      {
+        "word": "in",
+        "start": 110.7,
+        "end": 110.88
+      },
+      {
+        "word": "a",
+        "start": 110.88,
+        "end": 110.96
+      },
+      {
+        "word": "word",
+        "start": 110.96,
+        "end": 111.14
+      },
+      {
+        "word": "like",
+        "start": 111.14,
+        "end": 111.3
+      },
+      {
+        "word": "budget",
+        "start": 111.3,
+        "end": 111.68
+      },
+      {
+        "word": "in",
+        "start": 111.68,
+        "end": 111.88
+      },
+      {
+        "word": "a",
+        "start": 111.88,
+        "end": 111.98
+      },
+      {
+        "word": "meeting",
+        "start": 111.98,
+        "end": 112.28
+      },
+      {
+        "word": "and",
+        "start": 112.28,
+        "end": 112.6
+      },
+      {
+        "word": "that's",
+        "start": 112.6,
+        "end": 113.26
+      },
+      {
+        "word": "it.",
+        "start": 113.26,
+        "end": 113.36
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 114,
+    "end_seconds": 115,
+    "text": "It takes you there instantly.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "It",
+        "start": 113.78,
+        "end": 113.92
+      },
+      {
+        "word": "takes",
+        "start": 113.92,
+        "end": 114.1
+      },
+      {
+        "word": "you",
+        "start": 114.1,
+        "end": 114.26
+      },
+      {
+        "word": "there",
+        "start": 114.26,
+        "end": 114.38
+      },
+      {
+        "word": "instantly.",
+        "start": 114.38,
+        "end": 114.98
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 116,
+    "end_seconds": 117,
+    "text": "We also have clickable timestamps.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 115.66,
+        "end": 115.82
+      },
+      {
+        "word": "also",
+        "start": 115.82,
+        "end": 116.06
+      },
+      {
+        "word": "have",
+        "start": 116.06,
+        "end": 116.22
+      },
+      {
+        "word": "clickable",
+        "start": 116.22,
+        "end": 116.68
+      },
+      {
+        "word": "timestamps.",
+        "start": 116.68,
+        "end": 117.3
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 118,
+    "end_seconds": 123,
+    "text": "You must have seen this feature in YouTube, where every sentence in a transcript has a timestamp.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "You",
+        "start": 117.92,
+        "end": 118.18
+      },
+      {
+        "word": "must",
+        "start": 118.18,
+        "end": 118.4
+      },
+      {
+        "word": "have",
+        "start": 118.4,
+        "end": 118.5
+      },
+      {
+        "word": "seen",
+        "start": 118.5,
+        "end": 118.72
+      },
+      {
+        "word": "this",
+        "start": 118.72,
+        "end": 118.86
+      },
+      {
+        "word": "feature",
+        "start": 118.86,
+        "end": 119.14
+      },
+      {
+        "word": "in",
+        "start": 119.14,
+        "end": 119.32
+      },
+      {
+        "word": "YouTube,",
+        "start": 119.32,
+        "end": 119.62
+      },
+      {
+        "word": "where",
+        "start": 120.24,
+        "end": 120.46
+      },
+      {
+        "word": "every",
+        "start": 120.46,
+        "end": 120.74
+      },
+      {
+        "word": "sentence",
+        "start": 120.74,
+        "end": 121.08
+      },
+      {
+        "word": "in",
+        "start": 121.08,
+        "end": 121.34
+      },
+      {
+        "word": "a",
+        "start": 121.34,
+        "end": 121.44
+      },
+      {
+        "word": "transcript",
+        "start": 121.44,
+        "end": 121.88
+      },
+      {
+        "word": "has",
+        "start": 121.88,
+        "end": 122.12
+      },
+      {
+        "word": "a",
+        "start": 122.12,
+        "end": 122.2
+      },
+      {
+        "word": "timestamp.",
+        "start": 122.2,
+        "end": 122.68
+      }
+    ],
+    "sentiment": "negative"
+  },
+  {
+    "start_seconds": 123,
+    "end_seconds": 126,
+    "text": "Click on it and an audio or video jumps it at exact moment.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Click",
+        "start": 122.86,
+        "end": 123
+      },
+      {
+        "word": "on",
+        "start": 123,
+        "end": 123.24
+      },
+      {
+        "word": "it",
+        "start": 123.24,
+        "end": 123.36
+      },
+      {
+        "word": "and",
+        "start": 123.36,
+        "end": 123.56
+      },
+      {
+        "word": "an",
+        "start": 123.56,
+        "end": 123.66
+      },
+      {
+        "word": "audio",
+        "start": 123.66,
+        "end": 124.02
+      },
+      {
+        "word": "or",
+        "start": 124.02,
+        "end": 124.22
+      },
+      {
+        "word": "video",
+        "start": 124.22,
+        "end": 124.36
+      },
+      {
+        "word": "jumps",
+        "start": 124.36,
+        "end": 124.78
+      },
+      {
+        "word": "it",
+        "start": 124.78,
+        "end": 124.88
+      },
+      {
+        "word": "at",
+        "start": 124.88,
+        "end": 125.02
+      },
+      {
+        "word": "exact",
+        "start": 125.02,
+        "end": 125.3
+      },
+      {
+        "word": "moment.",
+        "start": 125.3,
+        "end": 125.78
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 126,
+    "end_seconds": 128,
+    "text": "Also, we do not have to go through the entire file.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Also,",
+        "start": 126.08,
+        "end": 126.46
+      },
+      {
+        "word": "we",
+        "start": 126.64,
+        "end": 126.72
+      },
+      {
+        "word": "do",
+        "start": 126.72,
+        "end": 126.82
+      },
+      {
+        "word": "not",
+        "start": 126.82,
+        "end": 126.94
+      },
+      {
+        "word": "have",
+        "start": 126.94,
+        "end": 127.08
+      },
+      {
+        "word": "to",
+        "start": 127.08,
+        "end": 127.22
+      },
+      {
+        "word": "go",
+        "start": 127.22,
+        "end": 127.4
+      },
+      {
+        "word": "through",
+        "start": 127.4,
+        "end": 127.6
+      },
+      {
+        "word": "the",
+        "start": 127.6,
+        "end": 127.76
+      },
+      {
+        "word": "entire",
+        "start": 127.76,
+        "end": 128.04
+      },
+      {
+        "word": "file.",
+        "start": 128.04,
+        "end": 128.44
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 129,
+    "end_seconds": 132,
+    "text": "The AI picks up the key points and gives you a quick summary.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "The",
+        "start": 129.1,
+        "end": 129.22
+      },
+      {
+        "word": "AI",
+        "start": 129.22,
+        "end": 129.48
+      },
+      {
+        "word": "picks",
+        "start": 129.48,
+        "end": 129.8
+      },
+      {
+        "word": "up",
+        "start": 129.8,
+        "end": 130
+      },
+      {
+        "word": "the",
+        "start": 130,
+        "end": 130.16
+      },
+      {
+        "word": "key",
+        "start": 130.16,
+        "end": 130.4
+      },
+      {
+        "word": "points",
+        "start": 130.4,
+        "end": 130.72
+      },
+      {
+        "word": "and",
+        "start": 130.72,
+        "end": 131
+      },
+      {
+        "word": "gives",
+        "start": 131,
+        "end": 131.22
+      },
+      {
+        "word": "you",
+        "start": 131.22,
+        "end": 131.36
+      },
+      {
+        "word": "a",
+        "start": 131.36,
+        "end": 131.44
+      },
+      {
+        "word": "quick",
+        "start": 131.44,
+        "end": 131.64
+      },
+      {
+        "word": "summary.",
+        "start": 131.64,
+        "end": 132.04
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 133,
+    "end_seconds": 138,
+    "text": "Whether it's a podcast or an online author business meeting, the tool works perfectly with both.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Whether",
+        "start": 132.74,
+        "end": 133.1
+      },
+      {
+        "word": "it's",
+        "start": 133.1,
+        "end": 133.32
+      },
+      {
+        "word": "a",
+        "start": 133.32,
+        "end": 133.38
+      },
+      {
+        "word": "podcast",
+        "start": 133.38,
+        "end": 133.84
+      },
+      {
+        "word": "or",
+        "start": 133.84,
+        "end": 134.24
+      },
+      {
+        "word": "an",
+        "start": 134.24,
+        "end": 134.4
+      },
+      {
+        "word": "online",
+        "start": 134.4,
+        "end": 134.52
+      },
+      {
+        "word": "author",
+        "start": 134.52,
+        "end": 134.8
+      },
+      {
+        "word": "business",
+        "start": 134.8,
+        "end": 135.16
+      },
+      {
+        "word": "meeting,",
+        "start": 135.16,
+        "end": 135.68
+      },
+      {
+        "word": "the",
+        "start": 136.26,
+        "end": 136.3
+      },
+      {
+        "word": "tool",
+        "start": 136.3,
+        "end": 136.62
+      },
+      {
+        "word": "works",
+        "start": 136.62,
+        "end": 136.88
+      },
+      {
+        "word": "perfectly",
+        "start": 136.88,
+        "end": 137.26
+      },
+      {
+        "word": "with",
+        "start": 137.26,
+        "end": 137.74
+      },
+      {
+        "word": "both.",
+        "start": 137.74,
+        "end": 137.98
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 139,
+    "end_seconds": 144,
+    "text": "If multiple people are talking, the AI identifies different voices and labels who said what?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "If",
+        "start": 138.56,
+        "end": 139.12
+      },
+      {
+        "word": "multiple",
+        "start": 139.12,
+        "end": 139.46
+      },
+      {
+        "word": "people",
+        "start": 139.46,
+        "end": 139.96
+      },
+      {
+        "word": "are",
+        "start": 139.96,
+        "end": 140.12
+      },
+      {
+        "word": "talking,",
+        "start": 140.12,
+        "end": 140.52
+      },
+      {
+        "word": "the",
+        "start": 141.04,
+        "end": 141.14
+      },
+      {
+        "word": "AI",
+        "start": 141.14,
+        "end": 141.44
+      },
+      {
+        "word": "identifies",
+        "start": 141.44,
+        "end": 142
+      },
+      {
+        "word": "different",
+        "start": 142,
+        "end": 142.48
+      },
+      {
+        "word": "voices",
+        "start": 142.48,
+        "end": 143
+      },
+      {
+        "word": "and",
+        "start": 143,
+        "end": 143.3
+      },
+      {
+        "word": "labels",
+        "start": 143.3,
+        "end": 143.6
+      },
+      {
+        "word": "who",
+        "start": 143.6,
+        "end": 143.92
+      },
+      {
+        "word": "said",
+        "start": 143.92,
+        "end": 144.16
+      },
+      {
+        "word": "what?",
+        "start": 144.16,
+        "end": 144.42
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 145,
+    "end_seconds": 147,
+    "text": "Expeeker one and speaker two.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Expeeker",
+        "start": 145.04,
+        "end": 145.6
+      },
+      {
+        "word": "one",
+        "start": 145.6,
+        "end": 145.78
+      },
+      {
+        "word": "and",
+        "start": 145.78,
+        "end": 145.9
+      },
+      {
+        "word": "speaker",
+        "start": 145.9,
+        "end": 146.16
+      },
+      {
+        "word": "two.",
+        "start": 146.16,
+        "end": 146.5
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 147,
+    "end_seconds": 150,
+    "text": "You also have a special unique feature called the mind map.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "You",
+        "start": 147.28,
+        "end": 147.42
+      },
+      {
+        "word": "also",
+        "start": 147.42,
+        "end": 147.66
+      },
+      {
+        "word": "have",
+        "start": 147.66,
+        "end": 147.86
+      },
+      {
+        "word": "a",
+        "start": 147.86,
+        "end": 147.96
+      },
+      {
+        "word": "special",
+        "start": 147.96,
+        "end": 148.26
+      },
+      {
+        "word": "unique",
+        "start": 148.26,
+        "end": 148.66
+      },
+      {
+        "word": "feature",
+        "start": 148.66,
+        "end": 149.02
+      },
+      {
+        "word": "called",
+        "start": 149.02,
+        "end": 149.34
+      },
+      {
+        "word": "the",
+        "start": 149.34,
+        "end": 149.46
+      },
+      {
+        "word": "mind",
+        "start": 149.46,
+        "end": 149.74
+      },
+      {
+        "word": "map.",
+        "start": 149.74,
+        "end": 149.9
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 150,
+    "end_seconds": 152,
+    "text": "We're instead of reading a wall of text.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We're",
+        "start": 150.46,
+        "end": 150.7
+      },
+      {
+        "word": "instead",
+        "start": 150.7,
+        "end": 150.9
+      },
+      {
+        "word": "of",
+        "start": 150.9,
+        "end": 151.08
+      },
+      {
+        "word": "reading",
+        "start": 151.08,
+        "end": 151.28
+      },
+      {
+        "word": "a",
+        "start": 151.28,
+        "end": 151.48
+      },
+      {
+        "word": "wall",
+        "start": 151.48,
+        "end": 151.68
+      },
+      {
+        "word": "of",
+        "start": 151.68,
+        "end": 151.94
+      },
+      {
+        "word": "text.",
+        "start": 151.94,
+        "end": 152.22
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 153,
+    "end_seconds": 156,
+    "text": "We basically get a word to the road map of the entire conversation,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 152.64,
+        "end": 152.92
+      },
+      {
+        "word": "basically",
+        "start": 152.92,
+        "end": 153.42
+      },
+      {
+        "word": "get",
+        "start": 153.42,
+        "end": 153.68
+      },
+      {
+        "word": "a",
+        "start": 153.68,
+        "end": 153.84
+      },
+      {
+        "word": "word",
+        "start": 153.84,
+        "end": 154.04
+      },
+      {
+        "word": "to",
+        "start": 154.04,
+        "end": 154.22
+      },
+      {
+        "word": "the",
+        "start": 154.22,
+        "end": 154.34
+      },
+      {
+        "word": "road",
+        "start": 154.34,
+        "end": 154.5
+      },
+      {
+        "word": "map",
+        "start": 154.5,
+        "end": 154.72
+      },
+      {
+        "word": "of",
+        "start": 154.72,
+        "end": 154.98
+      },
+      {
+        "word": "the",
+        "start": 154.98,
+        "end": 155.1
+      },
+      {
+        "word": "entire",
+        "start": 155.1,
+        "end": 155.4
+      },
+      {
+        "word": "conversation,",
+        "start": 155.4,
+        "end": 156.04
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 157,
+    "end_seconds": 159,
+    "text": "making it easier to understand key topics and connectors.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "making",
+        "start": 156.72,
+        "end": 156.98
+      },
+      {
+        "word": "it",
+        "start": 156.98,
+        "end": 157.24
+      },
+      {
+        "word": "easier",
+        "start": 157.24,
+        "end": 157.5
+      },
+      {
+        "word": "to",
+        "start": 157.5,
+        "end": 157.72
+      },
+      {
+        "word": "understand",
+        "start": 157.72,
+        "end": 158.14
+      },
+      {
+        "word": "key",
+        "start": 158.14,
+        "end": 158.42
+      },
+      {
+        "word": "topics",
+        "start": 158.42,
+        "end": 158.76
+      },
+      {
+        "word": "and",
+        "start": 158.76,
+        "end": 159
+      },
+      {
+        "word": "connectors.",
+        "start": 159,
+        "end": 159.48
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 160,
+    "end_seconds": 161,
+    "text": "Now let's discuss the text tag.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Now",
+        "start": 160,
+        "end": 160.14
+      },
+      {
+        "word": "let's",
+        "start": 160.14,
+        "end": 160.42
+      },
+      {
+        "word": "discuss",
+        "start": 160.42,
+        "end": 160.74
+      },
+      {
+        "word": "the",
+        "start": 160.74,
+        "end": 160.96
+      },
+      {
+        "word": "text",
+        "start": 160.96,
+        "end": 161.18
+      },
+      {
+        "word": "tag.",
+        "start": 161.18,
+        "end": 161.44
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 162,
+    "end_seconds": 167,
+    "text": "We'll be using XDS and TypeScript for a smooth user interface with no JS and Express for handling",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We'll",
+        "start": 161.94,
+        "end": 162.42
+      },
+      {
+        "word": "be",
+        "start": 162.42,
+        "end": 162.52
+      },
+      {
+        "word": "using",
+        "start": 162.52,
+        "end": 162.74
+      },
+      {
+        "word": "XDS",
+        "start": 162.74,
+        "end": 163.22
+      },
+      {
+        "word": "and",
+        "start": 163.22,
+        "end": 163.48
+      },
+      {
+        "word": "TypeScript",
+        "start": 163.48,
+        "end": 163.94
+      },
+      {
+        "word": "for",
+        "start": 163.94,
+        "end": 164.3
+      },
+      {
+        "word": "a",
+        "start": 164.3,
+        "end": 164.32
+      },
+      {
+        "word": "smooth",
+        "start": 164.32,
+        "end": 164.48
+      },
+      {
+        "word": "user",
+        "start": 164.48,
+        "end": 164.84
+      },
+      {
+        "word": "interface",
+        "start": 164.84,
+        "end": 165.36
+      },
+      {
+        "word": "with",
+        "start": 165.36,
+        "end": 165.72
+      },
+      {
+        "word": "no",
+        "start": 165.72,
+        "end": 165.88
+      },
+      {
+        "word": "JS",
+        "start": 165.88,
+        "end": 166.18
+      },
+      {
+        "word": "and",
+        "start": 166.18,
+        "end": 166.36
+      },
+      {
+        "word": "Express",
+        "start": 166.36,
+        "end": 166.66
+      },
+      {
+        "word": "for",
+        "start": 166.66,
+        "end": 166.9
+      },
+      {
+        "word": "handling",
+        "start": 166.9,
+        "end": 167.18
+      }
+    ],
+    "sentiment": "negative"
+  },
+  {
+    "start_seconds": 167,
+    "end_seconds": 168,
+    "text": "the backend.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "the",
+        "start": 167.18,
+        "end": 167.66
+      },
+      {
+        "word": "backend.",
+        "start": 167.66,
+        "end": 168.14
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 169,
+    "end_seconds": 171,
+    "text": "We are also trying to run this as locally as possible.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 168.68,
+        "end": 168.92
+      },
+      {
+        "word": "are",
+        "start": 168.92,
+        "end": 169.04
+      },
+      {
+        "word": "also",
+        "start": 169.04,
+        "end": 169.3
+      },
+      {
+        "word": "trying",
+        "start": 169.3,
+        "end": 169.6
+      },
+      {
+        "word": "to",
+        "start": 169.6,
+        "end": 169.78
+      },
+      {
+        "word": "run",
+        "start": 169.78,
+        "end": 169.96
+      },
+      {
+        "word": "this",
+        "start": 169.96,
+        "end": 170.16
+      },
+      {
+        "word": "as",
+        "start": 170.16,
+        "end": 170.32
+      },
+      {
+        "word": "locally",
+        "start": 170.32,
+        "end": 170.68
+      },
+      {
+        "word": "as",
+        "start": 170.68,
+        "end": 170.94
+      },
+      {
+        "word": "possible.",
+        "start": 170.94,
+        "end": 171.42
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 172,
+    "end_seconds": 176,
+    "text": "Like we're using open as we were local model for transcription.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Like",
+        "start": 172.04,
+        "end": 172.32
+      },
+      {
+        "word": "we're",
+        "start": 172.32,
+        "end": 172.54
+      },
+      {
+        "word": "using",
+        "start": 172.54,
+        "end": 172.78
+      },
+      {
+        "word": "open",
+        "start": 172.78,
+        "end": 173.1
+      },
+      {
+        "word": "as",
+        "start": 173.1,
+        "end": 173.32
+      },
+      {
+        "word": "we",
+        "start": 173.32,
+        "end": 173.5
+      },
+      {
+        "word": "were",
+        "start": 173.5,
+        "end": 173.94
+      },
+      {
+        "word": "local",
+        "start": 173.94,
+        "end": 174.38
+      },
+      {
+        "word": "model",
+        "start": 174.38,
+        "end": 174.8
+      },
+      {
+        "word": "for",
+        "start": 174.8,
+        "end": 175.02
+      },
+      {
+        "word": "transcription.",
+        "start": 175.02,
+        "end": 175.6
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 176,
+    "end_seconds": 180,
+    "text": "Video for sentiment analysis and space in it, just like I said before.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Video",
+        "start": 176.36,
+        "end": 176.68
+      },
+      {
+        "word": "for",
+        "start": 176.68,
+        "end": 176.86
+      },
+      {
+        "word": "sentiment",
+        "start": 176.86,
+        "end": 177.18
+      },
+      {
+        "word": "analysis",
+        "start": 177.18,
+        "end": 177.62
+      },
+      {
+        "word": "and",
+        "start": 177.62,
+        "end": 177.9
+      },
+      {
+        "word": "space",
+        "start": 177.9,
+        "end": 178.12
+      },
+      {
+        "word": "in",
+        "start": 178.12,
+        "end": 178.36
+      },
+      {
+        "word": "it,",
+        "start": 178.36,
+        "end": 178.54
+      },
+      {
+        "word": "just",
+        "start": 178.78,
+        "end": 178.92
+      },
+      {
+        "word": "like",
+        "start": 178.92,
+        "end": 179.1
+      },
+      {
+        "word": "I",
+        "start": 179.1,
+        "end": 179.22
+      },
+      {
+        "word": "said",
+        "start": 179.22,
+        "end": 179.36
+      },
+      {
+        "word": "before.",
+        "start": 179.36,
+        "end": 179.8
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 181,
+    "end_seconds": 184,
+    "text": "And as for database for storing the bookmarks and timestamps,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "And",
+        "start": 180.88,
+        "end": 181.34
+      },
+      {
+        "word": "as",
+        "start": 181.34,
+        "end": 181.5
+      },
+      {
+        "word": "for",
+        "start": 181.5,
+        "end": 181.66
+      },
+      {
+        "word": "database",
+        "start": 181.66,
+        "end": 181.94
+      },
+      {
+        "word": "for",
+        "start": 181.94,
+        "end": 182.28
+      },
+      {
+        "word": "storing",
+        "start": 182.28,
+        "end": 182.62
+      },
+      {
+        "word": "the",
+        "start": 182.62,
+        "end": 182.88
+      },
+      {
+        "word": "bookmarks",
+        "start": 182.88,
+        "end": 183.26
+      },
+      {
+        "word": "and",
+        "start": 183.26,
+        "end": 183.48
+      },
+      {
+        "word": "timestamps,",
+        "start": 183.48,
+        "end": 184.22
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 185,
+    "end_seconds": 186,
+    "text": "we'll be using PostgreSQL.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "we'll",
+        "start": 184.7,
+        "end": 184.94
+      },
+      {
+        "word": "be",
+        "start": 184.94,
+        "end": 185.04
+      },
+      {
+        "word": "using",
+        "start": 185.04,
+        "end": 185.26
+      },
+      {
+        "word": "PostgreSQL.",
+        "start": 185.26,
+        "end": 186.12
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 187,
+    "end_seconds": 189,
+    "text": "And hopefully scale it on DB.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "And",
+        "start": 186.82,
+        "end": 187.06
+      },
+      {
+        "word": "hopefully",
+        "start": 187.06,
+        "end": 187.4
+      },
+      {
+        "word": "scale",
+        "start": 187.4,
+        "end": 187.74
+      },
+      {
+        "word": "it",
+        "start": 187.74,
+        "end": 187.96
+      },
+      {
+        "word": "on",
+        "start": 187.96,
+        "end": 188.1
+      },
+      {
+        "word": "DB.",
+        "start": 188.1,
+        "end": 188.62
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 189,
+    "end_seconds": 191,
+    "text": "Video processing will be using GIFF Mac.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Video",
+        "start": 189.24,
+        "end": 189.4
+      },
+      {
+        "word": "processing",
+        "start": 189.4,
+        "end": 189.82
+      },
+      {
+        "word": "will",
+        "start": 189.82,
+        "end": 190.2
+      },
+      {
+        "word": "be",
+        "start": 190.2,
+        "end": 190.34
+      },
+      {
+        "word": "using",
+        "start": 190.34,
+        "end": 190.64
+      },
+      {
+        "word": "GIFF",
+        "start": 190.64,
+        "end": 191
+      },
+      {
+        "word": "Mac.",
+        "start": 191,
+        "end": 191.22
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 192,
+    "end_seconds": 194,
+    "text": "We do JS and wave software JS for seamless payback.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 191.76,
+        "end": 191.96
+      },
+      {
+        "word": "do",
+        "start": 191.96,
+        "end": 192.14
+      },
+      {
+        "word": "JS",
+        "start": 192.14,
+        "end": 192.52
+      },
+      {
+        "word": "and",
+        "start": 192.52,
+        "end": 192.78
+      },
+      {
+        "word": "wave",
+        "start": 192.78,
+        "end": 192.92
+      },
+      {
+        "word": "software",
+        "start": 192.92,
+        "end": 193.14
+      },
+      {
+        "word": "JS",
+        "start": 193.14,
+        "end": 193.62
+      },
+      {
+        "word": "for",
+        "start": 193.62,
+        "end": 193.82
+      },
+      {
+        "word": "seamless",
+        "start": 193.82,
+        "end": 194.16
+      },
+      {
+        "word": "payback.",
+        "start": 194.16,
+        "end": 194.44
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 195,
+    "end_seconds": 199,
+    "text": "This study is designed for anyone who deals with audio or video content.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "This",
+        "start": 195.22,
+        "end": 195.52
+      },
+      {
+        "word": "study",
+        "start": 195.52,
+        "end": 195.76
+      },
+      {
+        "word": "is",
+        "start": 195.76,
+        "end": 195.92
+      },
+      {
+        "word": "designed",
+        "start": 195.92,
+        "end": 196.22
+      },
+      {
+        "word": "for",
+        "start": 196.22,
+        "end": 196.5
+      },
+      {
+        "word": "anyone",
+        "start": 196.5,
+        "end": 196.84
+      },
+      {
+        "word": "who",
+        "start": 196.84,
+        "end": 197.06
+      },
+      {
+        "word": "deals",
+        "start": 197.06,
+        "end": 197.26
+      },
+      {
+        "word": "with",
+        "start": 197.26,
+        "end": 197.42
+      },
+      {
+        "word": "audio",
+        "start": 197.42,
+        "end": 197.72
+      },
+      {
+        "word": "or",
+        "start": 197.72,
+        "end": 197.96
+      },
+      {
+        "word": "video",
+        "start": 197.96,
+        "end": 198.16
+      },
+      {
+        "word": "content.",
+        "start": 198.16,
+        "end": 198.58
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 199,
+    "end_seconds": 204,
+    "text": "In a corporation, this can be used to extract key decisions from long meetings.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "In",
+        "start": 199.1,
+        "end": 199.34
+      },
+      {
+        "word": "a",
+        "start": 199.34,
+        "end": 199.44
+      },
+      {
+        "word": "corporation,",
+        "start": 199.44,
+        "end": 200.08
+      },
+      {
+        "word": "this",
+        "start": 200.48,
+        "end": 200.64
+      },
+      {
+        "word": "can",
+        "start": 200.64,
+        "end": 200.8
+      },
+      {
+        "word": "be",
+        "start": 200.8,
+        "end": 200.98
+      },
+      {
+        "word": "used",
+        "start": 200.98,
+        "end": 201.2
+      },
+      {
+        "word": "to",
+        "start": 201.2,
+        "end": 201.28
+      },
+      {
+        "word": "extract",
+        "start": 201.28,
+        "end": 201.78
+      },
+      {
+        "word": "key",
+        "start": 201.78,
+        "end": 202.2
+      },
+      {
+        "word": "decisions",
+        "start": 202.2,
+        "end": 202.56
+      },
+      {
+        "word": "from",
+        "start": 202.56,
+        "end": 202.98
+      },
+      {
+        "word": "long",
+        "start": 202.98,
+        "end": 203.2
+      },
+      {
+        "word": "meetings.",
+        "start": 203.2,
+        "end": 203.62
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 204,
+    "end_seconds": 207,
+    "text": "Students could use this as a summer's literature and study smart.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Students",
+        "start": 204.48,
+        "end": 205.02
+      },
+      {
+        "word": "could",
+        "start": 205.02,
+        "end": 205.24
+      },
+      {
+        "word": "use",
+        "start": 205.24,
+        "end": 205.5
+      },
+      {
+        "word": "this",
+        "start": 205.5,
+        "end": 205.72
+      },
+      {
+        "word": "as",
+        "start": 205.72,
+        "end": 205.98
+      },
+      {
+        "word": "a",
+        "start": 205.98,
+        "end": 205.98
+      },
+      {
+        "word": "summer's",
+        "start": 205.98,
+        "end": 206.34
+      },
+      {
+        "word": "literature",
+        "start": 206.34,
+        "end": 206.66
+      },
+      {
+        "word": "and",
+        "start": 206.66,
+        "end": 206.94
+      },
+      {
+        "word": "study",
+        "start": 206.94,
+        "end": 207.24
+      },
+      {
+        "word": "smart.",
+        "start": 207.24,
+        "end": 207.48
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 208,
+    "end_seconds": 212,
+    "text": "A legal team could generate automatic transcripts for case studies.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "A",
+        "start": 208.3,
+        "end": 208.48
+      },
+      {
+        "word": "legal",
+        "start": 208.48,
+        "end": 208.82
+      },
+      {
+        "word": "team",
+        "start": 208.82,
+        "end": 209.12
+      },
+      {
+        "word": "could",
+        "start": 209.12,
+        "end": 209.32
+      },
+      {
+        "word": "generate",
+        "start": 209.32,
+        "end": 209.7
+      },
+      {
+        "word": "automatic",
+        "start": 209.7,
+        "end": 210.24
+      },
+      {
+        "word": "transcripts",
+        "start": 210.24,
+        "end": 211.04
+      },
+      {
+        "word": "for",
+        "start": 211.04,
+        "end": 211.16
+      },
+      {
+        "word": "case",
+        "start": 211.16,
+        "end": 211.4
+      },
+      {
+        "word": "studies.",
+        "start": 211.4,
+        "end": 211.78
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 212,
+    "end_seconds": 215,
+    "text": "Content creators could repurpose the best movements.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Content",
+        "start": 212.32,
+        "end": 212.76
+      },
+      {
+        "word": "creators",
+        "start": 212.76,
+        "end": 213.28
+      },
+      {
+        "word": "could",
+        "start": 213.28,
+        "end": 213.58
+      },
+      {
+        "word": "repurpose",
+        "start": 213.58,
+        "end": 214.08
+      },
+      {
+        "word": "the",
+        "start": 214.08,
+        "end": 214.3
+      },
+      {
+        "word": "best",
+        "start": 214.3,
+        "end": 214.48
+      },
+      {
+        "word": "movements.",
+        "start": 214.48,
+        "end": 214.92
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 216,
+    "end_seconds": 220,
+    "text": "A support team could analyze customer interactions for a better service.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "A",
+        "start": 215.84,
+        "end": 216.34
+      },
+      {
+        "word": "support",
+        "start": 216.34,
+        "end": 216.64
+      },
+      {
+        "word": "team",
+        "start": 216.64,
+        "end": 217.02
+      },
+      {
+        "word": "could",
+        "start": 217.02,
+        "end": 217.22
+      },
+      {
+        "word": "analyze",
+        "start": 217.22,
+        "end": 217.54
+      },
+      {
+        "word": "customer",
+        "start": 217.54,
+        "end": 218
+      },
+      {
+        "word": "interactions",
+        "start": 218,
+        "end": 218.58
+      },
+      {
+        "word": "for",
+        "start": 218.58,
+        "end": 218.92
+      },
+      {
+        "word": "a",
+        "start": 218.92,
+        "end": 219.02
+      },
+      {
+        "word": "better",
+        "start": 219.02,
+        "end": 219.2
+      },
+      {
+        "word": "service.",
+        "start": 219.2,
+        "end": 219.72
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 221,
+    "end_seconds": 225,
+    "text": "We believe that I can transform the process audio and video content,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 220.54,
+        "end": 220.82
+      },
+      {
+        "word": "believe",
+        "start": 220.82,
+        "end": 221.1
+      },
+      {
+        "word": "that",
+        "start": 221.1,
+        "end": 221.44
+      },
+      {
+        "word": "I",
+        "start": 221.44,
+        "end": 221.62
+      },
+      {
+        "word": "can",
+        "start": 221.62,
+        "end": 221.88
+      },
+      {
+        "word": "transform",
+        "start": 221.88,
+        "end": 222.34
+      },
+      {
+        "word": "the",
+        "start": 222.34,
+        "end": 222.64
+      },
+      {
+        "word": "process",
+        "start": 222.64,
+        "end": 223.18
+      },
+      {
+        "word": "audio",
+        "start": 223.18,
+        "end": 223.58
+      },
+      {
+        "word": "and",
+        "start": 223.58,
+        "end": 223.86
+      },
+      {
+        "word": "video",
+        "start": 223.86,
+        "end": 224.08
+      },
+      {
+        "word": "content,",
+        "start": 224.08,
+        "end": 224.58
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 225,
+    "end_seconds": 228,
+    "text": "making it more accessible, interactive and intelligent.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "making",
+        "start": 225.02,
+        "end": 225.34
+      },
+      {
+        "word": "it",
+        "start": 225.34,
+        "end": 225.54
+      },
+      {
+        "word": "more",
+        "start": 225.54,
+        "end": 225.72
+      },
+      {
+        "word": "accessible,",
+        "start": 225.72,
+        "end": 226.22
+      },
+      {
+        "word": "interactive",
+        "start": 226.58,
+        "end": 226.9
+      },
+      {
+        "word": "and",
+        "start": 226.9,
+        "end": 227.26
+      },
+      {
+        "word": "intelligent.",
+        "start": 227.26,
+        "end": 227.72
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 229,
+    "end_seconds": 232,
+    "text": "We're hoping that this could be a great tool that could help a lot of people.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We're",
+        "start": 228.54,
+        "end": 228.96
+      },
+      {
+        "word": "hoping",
+        "start": 228.96,
+        "end": 229.26
+      },
+      {
+        "word": "that",
+        "start": 229.26,
+        "end": 229.48
+      },
+      {
+        "word": "this",
+        "start": 229.48,
+        "end": 229.7
+      },
+      {
+        "word": "could",
+        "start": 229.7,
+        "end": 229.84
+      },
+      {
+        "word": "be",
+        "start": 229.84,
+        "end": 229.98
+      },
+      {
+        "word": "a",
+        "start": 229.98,
+        "end": 230.04
+      },
+      {
+        "word": "great",
+        "start": 230.04,
+        "end": 230.24
+      },
+      {
+        "word": "tool",
+        "start": 230.24,
+        "end": 230.58
+      },
+      {
+        "word": "that",
+        "start": 230.58,
+        "end": 230.76
+      },
+      {
+        "word": "could",
+        "start": 230.76,
+        "end": 230.9
+      },
+      {
+        "word": "help",
+        "start": 230.9,
+        "end": 231.12
+      },
+      {
+        "word": "a",
+        "start": 231.12,
+        "end": 231.28
+      },
+      {
+        "word": "lot",
+        "start": 231.28,
+        "end": 231.44
+      },
+      {
+        "word": "of",
+        "start": 231.44,
+        "end": 231.6
+      },
+      {
+        "word": "people.",
+        "start": 231.6,
+        "end": 231.96
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 233,
+    "end_seconds": 236,
+    "text": "And that's a wrap up for a short video of expanding our project.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "And",
+        "start": 232.98,
+        "end": 233.16
+      },
+      {
+        "word": "that's",
+        "start": 233.16,
+        "end": 233.64
+      },
+      {
+        "word": "a",
+        "start": 233.64,
+        "end": 233.72
+      },
+      {
+        "word": "wrap",
+        "start": 233.72,
+        "end": 233.88
+      },
+      {
+        "word": "up",
+        "start": 233.88,
+        "end": 234.16
+      },
+      {
+        "word": "for",
+        "start": 234.16,
+        "end": 234.3
+      },
+      {
+        "word": "a",
+        "start": 234.3,
+        "end": 234.42
+      },
+      {
+        "word": "short",
+        "start": 234.42,
+        "end": 234.64
+      },
+      {
+        "word": "video",
+        "start": 234.64,
+        "end": 234.96
+      },
+      {
+        "word": "of",
+        "start": 234.96,
+        "end": 235.26
+      },
+      {
+        "word": "expanding",
+        "start": 235.26,
+        "end": 235.7
+      },
+      {
+        "word": "our",
+        "start": 235.7,
+        "end": 235.96
+      },
+      {
+        "word": "project.",
+        "start": 235.96,
+        "end": 236.42
+      }
+    ],
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 237,
+    "end_seconds": 239,
+    "text": "Hopefully we'll see you in HackFest.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Hopefully",
+        "start": 237.24,
+        "end": 237.62
+      },
+      {
+        "word": "we'll",
+        "start": 237.62,
+        "end": 237.94
+      },
+      {
+        "word": "see",
+        "start": 237.94,
+        "end": 238.08
+      },
+      {
+        "word": "you",
+        "start": 238.08,
+        "end": 238.2
+      },
+      {
+        "word": "in",
+        "start": 238.2,
+        "end": 238.3
+      },
+      {
+        "word": "HackFest.",
+        "start": 238.3,
+        "end": 238.76
+      }
+    ],
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 239,
+    "end_seconds": 240,
+    "text": "Goodbye for now.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Goodbye",
+        "start": 239.48,
+        "end": 239.7
+      },
+      {
+        "word": "for",
+        "start": 239.7,
+        "end": 239.94
+      },
+      {
+        "word": "now.",
+        "start": 239.94,
+        "end": 240.14
+      }
+    ],
+    "sentiment": "neutral"
+  }
+]

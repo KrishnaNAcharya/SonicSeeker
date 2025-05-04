@@ -1,0 +1,68 @@
+{
+  "topic": "Hackfish 2025 Presentation",
+  "children": [
+    {
+      "topic": "Problem Statement",
+      "summary": "Manual note-taking and searching for key points in audio/video content is time-consuming and inefficient.",
+      "children": []
+    },
+    {
+      "topic": "Solution: A Power Media Processing Tool",
+      "summary": "A tool that can transcribe, analyze, and provide interactive features for easier content consumption.",
+      "children": [
+        {
+          "topic": "Transcription",
+          "summary": "High-accuracy transcription of audio/video files with background noise and multiple accents.",
+          "children": []
+        },
+        {
+          "topic": "Sentiment Analysis",
+          "summary": "Detects emotions in speech, useful for analyzing customer calls, debates, or interviews.",
+          "children": []
+        },
+        {
+          "topic": "Interactive Features",
+          "summary": "Searchable key words, clickable timestamps, and AI-generated summaries for easy navigation.",
+          "children": []
+        }
+      ]
+    },
+    {
+      "topic": "Technical Details",
+      "summary": "Using XDS, TypeScript, Express, PostgreSQL, GIFF Mac, and Wave software JS for a seamless user experience.",
+      "children": [
+        {
+          "topic": "Frontend",
+          "summary": "XDS and TypeScript for a smooth user interface.",
+          "children": []
+        },
+        {
+          "topic": "Backend",
+          "summary": "Express for handling requests, PostgreSQL for storing bookmarks and timestamps, GIFF Mac for video processing.",
+          "children": []
+        }
+      ]
+    },
+    {
+      "topic": "Target Audience",
+      "summary": "Anyone dealing with audio/video content, including corporations, students, legal teams, and content creators.",
+      "children": [
+        {
+          "topic": "Corporate Use Cases",
+          "summary": "Extracting key decisions from long meetings, analyzing customer interactions for better service.",
+          "children": []
+        },
+        {
+          "topic": "Individual Use Cases",
+          "summary": "Students using it as a study aid, legal teams generating automatic transcripts, content creators repurposing best moments.",
+          "children": []
+        }
+      ]
+    },
+    {
+      "topic": "Conclusion",
+      "summary": "A tool that can transform the process of consuming audio/video content, making it more accessible, interactive, and intelligent.",
+      "children": []
+    }
+  ]
+}
