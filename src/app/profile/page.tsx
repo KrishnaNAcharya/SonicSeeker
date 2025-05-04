@@ -4,11 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import tempImage from './temp/temp.png';
 import History from "@/components/History";
-import { FaFileAudio, FaFileVideo, FaTimes, FaSignOutAlt } from 'react-icons/fa';
+import { FaFileAudio, FaFileVideo, FaTimes, FaSignOutAlt, FaSpinner } from 'react-icons/fa';
 import WaveformPlayer from '@/components/WaveSurfer';
 import { useRouter } from 'next/navigation';
-import jwt from "jsonwebtoken";
-
 
 // Update structure for history items
 interface HistoryItem {
@@ -27,9 +25,61 @@ const ProfilePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<HistoryItem | null>(null);
 
-  // Placeholder data
-  const username = "ExampleUser";
-  const email = "user@example.com";
+  // State for user data
+  const [username, setUsername] = useState<string | null>(null);
+  const [email, setEmail] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch user data on component mount
+  useEffect(() => {
+    const fetchUserData = async () => {
+      setIsLoading(true);
+      setError(null);
+      
+      try {
+        // Get token from localStorage
+        const token = localStorage.getItem("token");
+        if (!token) {
+          setError("Not logged in");
+          setIsLoading(false);
+          router.push('/Authentication'); // Redirect to login page
+          return;
+        }
+
+        // Parse the token to get user ID
+        const payload = JSON.parse(atob(token.split('.')[1]));
+        const userId = payload.userId;
+        
+        if (!userId) {
+          setError("User ID not found in token");
+          setIsLoading(false);
+          return;
+        }
+
+        // Fetch user data from API
+        const response = await fetch(`/api/user/${userId}`);
+        
+        if (!response.ok) {
+          throw new Error(`Error fetching user data: ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        
+        // Update state with user data
+        setUsername(data.user.username || "User");
+        setEmail(data.user.email || "No email found");
+        
+      } catch (err: any) {
+        console.error("Error fetching user data:", err);
+        setError(err.message || "Failed to load user data");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchUserData();
+  }, [router]);
 
   // Function to handle logout
   const handleLogout = () => {
@@ -38,9 +88,6 @@ const ProfilePage = () => {
     
     // You can also clear any other user-related data from localStorage
     localStorage.removeItem('user_data');
-    
-    // Optional: Clear any state related to the user
-    // For example, if you have user state in context or Redux
     
     // Redirect to login page
     router.push('/');
@@ -100,8 +147,21 @@ const ProfilePage = () => {
       <div className="flex-grow p-6 md:p-10 bg-neutral-800 backdrop-blur-lg bg-white/10 rounded-lg overflow-y-auto">
         {/* User Info Section */}
         <div className="mb-8">
-          <p className="text-2xl font-semibold">{username}</p>
-          <p className="text-neutral-400">{email}</p>
+          {isLoading ? (
+            <div className="flex items-center gap-2">
+              <FaSpinner className="animate-spin text-neutral-400" />
+              <span className="text-neutral-400">Loading user information...</span>
+            </div>
+          ) : error ? (
+            <div className="text-red-400">
+              <p>Error: {error}</p>
+            </div>
+          ) : (
+            <>
+              <p className="text-2xl font-semibold">{username}</p>
+              <p className="text-neutral-400">{email}</p>
+            </>
+          )}
         </div>
 
         {/* User History Section */}

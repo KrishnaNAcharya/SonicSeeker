@@ -103,7 +103,7 @@ export const Hero = () => {
             Sonic-Seeker
           </h1>
           <p className="mb-4 max-w-2xl text-lg text-neutral-300">
-            Your all in one audio tool
+            Your all in one AI media analysis tool {/* Updated text */}
           </p>
           <NavbarButton
             href={getStartedUrl} // Use state variable for href

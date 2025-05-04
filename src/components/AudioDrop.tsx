@@ -558,11 +558,12 @@ const AudioDrop = () => {
         </div>
       )}
 
-      <div className="flex-grow border border-border rounded-lg bg-card p-4 flex flex-col min-h-[300px] mt-6">
-        <h2 className="text-xl font-semibold mb-4 text-foreground">Transcription</h2>
-        <div className="h-full overflow-y-auto p-1 flex-grow">
+      {/* Transcription Results Section */}
+      <div className="flex-grow border border-border rounded-lg bg-card flex flex-col min-h-[300px] mt-6">
+        {/* Add padding (e.g., p-4 pb-0) to the title */}
+        <div className="h-full overflow-y-auto flex-grow"> 
           {isTranscribing ? (
-            <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
+            <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-4"> {/* Added text-center class */}
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500 mb-4"></div>
               <p>Transcribing... {transcriptionProgress}%</p>
               <div className="w-full max-w-xs h-2 bg-muted rounded-full mt-2 overflow-hidden">
@@ -570,7 +571,7 @@ const AudioDrop = () => {
               </div>
             </div>
           ) : transcriptionError ? (
-            <div className="flex flex-col items-center justify-center h-full text-red-400 p-4">
+            <div className="flex flex-col items-center justify-center h-full text-red-400 p-4"> {/* Add padding back here */}
               <p>Error: {transcriptionError}</p>
               <p className="text-sm mt-2 text-red-300">
                 Try converting your file to MP3 or WAV format. If recording, ensure it's at least 1 second long.
@@ -585,8 +586,9 @@ const AudioDrop = () => {
               currentTime={currentPlaybackTime}
             />
           ) : (
-            <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
-              <p>Upload or record audio and click "Transcribe Media".</p>
+            // Placeholder shown when no transcription is available
+            <div className="flex flex-col items-center justify-center h-full text-muted-foreground p-32"> 
+              <p>Upload or record audio and click "Transcribe Media".</p> 
             </div>
           )}
         </div>

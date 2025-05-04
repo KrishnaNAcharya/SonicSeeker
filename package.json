@@ -19,6 +19,7 @@
     "compromise": "^14.14.4",
     "cytoscape": "^3.31.2",
     "d3": "^7.9.0",
+    "dotenv": "^16.5.0",
     "file-type": "^20.4.1",
     "framer-motion": "^12.7.4",
     "jsonwebtoken": "^9.0.2",

@@ -243,7 +243,7 @@ export default function Transcript({
   return (
     <Card className="w-full">
       <CardHeader className="flex flex-row items-center justify-between pb-2">
-        <CardTitle className="text-foreground">Transcript</CardTitle>
+        <CardTitle className="text-foreground"></CardTitle>
         <div className="flex w-full max-w-sm items-center space-x-2">
           <Input
             type="text"
@@ -269,7 +269,7 @@ export default function Transcript({
       </CardHeader>
       
       <Tabs value={analysisTab} onValueChange={setAnalysisTab} className="w-full">
-        <TabsList className="grid w-full grid-cols-6">
+        <TabsList className="grid w-full grid-cols-7">
           <TabsTrigger value="transcript">Transcript</TabsTrigger>
           <TabsTrigger value="translation">Translation</TabsTrigger>
           <TabsTrigger value="summary">Summary</TabsTrigger>

@@ -1,68 +1,43 @@
 {
-  "topic": "Hackfish 2025 Presentation",
+  "topic": "Good Health",
   "children": [
     {
-      "topic": "Problem Statement",
-      "summary": "Manual note-taking and searching for key points in audio/video content is time-consuming and inefficient.",
+      "topic": "Assessing Current Health",
+      "summary": "One friend reports feeling weak and not fine, while the other is fine.",
       "children": []
     },
     {
-      "topic": "Solution: A Power Media Processing Tool",
-      "summary": "A tool that can transcribe, analyze, and provide interactive features for easier content consumption.",
+      "topic": "Importance of Physical Exercise",
+      "summary": "Regular physical exercise is crucial for staying fit and avoiding idleness.",
       "children": [
         {
-          "topic": "Transcription",
-          "summary": "High-accuracy transcription of audio/video files with background noise and multiple accents.",
-          "children": []
-        },
-        {
-          "topic": "Sentiment Analysis",
-          "summary": "Detects emotions in speech, useful for analyzing customer calls, debates, or interviews.",
-          "children": []
-        },
-        {
-          "topic": "Interactive Features",
-          "summary": "Searchable key words, clickable timestamps, and AI-generated summaries for easy navigation.",
+          "topic": "Consequences of Lack of Physical Exercise",
+          "summary": "Not taking physical exercise regularly can lead to poor health and inability to perform daily tasks.",
           "children": []
         }
       ]
     },
     {
-      "topic": "Technical Details",
-      "summary": "Using XDS, TypeScript, Express, PostgreSQL, GIFF Mac, and Wave software JS for a seamless user experience.",
+      "topic": "Balanced Diet for Good Health",
+      "summary": "A balanced diet, with the right proportion of necessary ingredients, is essential for overall well-being.",
       "children": [
         {
-          "topic": "Frontend",
-          "summary": "XDS and TypeScript for a smooth user interface.",
-          "children": []
-        },
-        {
-          "topic": "Backend",
-          "summary": "Express for handling requests, PostgreSQL for storing bookmarks and timestamps, GIFF Mac for video processing.",
+          "topic": "Defining a Balanced Diet",
+          "summary": "A balanced diet means taking regular food that contains all necessary ingredients needed for health in right proportion.",
           "children": []
         }
       ]
     },
     {
-      "topic": "Target Audience",
-      "summary": "Anyone dealing with audio/video content, including corporations, students, legal teams, and content creators.",
+      "topic": "Practical Advice for Good Health",
+      "summary": "The friend suggests taking physical exercise regularly and eating a balanced diet to stay fit and healthy.",
       "children": [
         {
-          "topic": "Corporate Use Cases",
-          "summary": "Extracting key decisions from long meetings, analyzing customer interactions for better service.",
-          "children": []
-        },
-        {
-          "topic": "Individual Use Cases",
-          "summary": "Students using it as a study aid, legal teams generating automatic transcripts, content creators repurposing best moments.",
+          "topic": "Following the Advice",
+          "summary": "The friends encourage each other to follow the advice and take care of their health.",
           "children": []
         }
       ]
-    },
-    {
-      "topic": "Conclusion",
-      "summary": "A tool that can transform the process of consuming audio/video content, making it more accessible, interactive, and intelligent.",
-      "children": []
     }
   ]
 }

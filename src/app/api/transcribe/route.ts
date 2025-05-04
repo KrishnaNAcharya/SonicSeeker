@@ -53,17 +53,20 @@ export async function POST(request: NextRequest) {
     const formData = await request.formData();
     const mediaFile = formData.get('mediaFile') as File | null;
     const diarize = formData.get('diarize') === 'true'; // Get diarization flag
+    console.log(`Diarization requested: ${diarize}`); // Log if diarization is requested
 
     if (!mediaFile) {
       return NextResponse.json({ error: 'No media file uploaded' }, { status: 400 });
     }
 
-    // --- Get Hugging Face Token (from environment variable) ---
-    const hfToken = process.env.HUGGING_FACE_TOKEN;
-    if (diarize && !hfToken) {
-        console.warn("Diarization requested, but HUGGING_FACE_TOKEN environment variable is not set.");
-        // Optionally, you could choose to fail here or proceed without diarization
-        // return NextResponse.json({ error: 'Hugging Face token not configured for diarization' }, { status: 500 });
+    // --- Get Hugging Face Token (use HF_TOKEN consistently) ---
+    const hfToken = process.env.HF_TOKEN; // Read HF_TOKEN from .env
+    if (diarize) {
+        if (!hfToken) {
+            console.warn("Diarization requested, but HF_TOKEN environment variable is not set.");
+        } else {
+            console.log("HF_TOKEN found for diarization.");
+        }
     }
 
     // Create a temporary directory for uploads if it doesn't exist
@@ -105,8 +108,9 @@ export async function POST(request: NextRequest) {
         // Pass token securely (consider if direct command line is okay, or use env var within python script only)
         // Here we pass it as an argument, ensure your python script handles it
          commandParts.push(`--hf-token "${hfToken}"`);
+         console.log("Passing --diarize and --hf-token flags to script.");
       } else {
-         console.warn("Proceeding with diarization request but without HF token.");
+         console.log("Passing --diarize flag without --hf-token to script.");
       }
     }
     // Add other Whisper args if needed (e.g., --model)

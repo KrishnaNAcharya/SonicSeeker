@@ -8,6 +8,8 @@ import contextlib
 import sys
 import logging
 from pathlib import Path
+import pprint # For pretty printing the diarization object
+import torch # Import torch
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -86,10 +88,16 @@ def run_whisper(input_path):
         logging.info("Loading Whisper model...")
         # Adjust model size and compute type as needed
         # model_size = args.model or "base"
-        model_size = os.environ.get("WHISPER_MODEL_SIZE") # Or choose based on args
+        model_size = os.environ.get("WHISPER_MODEL_SIZE", "base") # Provide default 'base'
+        device_type = os.environ.get("WHISPER_DEVICE_TYPE", "cpu") # Default to 'cpu'
+        compute_type = os.environ.get("WHISPER_COMPUTE_TYPE", "int8") # Default compute type for CPU
+
+        # Log the device being used
+        logging.info(f"Using device: {device_type} with compute type: {compute_type}")
+
         # For CPU: compute_type="int8"
         # For GPU: compute_type="float16" (or "int8_float16")
-        model = WhisperModel(model_size, device=os.environ.get("WHISPER_DEVICE_TYPE"), compute_type=os.environ.get("WHISPER_COMPUTE_TYPE"))
+        model = WhisperModel(model_size, device=device_type, compute_type=compute_type)
         logging.info(f"Starting Whisper transcription for '{input_path}'...")
         # Use word_timestamps=True
         segments_gen, info = model.transcribe(input_path, beam_size=5, word_timestamps=True)
@@ -208,6 +216,69 @@ def align_transcription_diarization(transcription_segments, speaker_turns):
         aligned_segments.append(segment)
 
     return aligned_segments
+
+def assign_speakers(diarization, segments):
+    """Assigns speaker labels from diarization results to Whisper segments."""
+    print("--- Starting Speaker Assignment ---", file=sys.stderr)
+    if not diarization:
+        print("No diarization data provided to assign_speakers.", file=sys.stderr)
+        # Return segments as is, maybe adding default speaker if needed
+        for segment in segments:
+             segment['speaker'] = 'SPEAKER_00' # Or None
+        return segments
+
+    # Create a list of speaker turns with start, end, and speaker label
+    speaker_turns = []
+    for turn, _, speaker in diarization.itertracks(yield_label=True):
+        speaker_turns.append({
+            "start": turn.start,
+            "end": turn.end,
+            "speaker": speaker
+        })
+    print(f"Found {len(speaker_turns)} speaker turns in diarization.", file=sys.stderr)
+    if not speaker_turns:
+         print("Diarization object contained no speaker turns.", file=sys.stderr)
+         for segment in segments:
+             segment['speaker'] = 'SPEAKER_00' # Fallback
+         return segments
+
+    # Sort turns by start time just in case
+    speaker_turns.sort(key=lambda x: x["start"])
+
+    # Assign speaker to each segment based on temporal overlap
+    for segment in segments:
+        segment_start = segment["start"]
+        segment_end = segment["end"]
+        segment_center = segment_start + (segment_end - segment_start) / 2
+
+        # Find the turn that contains the segment's center time
+        assigned_speaker = None
+        max_overlap = 0
+        best_speaker = None
+
+        for turn in speaker_turns:
+            # Calculate overlap duration
+            overlap_start = max(segment_start, turn["start"])
+            overlap_end = min(segment_end, turn["end"])
+            overlap_duration = max(0, overlap_end - overlap_start)
+
+            if overlap_duration > max_overlap:
+                max_overlap = overlap_duration
+                best_speaker = turn["speaker"]
+
+            # Alternative: Check if center point falls within a turn
+            # if segment_center >= turn["start"] and segment_center < turn["end"]:
+            #     assigned_speaker = turn["speaker"]
+            #     break # Found the turn containing the center
+
+        # Assign the speaker with the maximum overlap
+        segment["speaker"] = best_speaker if best_speaker else "SPEAKER_UNKNOWN"
+        if not best_speaker:
+             print(f"Segment {segment['id']} ({segment_start:.2f}-{segment_end:.2f}s) could not be assigned a speaker based on overlap.", file=sys.stderr)
+
+
+    print("--- Finished Speaker Assignment ---", file=sys.stderr)
+    return segments
 
 # --- Main Execution ---
 def main():
