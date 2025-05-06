@@ -1,0 +1,30 @@
+Here is the extracted mind map in JSON format:
+
+{
+  "topic": "John's Story",
+  "children": [
+    {
+      "topic": "Personal Details",
+      "summary": "John weighs 70 kgs and attends Cambridge Institute of Technology.",
+      "children": []
+    },
+    {
+      "topic": "Emotional State",
+      "summary": "John is a very debridged and sad individual due to the impact of war on his happiness.",
+      "children": [
+        {
+          "topic": "Causes of Sadness",
+          "summary": "The killing that takes place in war affects John's ability to be happy.",
+          "children": []
+        }
+    ],
+    {
+      "topic": "Education and Career",
+      "summary": "John attends Cambridge Institute of Technology and also has a connection with Google Ltd.",
+      "children": []
+    }
+  ]
+}
+
+Note: I've used the term "debridged" as it appears in the transcript, although it seems to be an uncommon or incorrect word. If you'd like me to adjust this, please let me know!
+

@@ -1,1505 +1,4577 @@
 [
   {
-    "start_seconds": 0,
-    "end_seconds": 2.76,
-    "text": "A conversation between two friends on good health.",
-    "speaker": "SPEAKER_01",
+    "start_seconds": 0.88,
+    "end_seconds": 6.64,
+    "text": "Hey everyone, here's Aski Otis from NMMIT Karnataka and today we are super excited to",
+    "speaker": "Unknown",
     "words": [
       {
-        "word": "A",
-        "start": 0,
-        "end": 0.26
+        "word": "Hey",
+        "start": 0.8000000000000025,
+        "end": 1.08,
+        "probability": 0.79150390625
       },
       {
-        "word": "conversation",
-        "start": 0.26,
-        "end": 0.86
+        "word": "everyone,",
+        "start": 1.08,
+        "end": 1.52,
+        "probability": 0.8125
       },
       {
-        "word": "between",
-        "start": 0.86,
-        "end": 1.26
+        "word": "here's",
+        "start": 2.08,
+        "end": 2.38,
+        "probability": 0.6461181640625
       },
       {
-        "word": "two",
-        "start": 1.26,
-        "end": 1.62
-      },
-      {
-        "word": "friends",
-        "start": 1.62,
-        "end": 2
-      },
-      {
-        "word": "on",
-        "start": 2,
-        "end": 2.2
-      },
-      {
-        "word": "good",
-        "start": 2.2,
-        "end": 2.38
-      },
-      {
-        "word": "health.",
+        "word": "Aski",
         "start": 2.38,
-        "end": 2.76
-      }
-    ],
-    "start": "00:00:00",
-    "end": "00:00:02",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 7.220000000000001,
-    "end_seconds": 10.14,
-    "text": "Hello, Jenny. How are you?",
-    "speaker": "SPEAKER_02",
-    "words": [
-      {
-        "word": "Hello,",
-        "start": 7.220000000000001,
-        "end": 7.92
-      },
-      {
-        "word": "Jenny.",
-        "start": 8.22,
-        "end": 8.52
-      },
-      {
-        "word": "How",
-        "start": 9.1,
-        "end": 9.78
-      },
-      {
-        "word": "are",
-        "start": 9.78,
-        "end": 9.94
-      },
-      {
-        "word": "you?",
-        "start": 9.94,
-        "end": 10.14
-      }
-    ],
-    "start": "00:00:07",
-    "end": "00:00:10",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 10.78,
-    "end_seconds": 13.94,
-    "text": "I am not fine. What about you?",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "I",
-        "start": 10.78,
-        "end": 11.42
-      },
-      {
-        "word": "am",
-        "start": 11.42,
-        "end": 11.54
-      },
-      {
-        "word": "not",
-        "start": 11.54,
-        "end": 11.76
-      },
-      {
-        "word": "fine.",
-        "start": 11.76,
-        "end": 12.18
-      },
-      {
-        "word": "What",
-        "start": 12.78,
-        "end": 13.36
-      },
-      {
-        "word": "about",
-        "start": 13.36,
-        "end": 13.6
-      },
-      {
-        "word": "you?",
-        "start": 13.6,
-        "end": 13.94
-      }
-    ],
-    "start": "00:00:10",
-    "end": "00:00:13",
-    "sentiment": "negative"
-  },
-  {
-    "start_seconds": 14.44,
-    "end_seconds": 17.68,
-    "text": "I am fine. But what happened to you?",
-    "speaker": "SPEAKER_02",
-    "words": [
-      {
-        "word": "I",
-        "start": 14.44,
-        "end": 15.14
-      },
-      {
-        "word": "am",
-        "start": 15.14,
-        "end": 15.3
-      },
-      {
-        "word": "fine.",
-        "start": 15.3,
-        "end": 15.72
-      },
-      {
-        "word": "But",
-        "start": 16.16,
-        "end": 16.86
-      },
-      {
-        "word": "what",
-        "start": 16.86,
-        "end": 17.04
-      },
-      {
-        "word": "happened",
-        "start": 17.04,
-        "end": 17.36
-      },
-      {
-        "word": "to",
-        "start": 17.36,
-        "end": 17.5
-      },
-      {
-        "word": "you?",
-        "start": 17.5,
-        "end": 17.68
-      }
-    ],
-    "start": "00:00:14",
-    "end": "00:00:17",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 18.38,
-    "end_seconds": 21.12,
-    "text": "Nothing serious, but I feel very weak.",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "Nothing",
-        "start": 18.38,
-        "end": 19.04
-      },
-      {
-        "word": "serious,",
-        "start": 19.04,
-        "end": 19.5
-      },
-      {
-        "word": "but",
-        "start": 19.88,
-        "end": 20.1
-      },
-      {
-        "word": "I",
-        "start": 20.1,
-        "end": 20.2
-      },
-      {
-        "word": "feel",
-        "start": 20.2,
-        "end": 20.44
-      },
-      {
-        "word": "very",
-        "start": 20.44,
-        "end": 20.72
-      },
-      {
-        "word": "weak.",
-        "start": 20.72,
-        "end": 21.12
-      }
-    ],
-    "start": "00:00:18",
-    "end": "00:00:21",
-    "sentiment": "negative"
-  },
-  {
-    "start_seconds": 21.92,
-    "end_seconds": 25.04,
-    "text": "It seems to me you are very careless about your health.",
-    "speaker": "SPEAKER_02",
-    "words": [
-      {
-        "word": "It",
-        "start": 21.92,
-        "end": 22.58
-      },
-      {
-        "word": "seems",
-        "start": 22.58,
-        "end": 22.9
-      },
-      {
-        "word": "to",
-        "start": 22.9,
-        "end": 23.06
-      },
-      {
-        "word": "me",
-        "start": 23.06,
-        "end": 23.2
-      },
-      {
-        "word": "you",
-        "start": 23.2,
-        "end": 23.36
-      },
-      {
-        "word": "are",
-        "start": 23.36,
-        "end": 23.5
-      },
-      {
-        "word": "very",
-        "start": 23.5,
-        "end": 23.78
-      },
-      {
-        "word": "careless",
-        "start": 23.78,
-        "end": 24.16
-      },
-      {
-        "word": "about",
-        "start": 24.16,
-        "end": 24.52
-      },
-      {
-        "word": "your",
-        "start": 24.52,
-        "end": 24.72
-      },
-      {
-        "word": "health.",
-        "start": 24.72,
-        "end": 25.04
-      }
-    ],
-    "start": "00:00:21",
-    "end": "00:00:25",
-    "sentiment": "negative"
-  },
-  {
-    "start_seconds": 25.78,
-    "end_seconds": 28.9,
-    "text": "Maybe you do not take physical exercise regularly.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "Maybe",
-        "start": 25.78,
-        "end": 26.48
-      },
-      {
-        "word": "you",
-        "start": 26.48,
-        "end": 26.66
-      },
-      {
-        "word": "do",
-        "start": 26.66,
-        "end": 26.8
-      },
-      {
-        "word": "not",
-        "start": 26.8,
-        "end": 27.06
-      },
-      {
-        "word": "take",
-        "start": 27.06,
-        "end": 27.32
-      },
-      {
-        "word": "physical",
-        "start": 27.32,
-        "end": 27.7
-      },
-      {
-        "word": "exercise",
-        "start": 27.7,
-        "end": 28.26
-      },
-      {
-        "word": "regularly.",
-        "start": 28.26,
-        "end": 28.9
-      }
-    ],
-    "start": "00:00:25",
-    "end": "00:00:28",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 30,
-    "end_seconds": 31.98,
-    "text": "Yes, you are absolutely right.",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "Yes,",
-        "start": 30,
-        "end": 30.42
-      },
-      {
-        "word": "you",
-        "start": 30.62,
-        "end": 30.76
-      },
-      {
-        "word": "are",
-        "start": 30.76,
-        "end": 30.94
-      },
-      {
-        "word": "absolutely",
-        "start": 30.94,
-        "end": 31.52
-      },
-      {
-        "word": "right.",
-        "start": 31.52,
-        "end": 31.98
-      }
-    ],
-    "start": "00:00:30",
-    "end": "00:00:31",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 32.78,
-    "end_seconds": 35.7,
-    "text": "I am not habituated to take physical exercise.",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "I",
-        "start": 32.78,
-        "end": 33.34
-      },
-      {
-        "word": "am",
-        "start": 33.34,
-        "end": 33.46
-      },
-      {
-        "word": "not",
-        "start": 33.46,
-        "end": 33.66
-      },
-      {
-        "word": "habituated",
-        "start": 33.66,
-        "end": 34.28
-      },
-      {
-        "word": "to",
-        "start": 34.28,
-        "end": 34.44
-      },
-      {
-        "word": "take",
-        "start": 34.44,
-        "end": 34.66
-      },
-      {
-        "word": "physical",
-        "start": 34.66,
-        "end": 35.06
-      },
-      {
-        "word": "exercise.",
-        "start": 35.06,
-        "end": 35.7
-      }
-    ],
-    "start": "00:00:32",
-    "end": "00:00:35",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 36.6,
-    "end_seconds": 39.38,
-    "text": "If you do not take physical exercise regularly,",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "If",
-        "start": 36.6,
-        "end": 37.16
-      },
-      {
-        "word": "you",
-        "start": 37.16,
-        "end": 37.26
-      },
-      {
-        "word": "do",
-        "start": 37.26,
-        "end": 37.38
-      },
-      {
-        "word": "not",
-        "start": 37.38,
-        "end": 37.62
-      },
-      {
-        "word": "take",
-        "start": 37.62,
-        "end": 37.84
-      },
-      {
-        "word": "physical",
-        "start": 37.84,
-        "end": 38.24
-      },
-      {
-        "word": "exercise",
-        "start": 38.24,
-        "end": 38.8
-      },
-      {
-        "word": "regularly,",
-        "start": 38.8,
-        "end": 39.38
-      }
-    ],
-    "start": "00:00:36",
-    "end": "00:00:39",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 40.36,
-    "end_seconds": 43.46,
-    "text": "you cannot keep yourself fit and do anything properly.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "you",
-        "start": 40.36,
-        "end": 40.92
-      },
-      {
-        "word": "cannot",
-        "start": 40.92,
-        "end": 41.16
-      },
-      {
-        "word": "keep",
-        "start": 41.16,
-        "end": 41.5
-      },
-      {
-        "word": "yourself",
-        "start": 41.5,
-        "end": 41.82
-      },
-      {
-        "word": "fit",
-        "start": 41.82,
-        "end": 42.26
-      },
-      {
-        "word": "and",
-        "start": 42.26,
-        "end": 42.44
-      },
-      {
-        "word": "do",
-        "start": 42.44,
-        "end": 42.62
-      },
-      {
-        "word": "anything",
-        "start": 42.62,
-        "end": 42.98
-      },
-      {
-        "word": "properly.",
-        "start": 42.98,
-        "end": 43.46
-      }
-    ],
-    "start": "00:00:40",
-    "end": "00:00:43",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 44.32,
-    "end_seconds": 46.18,
-    "text": "Besides, you will become idle.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "Besides,",
-        "start": 44.32,
-        "end": 44.88
-      },
-      {
-        "word": "you",
-        "start": 45.28,
-        "end": 45.46
-      },
-      {
-        "word": "will",
-        "start": 45.46,
-        "end": 45.6
-      },
-      {
-        "word": "become",
-        "start": 45.6,
-        "end": 45.86
-      },
-      {
-        "word": "idle.",
-        "start": 45.86,
-        "end": 46.18
-      }
-    ],
-    "start": "00:00:44",
-    "end": "00:00:46",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 46.36,
-    "end_seconds": 48.38,
-    "text": "It seems to me you are absolutely correct.",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "It",
-        "start": 46.36,
-        "end": 46.5
-      },
-      {
-        "word": "seems",
-        "start": 46.5,
-        "end": 46.78
-      },
-      {
-        "word": "to",
-        "start": 46.78,
-        "end": 46.92
-      },
-      {
-        "word": "me",
-        "start": 46.92,
-        "end": 47.04
-      },
-      {
-        "word": "you",
-        "start": 47.04,
-        "end": 47.18
-      },
-      {
-        "word": "are",
-        "start": 47.18,
-        "end": 47.32
-      },
-      {
-        "word": "absolutely",
-        "start": 47.32,
-        "end": 47.9
-      },
-      {
-        "word": "correct.",
-        "start": 47.9,
-        "end": 48.38
-      }
-    ],
-    "start": "00:00:46",
-    "end": "00:00:48",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 49.1,
-    "end_seconds": 50.88,
-    "text": "Now tell me what I should do.",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "Now",
-        "start": 49.1,
-        "end": 49.66
-      },
-      {
-        "word": "tell",
-        "start": 49.66,
-        "end": 49.9
-      },
-      {
-        "word": "me",
-        "start": 49.9,
-        "end": 50.06
-      },
-      {
-        "word": "what",
-        "start": 50.06,
-        "end": 50.22
-      },
-      {
-        "word": "I",
-        "start": 50.22,
-        "end": 50.36
-      },
-      {
-        "word": "should",
-        "start": 50.36,
-        "end": 50.6
+        "end": 2.72,
+        "probability": 0.41064453125
       },
-      {
-        "word": "do.",
-        "start": 50.6,
-        "end": 50.88
-      }
-    ],
-    "start": "00:00:49",
-    "end": "00:00:50",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 51.58,
-    "end_seconds": 54.08,
-    "text": "You should take physical exercise regularly.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "You",
-        "start": 51.58,
-        "end": 52.14
-      },
-      {
-        "word": "should",
-        "start": 52.14,
-        "end": 52.32
-      },
-      {
-        "word": "take",
-        "start": 52.32,
-        "end": 52.52
-      },
-      {
-        "word": "physical",
-        "start": 52.52,
-        "end": 52.92
-      },
-      {
-        "word": "exercise",
-        "start": 52.92,
-        "end": 53.52
-      },
-      {
-        "word": "regularly.",
-        "start": 53.52,
-        "end": 54.08
-      }
-    ],
-    "start": "00:00:51",
-    "end": "00:00:54",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 54.52,
-    "end_seconds": 58.2,
-    "text": "Apart from this, you should have a balanced diet to keep yourself fit.",
-    "speaker": "SPEAKER_00",
-    "words": [
       {
-        "word": "Apart",
-        "start": 54.52,
-        "end": 54.94
+        "word": "Otis",
+        "start": 2.72,
+        "end": 3,
+        "probability": 0.508056640625
       },
       {
         "word": "from",
-        "start": 54.94,
-        "end": 55.2
+        "start": 3,
+        "end": 3.2,
+        "probability": 0.984375
       },
       {
-        "word": "this,",
-        "start": 55.2,
-        "end": 55.48
+        "word": "NMMIT",
+        "start": 3.2,
+        "end": 3.94,
+        "probability": 0.7470703125
       },
       {
-        "word": "you",
-        "start": 55.68,
-        "end": 55.86
+        "word": "Karnataka",
+        "start": 3.94,
+        "end": 4.6,
+        "probability": 0.884765625
       },
-      {
-        "word": "should",
-        "start": 55.86,
-        "end": 56.04
-      },
-      {
-        "word": "have",
-        "start": 56.04,
-        "end": 56.18
-      },
-      {
-        "word": "a",
-        "start": 56.18,
-        "end": 56.3
-      },
-      {
-        "word": "balanced",
-        "start": 56.3,
-        "end": 56.68
-      },
-      {
-        "word": "diet",
-        "start": 56.68,
-        "end": 57.06
-      },
-      {
-        "word": "to",
-        "start": 57.06,
-        "end": 57.36
-      },
-      {
-        "word": "keep",
-        "start": 57.36,
-        "end": 57.58
-      },
-      {
-        "word": "yourself",
-        "start": 57.58,
-        "end": 57.88
-      },
-      {
-        "word": "fit.",
-        "start": 57.88,
-        "end": 58.2
-      }
-    ],
-    "start": "00:00:54",
-    "end": "00:00:58",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 58.2,
-    "end_seconds": 61,
-    "text": "What do you mean by a balanced diet?",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "What",
-        "start": 58.2,
-        "end": 59.34
-      },
-      {
-        "word": "do",
-        "start": 59.34,
-        "end": 59.48
-      },
-      {
-        "word": "you",
-        "start": 59.48,
-        "end": 59.6
-      },
-      {
-        "word": "mean",
-        "start": 59.6,
-        "end": 59.9
-      },
-      {
-        "word": "by",
-        "start": 59.9,
-        "end": 60.14
-      },
-      {
-        "word": "a",
-        "start": 60.14,
-        "end": 60.26
-      },
-      {
-        "word": "balanced",
-        "start": 60.26,
-        "end": 60.62
-      },
-      {
-        "word": "diet?",
-        "start": 60.62,
-        "end": 61
-      }
-    ],
-    "start": "00:00:58",
-    "end": "00:01:01",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 61.72,
-    "end_seconds": 63.32,
-    "text": "Please tell me in detail.",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "Please",
-        "start": 61.72,
-        "end": 62.38
-      },
-      {
-        "word": "tell",
-        "start": 62.38,
-        "end": 62.56
-      },
-      {
-        "word": "me",
-        "start": 62.56,
-        "end": 62.72
-      },
-      {
-        "word": "in",
-        "start": 62.72,
-        "end": 62.88
-      },
-      {
-        "word": "detail.",
-        "start": 62.88,
-        "end": 63.32
-      }
-    ],
-    "start": "00:01:01",
-    "end": "00:01:03",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 64.18,
-    "end_seconds": 67.18,
-    "text": "A balanced diet means to take regular food,",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "A",
-        "start": 64.18,
-        "end": 64.68
-      },
-      {
-        "word": "balanced",
-        "start": 64.68,
-        "end": 65.08
-      },
-      {
-        "word": "diet",
-        "start": 65.08,
-        "end": 65.5
-      },
-      {
-        "word": "means",
-        "start": 65.5,
-        "end": 65.94
-      },
-      {
-        "word": "to",
-        "start": 65.94,
-        "end": 66.14
-      },
-      {
-        "word": "take",
-        "start": 66.14,
-        "end": 66.38
-      },
-      {
-        "word": "regular",
-        "start": 66.38,
-        "end": 66.74
-      },
-      {
-        "word": "food,",
-        "start": 66.74,
-        "end": 67.18
-      }
-    ],
-    "start": "00:01:04",
-    "end": "00:01:07",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 68.16,
-    "end_seconds": 73.1,
-    "text": "containing all the necessary ingredients needed for health in right proportion.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "containing",
-        "start": 68.16,
-        "end": 68.88
-      },
-      {
-        "word": "all",
-        "start": 68.88,
-        "end": 69.26
-      },
-      {
-        "word": "the",
-        "start": 69.26,
-        "end": 69.42
-      },
-      {
-        "word": "necessary",
-        "start": 69.42,
-        "end": 69.96
-      },
-      {
-        "word": "ingredients",
-        "start": 69.96,
-        "end": 70.54
-      },
-      {
-        "word": "needed",
-        "start": 70.54,
-        "end": 71
-      },
-      {
-        "word": "for",
-        "start": 71,
-        "end": 71.78
-      },
-      {
-        "word": "health",
-        "start": 71.78,
-        "end": 72.1
-      },
-      {
-        "word": "in",
-        "start": 72.1,
-        "end": 72.38
-      },
-      {
-        "word": "right",
-        "start": 72.38,
-        "end": 72.6
-      },
-      {
-        "word": "proportion.",
-        "start": 72.6,
-        "end": 73.1
-      }
-    ],
-    "start": "00:01:08",
-    "end": "00:01:13",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 73.68,
-    "end_seconds": 76.54,
-    "text": "I see. Both taking physical exercise",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "I",
-        "start": 73.68,
-        "end": 74.2
-      },
-      {
-        "word": "see.",
-        "start": 74.2,
-        "end": 74.5
-      },
-      {
-        "word": "Both",
-        "start": 74.82,
-        "end": 75.02
-      },
-      {
-        "word": "taking",
-        "start": 75.02,
-        "end": 75.36
-      },
-      {
-        "word": "physical",
-        "start": 75.36,
-        "end": 75.84
-      },
-      {
-        "word": "exercise",
-        "start": 75.84,
-        "end": 76.54
-      }
-    ],
-    "start": "00:01:13",
-    "end": "00:01:16",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 76.54,
-    "end_seconds": 81.48,
-    "text": "and eating a balanced diet regularly are very important for good health.",
-    "speaker": "SPEAKER_01",
-    "words": [
       {
         "word": "and",
-        "start": 76.54,
-        "end": 77.84
+        "start": 4.6,
+        "end": 5.36,
+        "probability": 0.58154296875
       },
       {
-        "word": "eating",
-        "start": 77.84,
-        "end": 78.08
+        "word": "today",
+        "start": 5.36,
+        "end": 5.6,
+        "probability": 0.986328125
       },
       {
-        "word": "a",
-        "start": 78.08,
-        "end": 78.26
-      },
-      {
-        "word": "balanced",
-        "start": 78.26,
-        "end": 78.6
-      },
-      {
-        "word": "diet",
-        "start": 78.6,
-        "end": 79.02
-      },
-      {
-        "word": "regularly",
-        "start": 79.02,
-        "end": 79.56
+        "word": "we",
+        "start": 5.6,
+        "end": 5.74,
+        "probability": 0.96533203125
       },
       {
         "word": "are",
-        "start": 79.56,
-        "end": 79.88
+        "start": 5.74,
+        "end": 5.84,
+        "probability": 0.8662109375
       },
       {
-        "word": "very",
-        "start": 79.88,
-        "end": 80.16
+        "word": "super",
+        "start": 5.84,
+        "end": 6.08,
+        "probability": 0.9833984375
       },
       {
-        "word": "important",
-        "start": 80.16,
-        "end": 80.64
-      },
-      {
-        "word": "for",
-        "start": 80.64,
-        "end": 80.9
-      },
-      {
-        "word": "good",
-        "start": 80.9,
-        "end": 81.12
-      },
-      {
-        "word": "health.",
-        "start": 81.12,
-        "end": 81.48
-      }
-    ],
-    "start": "00:01:16",
-    "end": "00:01:21",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 82.36000000000001,
-    "end_seconds": 83.04,
-    "text": "Exactly.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "Exactly.",
-        "start": 82.36000000000001,
-        "end": 83.04
-      }
-    ],
-    "start": "00:01:22",
-    "end": "00:01:23",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 83.78,
-    "end_seconds": 87.28,
-    "text": "I hope you will follow both of the rules to keep yourself fit.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "I",
-        "start": 83.78,
-        "end": 84.46
-      },
-      {
-        "word": "hope",
-        "start": 84.46,
-        "end": 84.68
-      },
-      {
-        "word": "you",
-        "start": 84.68,
-        "end": 84.8
-      },
-      {
-        "word": "will",
-        "start": 84.8,
-        "end": 84.92
-      },
-      {
-        "word": "follow",
-        "start": 84.92,
-        "end": 85.24
-      },
-      {
-        "word": "both",
-        "start": 85.24,
-        "end": 85.56
-      },
-      {
-        "word": "of",
-        "start": 85.56,
-        "end": 85.68
-      },
-      {
-        "word": "the",
-        "start": 85.68,
-        "end": 85.8
-      },
-      {
-        "word": "rules",
-        "start": 85.8,
-        "end": 86.12
+        "word": "excited",
+        "start": 6.08,
+        "end": 6.46,
+        "probability": 0.990234375
       },
       {
         "word": "to",
-        "start": 86.12,
-        "end": 86.44
-      },
-      {
-        "word": "keep",
-        "start": 86.44,
-        "end": 86.64
-      },
-      {
-        "word": "yourself",
-        "start": 86.64,
-        "end": 86.96
-      },
-      {
-        "word": "fit.",
-        "start": 86.96,
-        "end": 87.28
+        "start": 6.46,
+        "end": 6.64,
+        "probability": 0.99853515625
       }
     ],
-    "start": "00:01:23",
+    "start": "00:00:00",
+    "end": "00:00:06",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 6.64,
+    "end_seconds": 10.88,
+    "text": "present our project for Hackfish 2025 under the open innovation track.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "present",
+        "start": 6.64,
+        "end": 6.96,
+        "probability": 0.99609375
+      },
+      {
+        "word": "our",
+        "start": 6.96,
+        "end": 7.16,
+        "probability": 0.513671875
+      },
+      {
+        "word": "project",
+        "start": 7.16,
+        "end": 7.62,
+        "probability": 0.96044921875
+      },
+      {
+        "word": "for",
+        "start": 7.62,
+        "end": 7.84,
+        "probability": 0.92822265625
+      },
+      {
+        "word": "Hackfish",
+        "start": 7.84,
+        "end": 8.2,
+        "probability": 0.836181640625
+      },
+      {
+        "word": "2025",
+        "start": 8.2,
+        "end": 8.78,
+        "probability": 0.982421875
+      },
+      {
+        "word": "under",
+        "start": 8.78,
+        "end": 9.7,
+        "probability": 0.79443359375
+      },
+      {
+        "word": "the",
+        "start": 9.7,
+        "end": 9.9,
+        "probability": 0.97119140625
+      },
+      {
+        "word": "open",
+        "start": 9.9,
+        "end": 10.16,
+        "probability": 0.6806640625
+      },
+      {
+        "word": "innovation",
+        "start": 10.16,
+        "end": 10.52,
+        "probability": 0.9638671875
+      },
+      {
+        "word": "track.",
+        "start": 10.52,
+        "end": 10.88,
+        "probability": 0.9765625
+      }
+    ],
+    "start": "00:00:06",
+    "end": "00:00:10",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 11.62,
+    "end_seconds": 15,
+    "text": "Our struggle with hours of record in meetings, lectures or interviews,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Our",
+        "start": 11.62,
+        "end": 11.72,
+        "probability": 0.92041015625
+      },
+      {
+        "word": "struggle",
+        "start": 11.72,
+        "end": 12.1,
+        "probability": 0.9814453125
+      },
+      {
+        "word": "with",
+        "start": 12.1,
+        "end": 12.32,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "hours",
+        "start": 12.32,
+        "end": 12.64,
+        "probability": 0.85888671875
+      },
+      {
+        "word": "of",
+        "start": 12.64,
+        "end": 12.82,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "record",
+        "start": 12.82,
+        "end": 13.1,
+        "probability": 0.705078125
+      },
+      {
+        "word": "in",
+        "start": 13.1,
+        "end": 13.28,
+        "probability": 0.6025390625
+      },
+      {
+        "word": "meetings,",
+        "start": 13.28,
+        "end": 13.7,
+        "probability": 0.98046875
+      },
+      {
+        "word": "lectures",
+        "start": 13.86,
+        "end": 14.28,
+        "probability": 0.99072265625
+      },
+      {
+        "word": "or",
+        "start": 14.28,
+        "end": 14.5,
+        "probability": 0.70703125
+      },
+      {
+        "word": "interviews,",
+        "start": 14.5,
+        "end": 15,
+        "probability": 0.99658203125
+      }
+    ],
+    "start": "00:00:11",
+    "end": "00:00:15",
+    "sentiment": "negative"
+  },
+  {
+    "start_seconds": 15.68,
+    "end_seconds": 19.66,
+    "text": "manually listening, taking notes and searching for key points is very exhausting right?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "manually",
+        "start": 15.68,
+        "end": 16.02,
+        "probability": 0.9296875
+      },
+      {
+        "word": "listening,",
+        "start": 16.02,
+        "end": 16.5,
+        "probability": 0.984375
+      },
+      {
+        "word": "taking",
+        "start": 16.78,
+        "end": 16.98,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "notes",
+        "start": 16.98,
+        "end": 17.36,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "and",
+        "start": 17.36,
+        "end": 17.58,
+        "probability": 0.8984375
+      },
+      {
+        "word": "searching",
+        "start": 17.58,
+        "end": 17.92,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "for",
+        "start": 17.92,
+        "end": 18.12,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "key",
+        "start": 18.12,
+        "end": 18.36,
+        "probability": 0.98193359375
+      },
+      {
+        "word": "points",
+        "start": 18.36,
+        "end": 18.68,
+        "probability": 0.9677734375
+      },
+      {
+        "word": "is",
+        "start": 18.68,
+        "end": 18.82,
+        "probability": 0.9345703125
+      },
+      {
+        "word": "very",
+        "start": 18.82,
+        "end": 19,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "exhausting",
+        "start": 19,
+        "end": 19.42,
+        "probability": 0.9921875
+      },
+      {
+        "word": "right?",
+        "start": 19.42,
+        "end": 19.66,
+        "probability": 0.611328125
+      }
+    ],
+    "start": "00:00:15",
+    "end": "00:00:19",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 20.220000000000006,
+    "end_seconds": 23.66,
+    "text": "But what if there is a tool that could do the hard work for you?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "But",
+        "start": 20.220000000000006,
+        "end": 20.78,
+        "probability": 0.9384765625
+      },
+      {
+        "word": "what",
+        "start": 20.78,
+        "end": 21.06,
+        "probability": 0.98095703125
+      },
+      {
+        "word": "if",
+        "start": 21.06,
+        "end": 21.22,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "there",
+        "start": 21.22,
+        "end": 21.44,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "is",
+        "start": 21.44,
+        "end": 21.56,
+        "probability": 0.97021484375
+      },
+      {
+        "word": "a",
+        "start": 21.56,
+        "end": 21.7,
+        "probability": 0.990234375
+      },
+      {
+        "word": "tool",
+        "start": 21.7,
+        "end": 21.96,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "that",
+        "start": 21.96,
+        "end": 22.22,
+        "probability": 0.998046875
+      },
+      {
+        "word": "could",
+        "start": 22.22,
+        "end": 22.4,
+        "probability": 0.97802734375
+      },
+      {
+        "word": "do",
+        "start": 22.4,
+        "end": 22.56,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "the",
+        "start": 22.56,
+        "end": 22.7,
+        "probability": 0.9775390625
+      },
+      {
+        "word": "hard",
+        "start": 22.7,
+        "end": 22.98,
+        "probability": 0.998046875
+      },
+      {
+        "word": "work",
+        "start": 22.98,
+        "end": 23.24,
+        "probability": 0.9931640625
+      },
+      {
+        "word": "for",
+        "start": 23.24,
+        "end": 23.44,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "you?",
+        "start": 23.44,
+        "end": 23.66,
+        "probability": 0.99853515625
+      }
+    ],
+    "start": "00:00:20",
+    "end": "00:00:23",
+    "sentiment": "negative"
+  },
+  {
+    "start_seconds": 24.02,
+    "end_seconds": 29.08,
+    "text": "Well that's exactly what we built. Think about it, every day we attend meetings,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Well",
+        "start": 24.02,
+        "end": 24.56,
+        "probability": 0.97705078125
+      },
+      {
+        "word": "that's",
+        "start": 24.56,
+        "end": 24.86,
+        "probability": 0.7919921875
+      },
+      {
+        "word": "exactly",
+        "start": 24.86,
+        "end": 25.28,
+        "probability": 0.994140625
+      },
+      {
+        "word": "what",
+        "start": 25.28,
+        "end": 25.56,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "we",
+        "start": 25.56,
+        "end": 25.72,
+        "probability": 0.5263671875
+      },
+      {
+        "word": "built.",
+        "start": 25.72,
+        "end": 26.02,
+        "probability": 0.904296875
+      },
+      {
+        "word": "Think",
+        "start": 26.36,
+        "end": 26.92,
+        "probability": 0.98486328125
+      },
+      {
+        "word": "about",
+        "start": 26.92,
+        "end": 27.16,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "it,",
+        "start": 27.16,
+        "end": 27.38,
+        "probability": 0.998046875
+      },
+      {
+        "word": "every",
+        "start": 27.78,
+        "end": 27.96,
+        "probability": 0.67578125
+      },
+      {
+        "word": "day",
+        "start": 27.96,
+        "end": 28.2,
+        "probability": 0.994140625
+      },
+      {
+        "word": "we",
+        "start": 28.2,
+        "end": 28.38,
+        "probability": 0.98681640625
+      },
+      {
+        "word": "attend",
+        "start": 28.38,
+        "end": 28.58,
+        "probability": 0.97900390625
+      },
+      {
+        "word": "meetings,",
+        "start": 28.58,
+        "end": 29.08,
+        "probability": 0.9873046875
+      }
+    ],
+    "start": "00:00:24",
+    "end": "00:00:29",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 29.08,
+    "end_seconds": 34.42,
+    "text": "listen to podcasts and watch lectures. But when we need to extract key insights, it's a nightmare.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "listen",
+        "start": 29.08,
+        "end": 29.46,
+        "probability": 0.68896484375
+      },
+      {
+        "word": "to",
+        "start": 29.46,
+        "end": 29.64,
+        "probability": 0.9921875
+      },
+      {
+        "word": "podcasts",
+        "start": 29.64,
+        "end": 30.16,
+        "probability": 0.935546875
+      },
+      {
+        "word": "and",
+        "start": 30.16,
+        "end": 30.38,
+        "probability": 0.80419921875
+      },
+      {
+        "word": "watch",
+        "start": 30.38,
+        "end": 30.6,
+        "probability": 0.9931640625
+      },
+      {
+        "word": "lectures.",
+        "start": 30.6,
+        "end": 31.1,
+        "probability": 0.7705078125
+      },
+      {
+        "word": "But",
+        "start": 31.44,
+        "end": 31.96,
+        "probability": 0.96630859375
+      },
+      {
+        "word": "when",
+        "start": 31.96,
+        "end": 32.14,
+        "probability": 0.96435546875
+      },
+      {
+        "word": "we",
+        "start": 32.14,
+        "end": 32.24,
+        "probability": 0.97314453125
+      },
+      {
+        "word": "need",
+        "start": 32.24,
+        "end": 32.4,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "to",
+        "start": 32.4,
+        "end": 32.54,
+        "probability": 0.9814453125
+      },
+      {
+        "word": "extract",
+        "start": 32.54,
+        "end": 32.84,
+        "probability": 0.9833984375
+      },
+      {
+        "word": "key",
+        "start": 32.84,
+        "end": 33.1,
+        "probability": 0.98828125
+      },
+      {
+        "word": "insights,",
+        "start": 33.1,
+        "end": 33.64,
+        "probability": 0.98779296875
+      },
+      {
+        "word": "it's",
+        "start": 33.9,
+        "end": 34.04,
+        "probability": 0.941162109375
+      },
+      {
+        "word": "a",
+        "start": 34.04,
+        "end": 34.12,
+        "probability": 0.9931640625
+      },
+      {
+        "word": "nightmare.",
+        "start": 34.12,
+        "end": 34.42,
+        "probability": 0.99365234375
+      }
+    ],
+    "start": "00:00:29",
+    "end": "00:00:34",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 35.14,
+    "end_seconds": 39.24,
+    "text": "Let's be real, listening to an entire recording just to find one important moment,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Let's",
+        "start": 35.14,
+        "end": 35.64,
+        "probability": 0.91015625
+      },
+      {
+        "word": "be",
+        "start": 35.64,
+        "end": 35.76,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "real,",
+        "start": 35.76,
+        "end": 36.06,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "listening",
+        "start": 36.24,
+        "end": 36.64,
+        "probability": 0.9736328125
+      },
+      {
+        "word": "to",
+        "start": 36.64,
+        "end": 36.82,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "an",
+        "start": 36.82,
+        "end": 36.92,
+        "probability": 0.982421875
+      },
+      {
+        "word": "entire",
+        "start": 36.92,
+        "end": 37.2,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "recording",
+        "start": 37.2,
+        "end": 37.62,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "just",
+        "start": 37.62,
+        "end": 37.84,
+        "probability": 0.98291015625
+      },
+      {
+        "word": "to",
+        "start": 37.84,
+        "end": 38,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "find",
+        "start": 38,
+        "end": 38.26,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "one",
+        "start": 38.26,
+        "end": 38.44,
+        "probability": 0.984375
+      },
+      {
+        "word": "important",
+        "start": 38.44,
+        "end": 38.82,
+        "probability": 0.99609375
+      },
+      {
+        "word": "moment,",
+        "start": 38.82,
+        "end": 39.24,
+        "probability": 0.9873046875
+      }
+    ],
+    "start": "00:00:35",
+    "end": "00:00:39",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 39.4,
+    "end_seconds": 43.24,
+    "text": "it's a huge waste of time right? Manually summarizing long discussions,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "it's",
+        "start": 39.4,
+        "end": 39.76,
+        "probability": 0.83740234375
+      },
+      {
+        "word": "a",
+        "start": 39.76,
+        "end": 39.8,
+        "probability": 0.9931640625
+      },
+      {
+        "word": "huge",
+        "start": 39.8,
+        "end": 40.02,
+        "probability": 0.998046875
+      },
+      {
+        "word": "waste",
+        "start": 40.02,
+        "end": 40.24,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "of",
+        "start": 40.24,
+        "end": 40.4,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "time",
+        "start": 40.4,
+        "end": 40.68,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "right?",
+        "start": 40.68,
+        "end": 40.9,
+        "probability": 0.424560546875
+      },
+      {
+        "word": "Manually",
+        "start": 41.4,
+        "end": 41.92,
+        "probability": 0.98681640625
+      },
+      {
+        "word": "summarizing",
+        "start": 41.92,
+        "end": 42.46,
+        "probability": 0.920654296875
+      },
+      {
+        "word": "long",
+        "start": 42.46,
+        "end": 42.68,
+        "probability": 0.9912109375
+      },
+      {
+        "word": "discussions,",
+        "start": 42.68,
+        "end": 43.24,
+        "probability": 0.9931640625
+      }
+    ],
+    "start": "00:00:39",
+    "end": "00:00:43",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 43.62,
+    "end_seconds": 49.34,
+    "text": "super inefficient, skipping through videos, randomly hoping to find key parts, it's very frustrating.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "super",
+        "start": 43.62,
+        "end": 44.08,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "inefficient,",
+        "start": 44.08,
+        "end": 44.46,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "skipping",
+        "start": 45.08,
+        "end": 45.64,
+        "probability": 0.98583984375
+      },
+      {
+        "word": "through",
+        "start": 45.64,
+        "end": 45.9,
+        "probability": 0.99072265625
+      },
+      {
+        "word": "videos,",
+        "start": 45.9,
+        "end": 46.3,
+        "probability": 0.9912109375
+      },
+      {
+        "word": "randomly",
+        "start": 46.48,
+        "end": 46.78,
+        "probability": 0.998046875
+      },
+      {
+        "word": "hoping",
+        "start": 46.78,
+        "end": 47.22,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "to",
+        "start": 47.22,
+        "end": 47.4,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "find",
+        "start": 47.4,
+        "end": 47.6,
+        "probability": 0.998046875
+      },
+      {
+        "word": "key",
+        "start": 47.6,
+        "end": 47.82,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "parts,",
+        "start": 47.82,
+        "end": 48.24,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "it's",
+        "start": 48.38,
+        "end": 48.64,
+        "probability": 0.97705078125
+      },
+      {
+        "word": "very",
+        "start": 48.64,
+        "end": 48.8,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "frustrating.",
+        "start": 48.8,
+        "end": 49.34,
+        "probability": 0.9990234375
+      }
+    ],
+    "start": "00:00:43",
+    "end": "00:00:49",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 49.92,
+    "end_seconds": 53.72,
+    "text": "So we ask ourselves, what if an AI could take care of this?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "So",
+        "start": 49.92,
+        "end": 50.34,
+        "probability": 0.994140625
+      },
+      {
+        "word": "we",
+        "start": 50.34,
+        "end": 50.48,
+        "probability": 0.86572265625
+      },
+      {
+        "word": "ask",
+        "start": 50.48,
+        "end": 50.76,
+        "probability": 0.97509765625
+      },
+      {
+        "word": "ourselves,",
+        "start": 50.76,
+        "end": 51.12,
+        "probability": 0.83642578125
+      },
+      {
+        "word": "what",
+        "start": 51.52,
+        "end": 52.18,
+        "probability": 0.91845703125
+      },
+      {
+        "word": "if",
+        "start": 52.18,
+        "end": 52.32,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "an",
+        "start": 52.32,
+        "end": 52.48,
+        "probability": 0.9794921875
+      },
+      {
+        "word": "AI",
+        "start": 52.48,
+        "end": 52.66,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "could",
+        "start": 52.66,
+        "end": 52.86,
+        "probability": 0.998046875
+      },
+      {
+        "word": "take",
+        "start": 52.86,
+        "end": 53.1,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "care",
+        "start": 53.1,
+        "end": 53.32,
+        "probability": 0.99609375
+      },
+      {
+        "word": "of",
+        "start": 53.32,
+        "end": 53.46,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "this?",
+        "start": 53.46,
+        "end": 53.72,
+        "probability": 0.99462890625
+      }
+    ],
+    "start": "00:00:49",
+    "end": "00:00:53",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 54.04,
+    "end_seconds": 57.56,
+    "text": "And this is exactly how our AI Power Media Processing tool was born.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "And",
+        "start": 54.04,
+        "end": 54.46,
+        "probability": 0.98583984375
+      },
+      {
+        "word": "this",
+        "start": 54.46,
+        "end": 54.6,
+        "probability": 0.97607421875
+      },
+      {
+        "word": "is",
+        "start": 54.6,
+        "end": 54.72,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "exactly",
+        "start": 54.72,
+        "end": 55.14,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "how",
+        "start": 55.14,
+        "end": 55.42,
+        "probability": 0.9921875
+      },
+      {
+        "word": "our",
+        "start": 55.42,
+        "end": 55.54,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "AI",
+        "start": 55.54,
+        "end": 55.78,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "Power",
+        "start": 55.78,
+        "end": 56,
+        "probability": 0.73828125
+      },
+      {
+        "word": "Media",
+        "start": 56,
+        "end": 56.32,
+        "probability": 0.91650390625
+      },
+      {
+        "word": "Processing",
+        "start": 56.32,
+        "end": 56.86,
+        "probability": 0.985595703125
+      },
+      {
+        "word": "tool",
+        "start": 56.86,
+        "end": 57.02,
+        "probability": 0.494140625
+      },
+      {
+        "word": "was",
+        "start": 57.02,
+        "end": 57.24,
+        "probability": 0.994140625
+      },
+      {
+        "word": "born.",
+        "start": 57.24,
+        "end": 57.56,
+        "probability": 0.986328125
+      }
+    ],
+    "start": "00:00:54",
+    "end": "00:00:57",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 58.36,
+    "end_seconds": 62.96,
+    "text": "Our tool makes AI and video files searchable, interactive and insightful.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Our",
+        "start": 58.36,
+        "end": 58.74,
+        "probability": 0.7333984375
+      },
+      {
+        "word": "tool",
+        "start": 58.74,
+        "end": 58.98,
+        "probability": 0.08209228515625
+      },
+      {
+        "word": "makes",
+        "start": 58.98,
+        "end": 59.32,
+        "probability": 0.98779296875
+      },
+      {
+        "word": "AI",
+        "start": 59.32,
+        "end": 59.62,
+        "probability": 0.912109375
+      },
+      {
+        "word": "and",
+        "start": 59.62,
+        "end": 59.92,
+        "probability": 0.91015625
+      },
+      {
+        "word": "video",
+        "start": 59.92,
+        "end": 60.18,
+        "probability": 0.8837890625
+      },
+      {
+        "word": "files",
+        "start": 60.18,
+        "end": 60.46,
+        "probability": 0.8525390625
+      },
+      {
+        "word": "searchable,",
+        "start": 60.46,
+        "end": 61.12,
+        "probability": 0.9853515625
+      },
+      {
+        "word": "interactive",
+        "start": 61.3,
+        "end": 61.8,
+        "probability": 0.99072265625
+      },
+      {
+        "word": "and",
+        "start": 61.8,
+        "end": 62.16,
+        "probability": 0.69921875
+      },
+      {
+        "word": "insightful.",
+        "start": 62.16,
+        "end": 62.96,
+        "probability": 0.9814453125
+      }
+    ],
+    "start": "00:00:58",
+    "end": "00:01:02",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 63.54,
+    "end_seconds": 68.74,
+    "text": "Here so, Whisper AI, think of this as a super smart subtitles for your media files.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Here",
+        "start": 63.54,
+        "end": 63.96,
+        "probability": 0.89111328125
+      },
+      {
+        "word": "so,",
+        "start": 63.96,
+        "end": 64.24,
+        "probability": 0.30517578125
+      },
+      {
+        "word": "Whisper",
+        "start": 64.92,
+        "end": 65.3,
+        "probability": 0.859130859375
+      },
+      {
+        "word": "AI,",
+        "start": 65.3,
+        "end": 65.56,
+        "probability": 0.94873046875
+      },
+      {
+        "word": "think",
+        "start": 65.78,
+        "end": 66.04,
+        "probability": 0.8974609375
+      },
+      {
+        "word": "of",
+        "start": 66.04,
+        "end": 66.2,
+        "probability": 0.99609375
+      },
+      {
+        "word": "this",
+        "start": 66.2,
+        "end": 66.38,
+        "probability": 0.98583984375
+      },
+      {
+        "word": "as",
+        "start": 66.38,
+        "end": 66.54,
+        "probability": 0.98876953125
+      },
+      {
+        "word": "a",
+        "start": 66.54,
+        "end": 66.62,
+        "probability": 0.79541015625
+      },
+      {
+        "word": "super",
+        "start": 66.62,
+        "end": 66.9,
+        "probability": 0.95751953125
+      },
+      {
+        "word": "smart",
+        "start": 66.9,
+        "end": 67.12,
+        "probability": 0.9501953125
+      },
+      {
+        "word": "subtitles",
+        "start": 67.12,
+        "end": 67.72,
+        "probability": 0.8203125
+      },
+      {
+        "word": "for",
+        "start": 67.72,
+        "end": 67.96,
+        "probability": 0.99609375
+      },
+      {
+        "word": "your",
+        "start": 67.96,
+        "end": 68.12,
+        "probability": 0.9775390625
+      },
+      {
+        "word": "media",
+        "start": 68.12,
+        "end": 68.34,
+        "probability": 0.91796875
+      },
+      {
+        "word": "files.",
+        "start": 68.34,
+        "end": 68.74,
+        "probability": 0.99365234375
+      }
+    ],
+    "start": "00:01:03",
+    "end": "00:01:08",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 69.42,
+    "end_seconds": 72.52,
+    "text": "Isn't the speech and turns it into text with high accuracy,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Isn't",
+        "start": 69.42,
+        "end": 69.74,
+        "probability": 0.8916015625
+      },
+      {
+        "word": "the",
+        "start": 69.74,
+        "end": 69.88,
+        "probability": 0.31103515625
+      },
+      {
+        "word": "speech",
+        "start": 69.88,
+        "end": 70.18,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "and",
+        "start": 70.18,
+        "end": 70.38,
+        "probability": 0.98828125
+      },
+      {
+        "word": "turns",
+        "start": 70.38,
+        "end": 70.72,
+        "probability": 0.9736328125
+      },
+      {
+        "word": "it",
+        "start": 70.72,
+        "end": 70.98,
+        "probability": 0.95849609375
+      },
+      {
+        "word": "into",
+        "start": 70.98,
+        "end": 71.26,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "text",
+        "start": 71.26,
+        "end": 71.62,
+        "probability": 0.83544921875
+      },
+      {
+        "word": "with",
+        "start": 71.62,
+        "end": 71.78,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "high",
+        "start": 71.78,
+        "end": 72,
+        "probability": 0.986328125
+      },
+      {
+        "word": "accuracy,",
+        "start": 72,
+        "end": 72.52,
+        "probability": 0.99755859375
+      }
+    ],
+    "start": "00:01:09",
+    "end": "00:01:12",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 72.88,
+    "end_seconds": 75.32,
+    "text": "even with background noise or multiple accents.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "even",
+        "start": 72.88,
+        "end": 73.48,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "with",
+        "start": 73.48,
+        "end": 73.64,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "background",
+        "start": 73.64,
+        "end": 74,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "noise",
+        "start": 74,
+        "end": 74.3,
+        "probability": 0.96728515625
+      },
+      {
+        "word": "or",
+        "start": 74.3,
+        "end": 74.46,
+        "probability": 0.994140625
+      },
+      {
+        "word": "multiple",
+        "start": 74.46,
+        "end": 74.78,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "accents.",
+        "start": 74.78,
+        "end": 75.32,
+        "probability": 0.9677734375
+      }
+    ],
+    "start": "00:01:12",
+    "end": "00:01:15",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 76.06,
+    "end_seconds": 79.56,
+    "text": "Weirder sentiment analysis, it detects emotions in speech.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Weirder",
+        "start": 76.06,
+        "end": 76.44,
+        "probability": 0.3388671875
+      },
+      {
+        "word": "sentiment",
+        "start": 76.44,
+        "end": 76.72,
+        "probability": 0.95458984375
+      },
+      {
+        "word": "analysis,",
+        "start": 76.72,
+        "end": 77.36,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "it",
+        "start": 77.88,
+        "end": 78.12,
+        "probability": 0.98681640625
+      },
+      {
+        "word": "detects",
+        "start": 78.12,
+        "end": 78.56,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "emotions",
+        "start": 78.56,
+        "end": 78.96,
+        "probability": 0.9833984375
+      },
+      {
+        "word": "in",
+        "start": 78.96,
+        "end": 79.2,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "speech.",
+        "start": 79.2,
+        "end": 79.56,
+        "probability": 0.998046875
+      }
+    ],
+    "start": "00:01:16",
+    "end": "00:01:19",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 80.16,
+    "end_seconds": 83.22,
+    "text": "Was the speaker happy, neutral, upset?",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Was",
+        "start": 80.16,
+        "end": 80.62,
+        "probability": 0.9912109375
+      },
+      {
+        "word": "the",
+        "start": 80.62,
+        "end": 80.74,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "speaker",
+        "start": 80.74,
+        "end": 81.04,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "happy,",
+        "start": 81.04,
+        "end": 81.5,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "neutral,",
+        "start": 81.84,
+        "end": 82.34,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "upset?",
+        "start": 82.7,
+        "end": 83.22,
+        "probability": 0.998046875
+      }
+    ],
+    "start": "00:01:20",
+    "end": "00:01:23",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 84.06,
+    "end_seconds": 87.84,
+    "text": "This is great for analyzing customer calls, debates or interviews.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "This",
+        "start": 84.06,
+        "end": 84.66,
+        "probability": 0.75830078125
+      },
+      {
+        "word": "is",
+        "start": 84.66,
+        "end": 84.8,
+        "probability": 0.99169921875
+      },
+      {
+        "word": "great",
+        "start": 84.8,
+        "end": 85.08,
+        "probability": 0.98876953125
+      },
+      {
+        "word": "for",
+        "start": 85.08,
+        "end": 85.36,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "analyzing",
+        "start": 85.36,
+        "end": 85.74,
+        "probability": 0.77783203125
+      },
+      {
+        "word": "customer",
+        "start": 85.74,
+        "end": 86.2,
+        "probability": 0.97265625
+      },
+      {
+        "word": "calls,",
+        "start": 86.2,
+        "end": 86.72,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "debates",
+        "start": 86.82,
+        "end": 87.14,
+        "probability": 0.9208984375
+      },
+      {
+        "word": "or",
+        "start": 87.14,
+        "end": 87.32,
+        "probability": 0.63818359375
+      },
+      {
+        "word": "interviews.",
+        "start": 87.32,
+        "end": 87.84,
+        "probability": 0.99169921875
+      }
+    ],
+    "start": "00:01:24",
     "end": "00:01:27",
     "sentiment": "positive"
   },
   {
-    "start_seconds": 87.84,
-    "end_seconds": 90.56,
-    "text": "I highly appreciate your wise suggestions.",
-    "speaker": "SPEAKER_01",
+    "start_seconds": 88.94,
+    "end_seconds": 92.58,
+    "text": "Spaceinner automatically detects names, places and key topics.",
+    "speaker": "Unknown",
     "words": [
       {
-        "word": "I",
-        "start": 87.84,
-        "end": 88.52
+        "word": "Spaceinner",
+        "start": 88.94,
+        "end": 89.54,
+        "probability": 0.714599609375
       },
       {
-        "word": "highly",
-        "start": 88.52,
-        "end": 88.84
+        "word": "automatically",
+        "start": 89.54,
+        "end": 90.1,
+        "probability": 0.98681640625
       },
       {
-        "word": "appreciate",
-        "start": 88.84,
-        "end": 89.32
+        "word": "detects",
+        "start": 90.1,
+        "end": 90.78,
+        "probability": 0.994873046875
       },
       {
-        "word": "your",
-        "start": 89.32,
-        "end": 89.62
+        "word": "names,",
+        "start": 90.78,
+        "end": 91.06,
+        "probability": 0.9814453125
       },
       {
-        "word": "wise",
-        "start": 89.62,
-        "end": 89.88
+        "word": "places",
+        "start": 91.3,
+        "end": 91.66,
+        "probability": 0.99365234375
       },
       {
-        "word": "suggestions.",
-        "start": 89.88,
-        "end": 90.56
+        "word": "and",
+        "start": 91.66,
+        "end": 91.9,
+        "probability": 0.87890625
+      },
+      {
+        "word": "key",
+        "start": 91.9,
+        "end": 92.14,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "topics.",
+        "start": 92.14,
+        "end": 92.58,
+        "probability": 0.9951171875
       }
     ],
-    "start": "00:01:27",
-    "end": "00:01:30",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 91.26,
-    "end_seconds": 92.28,
-    "text": "Thank you.",
-    "speaker": "SPEAKER_01",
-    "words": [
-      {
-        "word": "Thank",
-        "start": 91.26,
-        "end": 91.94
-      },
-      {
-        "word": "you.",
-        "start": 91.94,
-        "end": 92.28
-      }
-    ],
-    "start": "00:01:31",
+    "start": "00:01:28",
     "end": "00:01:32",
-    "sentiment": "positive"
+    "sentiment": "neutral"
   },
   {
-    "start_seconds": 93,
-    "end_seconds": 94.66,
-    "text": "You are most welcome.",
-    "speaker": "SPEAKER_00",
+    "start_seconds": 93.14,
+    "end_seconds": 98.8,
+    "text": "Let's say if someone mentions NASA or AI or let's say Elon Musk, it highlights them instantly,",
+    "speaker": "Unknown",
     "words": [
       {
-        "word": "You",
-        "start": 93,
-        "end": 93.68
+        "word": "Let's",
+        "start": 93.14,
+        "end": 93.74,
+        "probability": 0.914306640625
       },
       {
-        "word": "are",
-        "start": 93.68,
-        "end": 93.86
+        "word": "say",
+        "start": 93.74,
+        "end": 93.9,
+        "probability": 0.9912109375
       },
       {
-        "word": "most",
-        "start": 93.86,
-        "end": 94.22
+        "word": "if",
+        "start": 93.9,
+        "end": 93.98,
+        "probability": 0.89111328125
       },
       {
-        "word": "welcome.",
-        "start": 94.22,
-        "end": 94.66
+        "word": "someone",
+        "start": 93.98,
+        "end": 94.24,
+        "probability": 0.9892578125
+      },
+      {
+        "word": "mentions",
+        "start": 94.24,
+        "end": 94.66,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "NASA",
+        "start": 94.66,
+        "end": 95.08,
+        "probability": 0.921875
+      },
+      {
+        "word": "or",
+        "start": 95.08,
+        "end": 95.52,
+        "probability": 0.748046875
+      },
+      {
+        "word": "AI",
+        "start": 95.52,
+        "end": 95.8,
+        "probability": 0.92236328125
+      },
+      {
+        "word": "or",
+        "start": 95.8,
+        "end": 96.18,
+        "probability": 0.921875
+      },
+      {
+        "word": "let's",
+        "start": 96.18,
+        "end": 96.44,
+        "probability": 0.884521484375
+      },
+      {
+        "word": "say",
+        "start": 96.44,
+        "end": 96.5,
+        "probability": 0.98779296875
+      },
+      {
+        "word": "Elon",
+        "start": 96.5,
+        "end": 96.72,
+        "probability": 0.99169921875
+      },
+      {
+        "word": "Musk,",
+        "start": 96.72,
+        "end": 97.08,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "it",
+        "start": 97.42,
+        "end": 97.72,
+        "probability": 0.98046875
+      },
+      {
+        "word": "highlights",
+        "start": 97.72,
+        "end": 98.06,
+        "probability": 0.98681640625
+      },
+      {
+        "word": "them",
+        "start": 98.06,
+        "end": 98.26,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "instantly,",
+        "start": 98.26,
+        "end": 98.8,
+        "probability": 0.998046875
       }
     ],
     "start": "00:01:33",
-    "end": "00:01:34",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 95.32,
-    "end_seconds": 96.38,
-    "text": "See you later.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "See",
-        "start": 95.32,
-        "end": 95.94
-      },
-      {
-        "word": "you",
-        "start": 95.94,
-        "end": 96.08
-      },
-      {
-        "word": "later.",
-        "start": 96.08,
-        "end": 96.38
-      }
-    ],
-    "start": "00:01:35",
-    "end": "00:01:36",
+    "end": "00:01:38",
     "sentiment": "neutral"
   },
   {
-    "start_seconds": 96.76,
-    "end_seconds": 97.74,
-    "text": "Take care of yourself.",
-    "speaker": "SPEAKER_00",
+    "start_seconds": 99,
+    "end_seconds": 101.62,
+    "text": "like it's useful for research and organization purposes.",
+    "speaker": "Unknown",
     "words": [
       {
-        "word": "Take",
-        "start": 96.76,
-        "end": 96.94
+        "word": "like",
+        "start": 99,
+        "end": 99.28,
+        "probability": 0.99267578125
       },
       {
-        "word": "care",
-        "start": 96.94,
-        "end": 97.16
+        "word": "it's",
+        "start": 99.28,
+        "end": 99.46,
+        "probability": 0.967529296875
       },
       {
-        "word": "of",
-        "start": 97.16,
-        "end": 97.3
+        "word": "useful",
+        "start": 99.46,
+        "end": 99.74,
+        "probability": 0.998046875
       },
       {
-        "word": "yourself.",
-        "start": 97.3,
-        "end": 97.74
-      }
-    ],
-    "start": "00:01:36",
-    "end": "00:01:37",
-    "sentiment": "positive"
-  },
-  {
-    "start_seconds": 98.34,
-    "end_seconds": 99.02,
-    "text": "Bye.",
-    "speaker": "SPEAKER_00",
-    "words": [
-      {
-        "word": "Bye.",
-        "start": 98.34,
-        "end": 99.02
-      }
-    ],
-    "start": "00:01:38",
-    "end": "00:01:39",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 99.74,
-    "end_seconds": 101.32,
-    "text": "You too. Bye.",
-    "speaker": "SPEAKER_02",
-    "words": [
-      {
-        "word": "You",
+        "word": "for",
         "start": 99.74,
-        "end": 100.4
+        "end": 99.94,
+        "probability": 0.99853515625
       },
       {
-        "word": "too.",
-        "start": 100.4,
-        "end": 100.68
+        "word": "research",
+        "start": 99.94,
+        "end": 100.26,
+        "probability": 0.97998046875
       },
       {
-        "word": "Bye.",
-        "start": 100.98,
-        "end": 101.32
+        "word": "and",
+        "start": 100.26,
+        "end": 100.5,
+        "probability": 0.99609375
+      },
+      {
+        "word": "organization",
+        "start": 100.5,
+        "end": 101,
+        "probability": 0.91357421875
+      },
+      {
+        "word": "purposes.",
+        "start": 101,
+        "end": 101.62,
+        "probability": 0.99560546875
       }
     ],
     "start": "00:01:39",
     "end": "00:01:41",
-    "sentiment": "neutral"
+    "sentiment": "positive"
   },
   {
-    "start_seconds": 104.14,
-    "end_seconds": 104.28,
-    "text": "Bye.",
+    "start_seconds": 102.06,
+    "end_seconds": 105.84,
+    "text": "But that's not all. They pack this tool with interactive features.",
     "speaker": "Unknown",
     "words": [
       {
-        "word": "Bye.",
-        "start": 104.14,
-        "end": 104.28
+        "word": "But",
+        "start": 102.06,
+        "end": 102.6,
+        "probability": 0.99609375
+      },
+      {
+        "word": "that's",
+        "start": 102.6,
+        "end": 102.86,
+        "probability": 0.995849609375
+      },
+      {
+        "word": "not",
+        "start": 102.86,
+        "end": 103,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "all.",
+        "start": 103,
+        "end": 103.28,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "They",
+        "start": 103.46,
+        "end": 103.8,
+        "probability": 0.765625
+      },
+      {
+        "word": "pack",
+        "start": 103.8,
+        "end": 104.08,
+        "probability": 0.9150390625
+      },
+      {
+        "word": "this",
+        "start": 104.08,
+        "end": 104.28,
+        "probability": 0.99169921875
+      },
+      {
+        "word": "tool",
+        "start": 104.28,
+        "end": 104.5,
+        "probability": 0.9921875
+      },
+      {
+        "word": "with",
+        "start": 104.5,
+        "end": 104.74,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "interactive",
+        "start": 104.74,
+        "end": 105.3,
+        "probability": 0.99462890625
+      },
+      {
+        "word": "features.",
+        "start": 105.3,
+        "end": 105.84,
+        "probability": 0.99951171875
       }
     ],
-    "start": "00:01:44",
-    "end": "00:01:44",
+    "start": "00:01:42",
+    "end": "00:01:45",
     "sentiment": "neutral"
   },
   {
-    "start_seconds": 106.1,
-    "end_seconds": 106.78,
-    "text": "Bye.",
+    "start_seconds": 106.46,
+    "end_seconds": 109.64,
+    "text": "We can search any keyword to jump into an important moment.",
     "speaker": "Unknown",
     "words": [
       {
-        "word": "Bye.",
-        "start": 106.1,
-        "end": 106.78
+        "word": "We",
+        "start": 106.46,
+        "end": 106.94,
+        "probability": 0.8076171875
+      },
+      {
+        "word": "can",
+        "start": 106.94,
+        "end": 107.12,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "search",
+        "start": 107.12,
+        "end": 107.42,
+        "probability": 0.9931640625
+      },
+      {
+        "word": "any",
+        "start": 107.42,
+        "end": 107.66,
+        "probability": 0.9814453125
+      },
+      {
+        "word": "keyword",
+        "start": 107.66,
+        "end": 108.1,
+        "probability": 0.8291015625
+      },
+      {
+        "word": "to",
+        "start": 108.1,
+        "end": 108.3,
+        "probability": 0.81640625
+      },
+      {
+        "word": "jump",
+        "start": 108.3,
+        "end": 108.54,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "into",
+        "start": 108.54,
+        "end": 108.74,
+        "probability": 0.94384765625
+      },
+      {
+        "word": "an",
+        "start": 108.74,
+        "end": 108.88,
+        "probability": 0.75537109375
+      },
+      {
+        "word": "important",
+        "start": 108.88,
+        "end": 109.22,
+        "probability": 0.994140625
+      },
+      {
+        "word": "moment.",
+        "start": 109.22,
+        "end": 109.64,
+        "probability": 0.9951171875
       }
     ],
     "start": "00:01:46",
-    "end": "00:01:46",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 107.66,
-    "end_seconds": 108.24,
-    "text": "Bye.",
-    "speaker": "Unknown",
-    "words": [
-      {
-        "word": "Bye.",
-        "start": 107.66,
-        "end": 108.24
-      }
-    ],
-    "start": "00:01:47",
-    "end": "00:01:48",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 108.4,
-    "end_seconds": 108.86,
-    "text": "Bye.",
-    "speaker": "Unknown",
-    "words": [
-      {
-        "word": "Bye.",
-        "start": 108.4,
-        "end": 108.86
-      }
-    ],
-    "start": "00:01:48",
-    "end": "00:01:48",
-    "sentiment": "neutral"
-  },
-  {
-    "start_seconds": 109.8,
-    "end_seconds": 109.96,
-    "text": "Bye.",
-    "speaker": "Unknown",
-    "words": [
-      {
-        "word": "Bye.",
-        "start": 109.8,
-        "end": 109.96
-      }
-    ],
-    "start": "00:01:49",
     "end": "00:01:49",
-    "sentiment": "neutral"
+    "sentiment": "positive"
   },
   {
-    "start_seconds": 110,
-    "end_seconds": 110.08,
-    "text": "Bye.",
+    "start_seconds": 110.02,
+    "end_seconds": 113.34,
+    "text": "Just type in a word like budget in a meeting and that's it.",
     "speaker": "Unknown",
     "words": [
       {
-        "word": "Bye.",
-        "start": 110,
-        "end": 110.08
+        "word": "Just",
+        "start": 110.02,
+        "end": 110.5,
+        "probability": 0.9931640625
+      },
+      {
+        "word": "type",
+        "start": 110.5,
+        "end": 110.76,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "in",
+        "start": 110.76,
+        "end": 110.88,
+        "probability": 0.974609375
+      },
+      {
+        "word": "a",
+        "start": 110.88,
+        "end": 110.96,
+        "probability": 0.97900390625
+      },
+      {
+        "word": "word",
+        "start": 110.96,
+        "end": 111.18,
+        "probability": 0.9931640625
+      },
+      {
+        "word": "like",
+        "start": 111.18,
+        "end": 111.36,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "budget",
+        "start": 111.36,
+        "end": 111.7,
+        "probability": 0.724609375
+      },
+      {
+        "word": "in",
+        "start": 111.7,
+        "end": 111.9,
+        "probability": 0.79736328125
+      },
+      {
+        "word": "a",
+        "start": 111.9,
+        "end": 111.96,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "meeting",
+        "start": 111.96,
+        "end": 112.3,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "and",
+        "start": 112.3,
+        "end": 112.62,
+        "probability": 0.90576171875
+      },
+      {
+        "word": "that's",
+        "start": 112.62,
+        "end": 113.22,
+        "probability": 0.9453125
+      },
+      {
+        "word": "it.",
+        "start": 113.22,
+        "end": 113.34,
+        "probability": 0.9990234375
       }
     ],
     "start": "00:01:50",
-    "end": "00:01:50",
-    "sentiment": "neutral"
+    "end": "00:01:53",
+    "sentiment": "positive"
   },
   {
-    "start_seconds": 110.08,
-    "end_seconds": 110.4,
-    "text": "Bye.",
+    "start_seconds": 113.66,
+    "end_seconds": 114.86,
+    "text": "It takes you there instantly.",
     "speaker": "Unknown",
     "words": [
       {
-        "word": "Bye.",
-        "start": 110.08,
-        "end": 110.4
+        "word": "It",
+        "start": 113.66,
+        "end": 113.9,
+        "probability": 0.9794921875
+      },
+      {
+        "word": "takes",
+        "start": 113.9,
+        "end": 114.14,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "you",
+        "start": 114.14,
+        "end": 114.26,
+        "probability": 0.377685546875
+      },
+      {
+        "word": "there",
+        "start": 114.26,
+        "end": 114.4,
+        "probability": 0.94384765625
+      },
+      {
+        "word": "instantly.",
+        "start": 114.4,
+        "end": 114.86,
+        "probability": 0.99658203125
       }
     ],
-    "start": "00:01:50",
-    "end": "00:01:50",
+    "start": "00:01:53",
+    "end": "00:01:54",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 115.36,
+    "end_seconds": 117.3,
+    "text": "We also have clickable timestamps.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 115.36,
+        "end": 115.82,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "also",
+        "start": 115.82,
+        "end": 116.06,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "have",
+        "start": 116.06,
+        "end": 116.22,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "clickable",
+        "start": 116.22,
+        "end": 116.7,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "timestamps.",
+        "start": 116.7,
+        "end": 117.3,
+        "probability": 0.980224609375
+      }
+    ],
+    "start": "00:01:55",
+    "end": "00:01:57",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 117.7,
+    "end_seconds": 119.64,
+    "text": "You must have seen this feature in YouTube,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "You",
+        "start": 117.7,
+        "end": 118.18,
+        "probability": 0.998046875
+      },
+      {
+        "word": "must",
+        "start": 118.18,
+        "end": 118.38,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "have",
+        "start": 118.38,
+        "end": 118.54,
+        "probability": 0.66015625
+      },
+      {
+        "word": "seen",
+        "start": 118.54,
+        "end": 118.7,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "this",
+        "start": 118.7,
+        "end": 118.84,
+        "probability": 0.97021484375
+      },
+      {
+        "word": "feature",
+        "start": 118.84,
+        "end": 119.14,
+        "probability": 0.998046875
+      },
+      {
+        "word": "in",
+        "start": 119.14,
+        "end": 119.32,
+        "probability": 0.94384765625
+      },
+      {
+        "word": "YouTube,",
+        "start": 119.32,
+        "end": 119.64,
+        "probability": 0.91943359375
+      }
+    ],
+    "start": "00:01:57",
+    "end": "00:01:59",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 119.9,
+    "end_seconds": 122.7,
+    "text": "where every sentence in a transcript has a timestamp.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "where",
+        "start": 119.9,
+        "end": 120.48,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "every",
+        "start": 120.48,
+        "end": 120.76,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "sentence",
+        "start": 120.76,
+        "end": 121.1,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "in",
+        "start": 121.1,
+        "end": 121.34,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "a",
+        "start": 121.34,
+        "end": 121.42,
+        "probability": 0.8740234375
+      },
+      {
+        "word": "transcript",
+        "start": 121.42,
+        "end": 121.88,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "has",
+        "start": 121.88,
+        "end": 122.12,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "a",
+        "start": 122.12,
+        "end": 122.24,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "timestamp.",
+        "start": 122.24,
+        "end": 122.7,
+        "probability": 0.999267578125
+      }
+    ],
+    "start": "00:01:59",
+    "end": "00:02:02",
+    "sentiment": "negative"
+  },
+  {
+    "start_seconds": 122.84,
+    "end_seconds": 125.74,
+    "text": "Click on it and an audio or reader jumps it at exact moment.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Click",
+        "start": 122.84,
+        "end": 123.04,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "on",
+        "start": 123.04,
+        "end": 123.24,
+        "probability": 1
+      },
+      {
+        "word": "it",
+        "start": 123.24,
+        "end": 123.38,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "and",
+        "start": 123.38,
+        "end": 123.58,
+        "probability": 0.953125
+      },
+      {
+        "word": "an",
+        "start": 123.58,
+        "end": 123.74,
+        "probability": 0.4921875
+      },
+      {
+        "word": "audio",
+        "start": 123.74,
+        "end": 124.06,
+        "probability": 0.9716796875
+      },
+      {
+        "word": "or",
+        "start": 124.06,
+        "end": 124.24,
+        "probability": 0.4462890625
+      },
+      {
+        "word": "reader",
+        "start": 124.24,
+        "end": 124.44,
+        "probability": 0.58544921875
+      },
+      {
+        "word": "jumps",
+        "start": 124.44,
+        "end": 124.76,
+        "probability": 0.9892578125
+      },
+      {
+        "word": "it",
+        "start": 124.76,
+        "end": 124.9,
+        "probability": 0.6943359375
+      },
+      {
+        "word": "at",
+        "start": 124.9,
+        "end": 125.02,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "exact",
+        "start": 125.02,
+        "end": 125.3,
+        "probability": 0.630859375
+      },
+      {
+        "word": "moment.",
+        "start": 125.3,
+        "end": 125.74,
+        "probability": 0.99072265625
+      }
+    ],
+    "start": "00:02:02",
+    "end": "00:02:05",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 126,
+    "end_seconds": 128.48,
+    "text": "Also, we do not have to go through the entire file.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Also,",
+        "start": 126,
+        "end": 126.46,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "we",
+        "start": 126.58,
+        "end": 126.74,
+        "probability": 0.94775390625
+      },
+      {
+        "word": "do",
+        "start": 126.74,
+        "end": 126.82,
+        "probability": 0.8974609375
+      },
+      {
+        "word": "not",
+        "start": 126.82,
+        "end": 126.94,
+        "probability": 1
+      },
+      {
+        "word": "have",
+        "start": 126.94,
+        "end": 127.1,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "to",
+        "start": 127.1,
+        "end": 127.22,
+        "probability": 1
+      },
+      {
+        "word": "go",
+        "start": 127.22,
+        "end": 127.38,
+        "probability": 1
+      },
+      {
+        "word": "through",
+        "start": 127.38,
+        "end": 127.6,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "the",
+        "start": 127.6,
+        "end": 127.76,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "entire",
+        "start": 127.76,
+        "end": 128.12,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "file.",
+        "start": 128.12,
+        "end": 128.48,
+        "probability": 0.998046875
+      }
+    ],
+    "start": "00:02:06",
+    "end": "00:02:08",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 128.48,
+    "end_seconds": 132.1,
+    "text": "The AI picks out the key points and gives you a quick summary.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "The",
+        "start": 128.48,
+        "end": 129.22,
+        "probability": 0.71826171875
+      },
+      {
+        "word": "AI",
+        "start": 129.22,
+        "end": 129.52,
+        "probability": 0.84130859375
+      },
+      {
+        "word": "picks",
+        "start": 129.52,
+        "end": 129.86,
+        "probability": 0.984375
+      },
+      {
+        "word": "out",
+        "start": 129.86,
+        "end": 130.02,
+        "probability": 0.86328125
+      },
+      {
+        "word": "the",
+        "start": 130.02,
+        "end": 130.18,
+        "probability": 0.9453125
+      },
+      {
+        "word": "key",
+        "start": 130.18,
+        "end": 130.42,
+        "probability": 0.98974609375
+      },
+      {
+        "word": "points",
+        "start": 130.42,
+        "end": 130.82,
+        "probability": 0.97216796875
+      },
+      {
+        "word": "and",
+        "start": 130.82,
+        "end": 131,
+        "probability": 0.9892578125
+      },
+      {
+        "word": "gives",
+        "start": 131,
+        "end": 131.26,
+        "probability": 0.98046875
+      },
+      {
+        "word": "you",
+        "start": 131.26,
+        "end": 131.36,
+        "probability": 0.556640625
+      },
+      {
+        "word": "a",
+        "start": 131.36,
+        "end": 131.48,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "quick",
+        "start": 131.48,
+        "end": 131.68,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "summary.",
+        "start": 131.68,
+        "end": 132.1,
+        "probability": 0.99462890625
+      }
+    ],
+    "start": "00:02:08",
+    "end": "00:02:12",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 132.52,
+    "end_seconds": 135.68,
+    "text": "Whether it's a podcast, online class or business meeting,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Whether",
+        "start": 132.52,
+        "end": 133.12,
+        "probability": 0.98291015625
+      },
+      {
+        "word": "it's",
+        "start": 133.12,
+        "end": 133.32,
+        "probability": 0.9404296875
+      },
+      {
+        "word": "a",
+        "start": 133.32,
+        "end": 133.4,
+        "probability": 0.98974609375
+      },
+      {
+        "word": "podcast,",
+        "start": 133.4,
+        "end": 133.94,
+        "probability": 0.9814453125
+      },
+      {
+        "word": "online",
+        "start": 134.16,
+        "end": 134.4,
+        "probability": 0.93701171875
+      },
+      {
+        "word": "class",
+        "start": 134.4,
+        "end": 134.76,
+        "probability": 0.9150390625
+      },
+      {
+        "word": "or",
+        "start": 134.76,
+        "end": 134.88,
+        "probability": 0.85546875
+      },
+      {
+        "word": "business",
+        "start": 134.88,
+        "end": 135.18,
+        "probability": 0.89306640625
+      },
+      {
+        "word": "meeting,",
+        "start": 135.18,
+        "end": 135.68,
+        "probability": 0.9892578125
+      }
+    ],
+    "start": "00:02:12",
+    "end": "00:02:15",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 136.14,
+    "end_seconds": 138.02,
+    "text": "the tool works perfectly with both.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "the",
+        "start": 136.14,
+        "end": 136.32,
+        "probability": 0.90234375
+      },
+      {
+        "word": "tool",
+        "start": 136.32,
+        "end": 136.58,
+        "probability": 0.98291015625
+      },
+      {
+        "word": "works",
+        "start": 136.58,
+        "end": 136.86,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "perfectly",
+        "start": 136.86,
+        "end": 137.42,
+        "probability": 0.98681640625
+      },
+      {
+        "word": "with",
+        "start": 137.42,
+        "end": 137.72,
+        "probability": 0.98974609375
+      },
+      {
+        "word": "both.",
+        "start": 137.72,
+        "end": 138.02,
+        "probability": 0.99658203125
+      }
+    ],
+    "start": "00:02:16",
+    "end": "00:02:18",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 138.58,
+    "end_seconds": 140.52,
+    "text": "If multiple people are talking,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "If",
+        "start": 138.58,
+        "end": 139.18,
+        "probability": 0.98486328125
+      },
+      {
+        "word": "multiple",
+        "start": 139.18,
+        "end": 139.58,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "people",
+        "start": 139.58,
+        "end": 139.94,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "are",
+        "start": 139.94,
+        "end": 140.12,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "talking,",
+        "start": 140.12,
+        "end": 140.52,
+        "probability": 0.998046875
+      }
+    ],
+    "start": "00:02:18",
+    "end": "00:02:20",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 141.06,
+    "end_seconds": 144.46,
+    "text": "the AI identifies different voices and labels who said what,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "the",
+        "start": 141.06,
+        "end": 141.14,
+        "probability": 0.978515625
+      },
+      {
+        "word": "AI",
+        "start": 141.14,
+        "end": 141.46,
+        "probability": 0.99462890625
+      },
+      {
+        "word": "identifies",
+        "start": 141.46,
+        "end": 142.12,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "different",
+        "start": 142.12,
+        "end": 142.46,
+        "probability": 0.9921875
+      },
+      {
+        "word": "voices",
+        "start": 142.46,
+        "end": 142.96,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "and",
+        "start": 142.96,
+        "end": 143.26,
+        "probability": 0.994140625
+      },
+      {
+        "word": "labels",
+        "start": 143.26,
+        "end": 143.68,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "who",
+        "start": 143.68,
+        "end": 143.98,
+        "probability": 0.9462890625
+      },
+      {
+        "word": "said",
+        "start": 143.98,
+        "end": 144.16,
+        "probability": 0.9208984375
+      },
+      {
+        "word": "what,",
+        "start": 144.16,
+        "end": 144.46,
+        "probability": 0.994140625
+      }
+    ],
+    "start": "00:02:21",
+    "end": "00:02:24",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 144.96,
+    "end_seconds": 146.48,
+    "text": "like speaker 1 and speaker 2.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "like",
+        "start": 144.96,
+        "end": 145.22,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "speaker",
+        "start": 145.22,
+        "end": 145.56,
+        "probability": 0.75634765625
+      },
+      {
+        "word": "1",
+        "start": 145.56,
+        "end": 145.76,
+        "probability": 0.74072265625
+      },
+      {
+        "word": "and",
+        "start": 145.76,
+        "end": 145.9,
+        "probability": 0.9755859375
+      },
+      {
+        "word": "speaker",
+        "start": 145.9,
+        "end": 146.2,
+        "probability": 0.98779296875
+      },
+      {
+        "word": "2.",
+        "start": 146.2,
+        "end": 146.48,
+        "probability": 0.998046875
+      }
+    ],
+    "start": "00:02:24",
+    "end": "00:02:26",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 147.02,
+    "end_seconds": 150,
+    "text": "You also have a special unique feature called the mind map,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "You",
+        "start": 147.02,
+        "end": 147.42,
+        "probability": 0.76953125
+      },
+      {
+        "word": "also",
+        "start": 147.42,
+        "end": 147.64,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "have",
+        "start": 147.64,
+        "end": 147.86,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "a",
+        "start": 147.86,
+        "end": 147.98,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "special",
+        "start": 147.98,
+        "end": 148.3,
+        "probability": 0.97509765625
+      },
+      {
+        "word": "unique",
+        "start": 148.3,
+        "end": 148.64,
+        "probability": 0.9375
+      },
+      {
+        "word": "feature",
+        "start": 148.64,
+        "end": 149.08,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "called",
+        "start": 149.08,
+        "end": 149.32,
+        "probability": 0.99462890625
+      },
+      {
+        "word": "the",
+        "start": 149.32,
+        "end": 149.46,
+        "probability": 0.935546875
+      },
+      {
+        "word": "mind",
+        "start": 149.46,
+        "end": 149.72,
+        "probability": 0.8544921875
+      },
+      {
+        "word": "map,",
+        "start": 149.72,
+        "end": 150,
+        "probability": 0.90478515625
+      }
+    ],
+    "start": "00:02:27",
+    "end": "00:02:30",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 150.18,
+    "end_seconds": 152.24,
+    "text": "where instead of reading a wall of text,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "where",
+        "start": 150.18,
+        "end": 150.68,
+        "probability": 0.998046875
+      },
+      {
+        "word": "instead",
+        "start": 150.68,
+        "end": 150.88,
+        "probability": 0.998046875
+      },
+      {
+        "word": "of",
+        "start": 150.88,
+        "end": 151.04,
+        "probability": 0.99951171875
+      },
+      {
+        "word": "reading",
+        "start": 151.04,
+        "end": 151.28,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "a",
+        "start": 151.28,
+        "end": 151.46,
+        "probability": 0.998046875
+      },
+      {
+        "word": "wall",
+        "start": 151.46,
+        "end": 151.74,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "of",
+        "start": 151.74,
+        "end": 151.9,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "text,",
+        "start": 151.9,
+        "end": 152.24,
+        "probability": 0.994140625
+      }
+    ],
+    "start": "00:02:30",
+    "end": "00:02:32",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 152.46,
+    "end_seconds": 156.22,
+    "text": "we basically get a virtual roadmap of the entire conversation,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "we",
+        "start": 152.46,
+        "end": 152.92,
+        "probability": 0.478515625
+      },
+      {
+        "word": "basically",
+        "start": 152.92,
+        "end": 153.36,
+        "probability": 0.98486328125
+      },
+      {
+        "word": "get",
+        "start": 153.36,
+        "end": 153.7,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "a",
+        "start": 153.7,
+        "end": 153.84,
+        "probability": 0.95849609375
+      },
+      {
+        "word": "virtual",
+        "start": 153.84,
+        "end": 154.2,
+        "probability": 0.99609375
+      },
+      {
+        "word": "roadmap",
+        "start": 154.2,
+        "end": 154.7,
+        "probability": 0.89306640625
+      },
+      {
+        "word": "of",
+        "start": 154.7,
+        "end": 154.96,
+        "probability": 0.98779296875
+      },
+      {
+        "word": "the",
+        "start": 154.96,
+        "end": 155.12,
+        "probability": 0.994140625
+      },
+      {
+        "word": "entire",
+        "start": 155.12,
+        "end": 155.46,
+        "probability": 0.9990234375
+      },
+      {
+        "word": "conversation,",
+        "start": 155.46,
+        "end": 156.22,
+        "probability": 0.9970703125
+      }
+    ],
+    "start": "00:02:32",
+    "end": "00:02:36",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 156.22,
+    "end_seconds": 159.54,
+    "text": "making it easier to understand key topics and connectors.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "making",
+        "start": 156.22,
+        "end": 157,
+        "probability": 0.5107421875
+      },
+      {
+        "word": "it",
+        "start": 157,
+        "end": 157.22,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "easier",
+        "start": 157.22,
+        "end": 157.54,
+        "probability": 0.97314453125
+      },
+      {
+        "word": "to",
+        "start": 157.54,
+        "end": 157.72,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "understand",
+        "start": 157.72,
+        "end": 158.16,
+        "probability": 0.99169921875
+      },
+      {
+        "word": "key",
+        "start": 158.16,
+        "end": 158.44,
+        "probability": 0.96533203125
+      },
+      {
+        "word": "topics",
+        "start": 158.44,
+        "end": 158.78,
+        "probability": 0.228759765625
+      },
+      {
+        "word": "and",
+        "start": 158.78,
+        "end": 159,
+        "probability": 0.319580078125
+      },
+      {
+        "word": "connectors.",
+        "start": 159,
+        "end": 159.54,
+        "probability": 0.9765625
+      }
+    ],
+    "start": "00:02:36",
+    "end": "00:02:39",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 159.84,
+    "end_seconds": 161.38,
+    "text": "Now, let's discuss the tech stack.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Now,",
+        "start": 159.84,
+        "end": 160.12,
+        "probability": 0.93701171875
+      },
+      {
+        "word": "let's",
+        "start": 160.18,
+        "end": 160.4,
+        "probability": 0.918701171875
+      },
+      {
+        "word": "discuss",
+        "start": 160.4,
+        "end": 160.76,
+        "probability": 0.9921875
+      },
+      {
+        "word": "the",
+        "start": 160.76,
+        "end": 160.96,
+        "probability": 0.95849609375
+      },
+      {
+        "word": "tech",
+        "start": 160.96,
+        "end": 161.14,
+        "probability": 0.77978515625
+      },
+      {
+        "word": "stack.",
+        "start": 161.14,
+        "end": 161.38,
+        "probability": 0.849609375
+      }
+    ],
+    "start": "00:02:39",
+    "end": "00:02:41",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 161.84,
+    "end_seconds": 165.36,
+    "text": "We'll be using XJS and TypeScript for a smooth user interface,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We'll",
+        "start": 161.84,
+        "end": 162.36,
+        "probability": 0.89013671875
+      },
+      {
+        "word": "be",
+        "start": 162.36,
+        "end": 162.52,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "using",
+        "start": 162.52,
+        "end": 162.78,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "XJS",
+        "start": 162.78,
+        "end": 163.34,
+        "probability": 0.3832194010416667
+      },
+      {
+        "word": "and",
+        "start": 163.34,
+        "end": 163.54,
+        "probability": 0.94921875
+      },
+      {
+        "word": "TypeScript",
+        "start": 163.54,
+        "end": 163.98,
+        "probability": 0.84912109375
+      },
+      {
+        "word": "for",
+        "start": 163.98,
+        "end": 164.2,
+        "probability": 0.98388671875
+      },
+      {
+        "word": "a",
+        "start": 164.2,
+        "end": 164.32,
+        "probability": 0.88427734375
+      },
+      {
+        "word": "smooth",
+        "start": 164.32,
+        "end": 164.52,
+        "probability": 0.98095703125
+      },
+      {
+        "word": "user",
+        "start": 164.52,
+        "end": 164.86,
+        "probability": 0.982421875
+      },
+      {
+        "word": "interface,",
+        "start": 164.86,
+        "end": 165.36,
+        "probability": 0.99755859375
+      }
+    ],
+    "start": "00:02:41",
+    "end": "00:02:45",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 165.62,
+    "end_seconds": 168.18,
+    "text": "with Node.json express for handling the backend.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "with",
+        "start": 165.62,
+        "end": 165.7,
+        "probability": 0.97900390625
+      },
+      {
+        "word": "Node",
+        "start": 165.7,
+        "end": 165.88,
+        "probability": 0.75537109375
+      },
+      {
+        "word": ".json",
+        "start": 165.88,
+        "end": 166.36,
+        "probability": 0.6982421875
+      },
+      {
+        "word": "express",
+        "start": 166.36,
+        "end": 166.6,
+        "probability": 0.625
+      },
+      {
+        "word": "for",
+        "start": 166.6,
+        "end": 166.92,
+        "probability": 0.93505859375
+      },
+      {
+        "word": "handling",
+        "start": 166.92,
+        "end": 167.58,
+        "probability": 0.9892578125
+      },
+      {
+        "word": "the",
+        "start": 167.58,
+        "end": 167.8,
+        "probability": 0.96484375
+      },
+      {
+        "word": "backend.",
+        "start": 167.8,
+        "end": 168.18,
+        "probability": 0.79833984375
+      }
+    ],
+    "start": "00:02:45",
+    "end": "00:02:48",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 168.6,
+    "end_seconds": 171.4,
+    "text": "We're also trying to run this as locally as possible.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We're",
+        "start": 168.6,
+        "end": 169.02,
+        "probability": 0.736572265625
+      },
+      {
+        "word": "also",
+        "start": 169.02,
+        "end": 169.28,
+        "probability": 0.99609375
+      },
+      {
+        "word": "trying",
+        "start": 169.28,
+        "end": 169.6,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "to",
+        "start": 169.6,
+        "end": 169.76,
+        "probability": 0.998046875
+      },
+      {
+        "word": "run",
+        "start": 169.76,
+        "end": 169.96,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "this",
+        "start": 169.96,
+        "end": 170.14,
+        "probability": 0.98828125
+      },
+      {
+        "word": "as",
+        "start": 170.14,
+        "end": 170.32,
+        "probability": 0.93212890625
+      },
+      {
+        "word": "locally",
+        "start": 170.32,
+        "end": 170.72,
+        "probability": 0.97509765625
+      },
+      {
+        "word": "as",
+        "start": 170.72,
+        "end": 170.94,
+        "probability": 0.994140625
+      },
+      {
+        "word": "possible.",
+        "start": 170.94,
+        "end": 171.4,
+        "probability": 0.9970703125
+      }
+    ],
+    "start": "00:02:48",
+    "end": "00:02:51",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 172.06,
+    "end_seconds": 175.56,
+    "text": "Like we're using OpenIS whisper local model for transcription,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Like",
+        "start": 172.06,
+        "end": 172.34,
+        "probability": 0.97119140625
+      },
+      {
+        "word": "we're",
+        "start": 172.34,
+        "end": 172.54,
+        "probability": 0.87744140625
+      },
+      {
+        "word": "using",
+        "start": 172.54,
+        "end": 172.8,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "OpenIS",
+        "start": 172.8,
+        "end": 173.36,
+        "probability": 0.754638671875
+      },
+      {
+        "word": "whisper",
+        "start": 173.36,
+        "end": 173.8,
+        "probability": 0.11517333984375
+      },
+      {
+        "word": "local",
+        "start": 173.8,
+        "end": 174.36,
+        "probability": 0.46142578125
+      },
+      {
+        "word": "model",
+        "start": 174.36,
+        "end": 174.84,
+        "probability": 0.9501953125
+      },
+      {
+        "word": "for",
+        "start": 174.84,
+        "end": 175.02,
+        "probability": 0.98583984375
+      },
+      {
+        "word": "transcription,",
+        "start": 175.02,
+        "end": 175.56,
+        "probability": 0.98388671875
+      }
+    ],
+    "start": "00:02:52",
+    "end": "00:02:55",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 176.48,
+    "end_seconds": 179.82,
+    "text": "video for sentiment analysis and space inert, just like I said before.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "video",
+        "start": 176.48,
+        "end": 176.66,
+        "probability": 0.281982421875
+      },
+      {
+        "word": "for",
+        "start": 176.66,
+        "end": 176.88,
+        "probability": 0.7412109375
+      },
+      {
+        "word": "sentiment",
+        "start": 176.88,
+        "end": 177.18,
+        "probability": 0.9189453125
+      },
+      {
+        "word": "analysis",
+        "start": 177.18,
+        "end": 177.66,
+        "probability": 0.98779296875
+      },
+      {
+        "word": "and",
+        "start": 177.66,
+        "end": 177.9,
+        "probability": 0.79345703125
+      },
+      {
+        "word": "space",
+        "start": 177.9,
+        "end": 178.22,
+        "probability": 0.57275390625
+      },
+      {
+        "word": "inert,",
+        "start": 178.22,
+        "end": 178.5,
+        "probability": 0.1773681640625
+      },
+      {
+        "word": "just",
+        "start": 178.7,
+        "end": 178.92,
+        "probability": 0.97021484375
+      },
+      {
+        "word": "like",
+        "start": 178.92,
+        "end": 179.14,
+        "probability": 0.994140625
+      },
+      {
+        "word": "I",
+        "start": 179.14,
+        "end": 179.24,
+        "probability": 0.951171875
+      },
+      {
+        "word": "said",
+        "start": 179.24,
+        "end": 179.42,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "before.",
+        "start": 179.42,
+        "end": 179.82,
+        "probability": 0.9951171875
+      }
+    ],
+    "start": "00:02:56",
+    "end": "00:02:59",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 180.76,
+    "end_seconds": 184.22,
+    "text": "And as for database for storing the bookmarks and timestamps,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "And",
+        "start": 180.76,
+        "end": 181.32,
+        "probability": 0.96875
+      },
+      {
+        "word": "as",
+        "start": 181.32,
+        "end": 181.52,
+        "probability": 0.93603515625
+      },
+      {
+        "word": "for",
+        "start": 181.52,
+        "end": 181.66,
+        "probability": 0.974609375
+      },
+      {
+        "word": "database",
+        "start": 181.66,
+        "end": 182,
+        "probability": 0.8857421875
+      },
+      {
+        "word": "for",
+        "start": 182,
+        "end": 182.28,
+        "probability": 0.8046875
+      },
+      {
+        "word": "storing",
+        "start": 182.28,
+        "end": 182.68,
+        "probability": 0.998046875
+      },
+      {
+        "word": "the",
+        "start": 182.68,
+        "end": 182.9,
+        "probability": 0.90380859375
+      },
+      {
+        "word": "bookmarks",
+        "start": 182.9,
+        "end": 183.32,
+        "probability": 0.980712890625
+      },
+      {
+        "word": "and",
+        "start": 183.32,
+        "end": 183.52,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "timestamps,",
+        "start": 183.52,
+        "end": 184.22,
+        "probability": 0.981201171875
+      }
+    ],
+    "start": "00:03:00",
+    "end": "00:03:04",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 184.22,
+    "end_seconds": 188.7,
+    "text": "we'll be using PostgreSQL and hopefully scale it to NeonDB.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "we'll",
+        "start": 184.22,
+        "end": 184.94,
+        "probability": 0.3399658203125
+      },
+      {
+        "word": "be",
+        "start": 184.94,
+        "end": 185.04,
+        "probability": 0.98193359375
+      },
+      {
+        "word": "using",
+        "start": 185.04,
+        "end": 185.28,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "PostgreSQL",
+        "start": 185.28,
+        "end": 186.02,
+        "probability": 0.8889973958333334
+      },
+      {
+        "word": "and",
+        "start": 186.02,
+        "end": 187.04,
+        "probability": 0.705078125
+      },
+      {
+        "word": "hopefully",
+        "start": 187.04,
+        "end": 187.44,
+        "probability": 0.98046875
+      },
+      {
+        "word": "scale",
+        "start": 187.44,
+        "end": 187.82,
+        "probability": 0.880859375
+      },
+      {
+        "word": "it",
+        "start": 187.82,
+        "end": 187.96,
+        "probability": 0.94970703125
+      },
+      {
+        "word": "to",
+        "start": 187.96,
+        "end": 188.1,
+        "probability": 0.1707763671875
+      },
+      {
+        "word": "NeonDB.",
+        "start": 188.1,
+        "end": 188.7,
+        "probability": 0.6583658854166666
+      }
+    ],
+    "start": "00:03:04",
+    "end": "00:03:08",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 189.02,
+    "end_seconds": 191.34,
+    "text": "Video processing, we'll be using FFMEG,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Video",
+        "start": 189.02,
+        "end": 189.4,
+        "probability": 0.48974609375
+      },
+      {
+        "word": "processing,",
+        "start": 189.4,
+        "end": 189.88,
+        "probability": 0.6240234375
+      },
+      {
+        "word": "we'll",
+        "start": 190.18,
+        "end": 190.24,
+        "probability": 0.951416015625
+      },
+      {
+        "word": "be",
+        "start": 190.24,
+        "end": 190.36,
+        "probability": 0.98486328125
+      },
+      {
+        "word": "using",
+        "start": 190.36,
+        "end": 190.62,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "FFMEG,",
+        "start": 190.62,
+        "end": 191.34,
+        "probability": 0.76849365234375
+      }
+    ],
+    "start": "00:03:09",
+    "end": "00:03:11",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 191.68,
+    "end_seconds": 194.76,
+    "text": "VideoGS and WaveCipherGS for seamless payback.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "VideoGS",
+        "start": 191.68,
+        "end": 192.48,
+        "probability": 0.54296875
+      },
+      {
+        "word": "and",
+        "start": 192.48,
+        "end": 192.72,
+        "probability": 0.73583984375
+      },
+      {
+        "word": "WaveCipherGS",
+        "start": 192.72,
+        "end": 193.48,
+        "probability": 0.6387939453125
+      },
+      {
+        "word": "for",
+        "start": 193.48,
+        "end": 193.82,
+        "probability": 0.98193359375
+      },
+      {
+        "word": "seamless",
+        "start": 193.82,
+        "end": 194.18,
+        "probability": 0.943359375
+      },
+      {
+        "word": "payback.",
+        "start": 194.18,
+        "end": 194.76,
+        "probability": 0.964111328125
+      }
+    ],
+    "start": "00:03:11",
+    "end": "00:03:14",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 195.1,
+    "end_seconds": 198.58,
+    "text": "This tool is designed for anyone who deals with audio or video content.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "This",
+        "start": 195.1,
+        "end": 195.58,
+        "probability": 0.966796875
+      },
+      {
+        "word": "tool",
+        "start": 195.58,
+        "end": 195.74,
+        "probability": 0.7119140625
+      },
+      {
+        "word": "is",
+        "start": 195.74,
+        "end": 195.88,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "designed",
+        "start": 195.88,
+        "end": 196.26,
+        "probability": 0.99169921875
+      },
+      {
+        "word": "for",
+        "start": 196.26,
+        "end": 196.48,
+        "probability": 0.994140625
+      },
+      {
+        "word": "anyone",
+        "start": 196.48,
+        "end": 196.88,
+        "probability": 0.9892578125
+      },
+      {
+        "word": "who",
+        "start": 196.88,
+        "end": 197.08,
+        "probability": 0.97998046875
+      },
+      {
+        "word": "deals",
+        "start": 197.08,
+        "end": 197.26,
+        "probability": 0.99169921875
+      },
+      {
+        "word": "with",
+        "start": 197.26,
+        "end": 197.46,
+        "probability": 0.99072265625
+      },
+      {
+        "word": "audio",
+        "start": 197.46,
+        "end": 197.78,
+        "probability": 0.958984375
+      },
+      {
+        "word": "or",
+        "start": 197.78,
+        "end": 197.94,
+        "probability": 0.9033203125
+      },
+      {
+        "word": "video",
+        "start": 197.94,
+        "end": 198.18,
+        "probability": 0.99755859375
+      },
+      {
+        "word": "content.",
+        "start": 198.18,
+        "end": 198.58,
+        "probability": 0.98876953125
+      }
+    ],
+    "start": "00:03:15",
+    "end": "00:03:18",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 198.8,
+    "end_seconds": 203.7,
+    "text": "In a corporation, this can be used to extract key decisions from long meetings.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "In",
+        "start": 198.8,
+        "end": 199.34,
+        "probability": 0.9873046875
+      },
+      {
+        "word": "a",
+        "start": 199.34,
+        "end": 199.44,
+        "probability": 0.9921875
+      },
+      {
+        "word": "corporation,",
+        "start": 199.44,
+        "end": 200.02,
+        "probability": 0.92822265625
+      },
+      {
+        "word": "this",
+        "start": 200.44,
+        "end": 200.62,
+        "probability": 0.98388671875
+      },
+      {
+        "word": "can",
+        "start": 200.62,
+        "end": 200.8,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "be",
+        "start": 200.8,
+        "end": 200.98,
+        "probability": 0.990234375
+      },
+      {
+        "word": "used",
+        "start": 200.98,
+        "end": 201.14,
+        "probability": 0.99365234375
+      },
+      {
+        "word": "to",
+        "start": 201.14,
+        "end": 201.26,
+        "probability": 0.998046875
+      },
+      {
+        "word": "extract",
+        "start": 201.26,
+        "end": 201.8,
+        "probability": 0.9921875
+      },
+      {
+        "word": "key",
+        "start": 201.8,
+        "end": 202.18,
+        "probability": 0.9921875
+      },
+      {
+        "word": "decisions",
+        "start": 202.18,
+        "end": 202.66,
+        "probability": 0.9765625
+      },
+      {
+        "word": "from",
+        "start": 202.66,
+        "end": 202.96,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "long",
+        "start": 202.96,
+        "end": 203.18,
+        "probability": 0.984375
+      },
+      {
+        "word": "meetings.",
+        "start": 203.18,
+        "end": 203.7,
+        "probability": 0.98779296875
+      }
+    ],
+    "start": "00:03:18",
+    "end": "00:03:23",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 204.6,
+    "end_seconds": 207.52,
+    "text": "Students could use this to summarize lectures and study smart.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Students",
+        "start": 204.6,
+        "end": 205.06,
+        "probability": 0.9794921875
+      },
+      {
+        "word": "could",
+        "start": 205.06,
+        "end": 205.26,
+        "probability": 0.98681640625
+      },
+      {
+        "word": "use",
+        "start": 205.26,
+        "end": 205.48,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "this",
+        "start": 205.48,
+        "end": 205.68,
+        "probability": 0.9013671875
+      },
+      {
+        "word": "to",
+        "start": 205.68,
+        "end": 205.88,
+        "probability": 0.9599609375
+      },
+      {
+        "word": "summarize",
+        "start": 205.88,
+        "end": 206.18,
+        "probability": 0.7880859375
+      },
+      {
+        "word": "lectures",
+        "start": 206.18,
+        "end": 206.66,
+        "probability": 0.9755859375
+      },
+      {
+        "word": "and",
+        "start": 206.66,
+        "end": 206.94,
+        "probability": 0.98681640625
+      },
+      {
+        "word": "study",
+        "start": 206.94,
+        "end": 207.22,
+        "probability": 0.98876953125
+      },
+      {
+        "word": "smart.",
+        "start": 207.22,
+        "end": 207.52,
+        "probability": 0.86767578125
+      }
+    ],
+    "start": "00:03:24",
+    "end": "00:03:27",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 207.86,
+    "end_seconds": 211.82,
+    "text": "A legal team could generate automatic transcripts for key studies.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "A",
+        "start": 207.86,
+        "end": 208.48,
+        "probability": 0.98193359375
+      },
+      {
+        "word": "legal",
+        "start": 208.48,
+        "end": 208.86,
+        "probability": 0.986328125
+      },
+      {
+        "word": "team",
+        "start": 208.86,
+        "end": 209.14,
+        "probability": 0.99462890625
+      },
+      {
+        "word": "could",
+        "start": 209.14,
+        "end": 209.36,
+        "probability": 0.91015625
+      },
+      {
+        "word": "generate",
+        "start": 209.36,
+        "end": 209.78,
+        "probability": 0.99609375
+      },
+      {
+        "word": "automatic",
+        "start": 209.78,
+        "end": 210.26,
+        "probability": 0.86669921875
+      },
+      {
+        "word": "transcripts",
+        "start": 210.26,
+        "end": 211,
+        "probability": 0.983154296875
+      },
+      {
+        "word": "for",
+        "start": 211,
+        "end": 211.16,
+        "probability": 0.99609375
+      },
+      {
+        "word": "key",
+        "start": 211.16,
+        "end": 211.4,
+        "probability": 0.491455078125
+      },
+      {
+        "word": "studies.",
+        "start": 211.4,
+        "end": 211.82,
+        "probability": 0.98046875
+      }
+    ],
+    "start": "00:03:27",
+    "end": "00:03:31",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 212.38,
+    "end_seconds": 215.02,
+    "text": "Content creators could repurpose the best moments.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Content",
+        "start": 212.38,
+        "end": 212.78,
+        "probability": 0.447509765625
+      },
+      {
+        "word": "creators",
+        "start": 212.78,
+        "end": 213.34,
+        "probability": 0.90283203125
+      },
+      {
+        "word": "could",
+        "start": 213.34,
+        "end": 213.6,
+        "probability": 0.9638671875
+      },
+      {
+        "word": "repurpose",
+        "start": 213.6,
+        "end": 214.16,
+        "probability": 0.9306640625
+      },
+      {
+        "word": "the",
+        "start": 214.16,
+        "end": 214.3,
+        "probability": 0.970703125
+      },
+      {
+        "word": "best",
+        "start": 214.3,
+        "end": 214.54,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "moments.",
+        "start": 214.54,
+        "end": 215.02,
+        "probability": 0.7919921875
+      }
+    ],
+    "start": "00:03:32",
+    "end": "00:03:35",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 215.82000000000002,
+    "end_seconds": 219.7,
+    "text": "A support team could analyze customer interactions for a better service.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "A",
+        "start": 215.82000000000002,
+        "end": 216.36,
+        "probability": 0.94580078125
+      },
+      {
+        "word": "support",
+        "start": 216.36,
+        "end": 216.72,
+        "probability": 0.97265625
+      },
+      {
+        "word": "team",
+        "start": 216.72,
+        "end": 216.98,
+        "probability": 0.994140625
+      },
+      {
+        "word": "could",
+        "start": 216.98,
+        "end": 217.28,
+        "probability": 0.974609375
+      },
+      {
+        "word": "analyze",
+        "start": 217.28,
+        "end": 217.52,
+        "probability": 0.72802734375
+      },
+      {
+        "word": "customer",
+        "start": 217.52,
+        "end": 217.98,
+        "probability": 0.9443359375
+      },
+      {
+        "word": "interactions",
+        "start": 217.98,
+        "end": 218.6,
+        "probability": 0.841796875
+      },
+      {
+        "word": "for",
+        "start": 218.6,
+        "end": 218.9,
+        "probability": 0.98486328125
+      },
+      {
+        "word": "a",
+        "start": 218.9,
+        "end": 219.02,
+        "probability": 0.95263671875
+      },
+      {
+        "word": "better",
+        "start": 219.02,
+        "end": 219.2,
+        "probability": 0.998046875
+      },
+      {
+        "word": "service.",
+        "start": 219.2,
+        "end": 219.7,
+        "probability": 0.99609375
+      }
+    ],
+    "start": "00:03:35",
+    "end": "00:03:39",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 220.64,
+    "end_seconds": 224.54,
+    "text": "We believe that AI can transform how we process audio and video content,",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We",
+        "start": 220.64,
+        "end": 220.82,
+        "probability": 0.97802734375
+      },
+      {
+        "word": "believe",
+        "start": 220.82,
+        "end": 221.16,
+        "probability": 0.986328125
+      },
+      {
+        "word": "that",
+        "start": 221.16,
+        "end": 221.4,
+        "probability": 0.98388671875
+      },
+      {
+        "word": "AI",
+        "start": 221.4,
+        "end": 221.62,
+        "probability": 0.68115234375
+      },
+      {
+        "word": "can",
+        "start": 221.62,
+        "end": 221.9,
+        "probability": 0.994140625
+      },
+      {
+        "word": "transform",
+        "start": 221.9,
+        "end": 222.4,
+        "probability": 0.99072265625
+      },
+      {
+        "word": "how",
+        "start": 222.4,
+        "end": 222.66,
+        "probability": 0.8271484375
+      },
+      {
+        "word": "we",
+        "start": 222.66,
+        "end": 222.76,
+        "probability": 0.9921875
+      },
+      {
+        "word": "process",
+        "start": 222.76,
+        "end": 223.2,
+        "probability": 0.98388671875
+      },
+      {
+        "word": "audio",
+        "start": 223.2,
+        "end": 223.64,
+        "probability": 0.9501953125
+      },
+      {
+        "word": "and",
+        "start": 223.64,
+        "end": 223.84,
+        "probability": 0.9306640625
+      },
+      {
+        "word": "video",
+        "start": 223.84,
+        "end": 224.12,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "content,",
+        "start": 224.12,
+        "end": 224.54,
+        "probability": 0.99560546875
+      }
+    ],
+    "start": "00:03:40",
+    "end": "00:03:44",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 224.78,
+    "end_seconds": 227.7,
+    "text": "making it more accessible, interactive and intelligent.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "making",
+        "start": 224.78,
+        "end": 225.36,
+        "probability": 0.962890625
+      },
+      {
+        "word": "it",
+        "start": 225.36,
+        "end": 225.56,
+        "probability": 0.9951171875
+      },
+      {
+        "word": "more",
+        "start": 225.56,
+        "end": 225.74,
+        "probability": 0.9892578125
+      },
+      {
+        "word": "accessible,",
+        "start": 225.74,
+        "end": 226.3,
+        "probability": 0.98828125
+      },
+      {
+        "word": "interactive",
+        "start": 226.56,
+        "end": 227,
+        "probability": 0.99560546875
+      },
+      {
+        "word": "and",
+        "start": 227,
+        "end": 227.24,
+        "probability": 0.78662109375
+      },
+      {
+        "word": "intelligent.",
+        "start": 227.24,
+        "end": 227.7,
+        "probability": 0.99658203125
+      }
+    ],
+    "start": "00:03:44",
+    "end": "00:03:47",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 228.42000000000002,
+    "end_seconds": 232,
+    "text": "We're hoping that this could be a great tool that could help a lot of people.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "We're",
+        "start": 228.42000000000002,
+        "end": 228.96,
+        "probability": 0.6876220703125
+      },
+      {
+        "word": "hoping",
+        "start": 228.96,
+        "end": 229.28,
+        "probability": 0.99609375
+      },
+      {
+        "word": "that",
+        "start": 229.28,
+        "end": 229.5,
+        "probability": 0.93017578125
+      },
+      {
+        "word": "this",
+        "start": 229.5,
+        "end": 229.7,
+        "probability": 0.98779296875
+      },
+      {
+        "word": "could",
+        "start": 229.7,
+        "end": 229.84,
+        "probability": 0.9833984375
+      },
+      {
+        "word": "be",
+        "start": 229.84,
+        "end": 229.96,
+        "probability": 0.998046875
+      },
+      {
+        "word": "a",
+        "start": 229.96,
+        "end": 230.06,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "great",
+        "start": 230.06,
+        "end": 230.28,
+        "probability": 0.9892578125
+      },
+      {
+        "word": "tool",
+        "start": 230.28,
+        "end": 230.58,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "that",
+        "start": 230.58,
+        "end": 230.78,
+        "probability": 0.9853515625
+      },
+      {
+        "word": "could",
+        "start": 230.78,
+        "end": 230.92,
+        "probability": 0.986328125
+      },
+      {
+        "word": "help",
+        "start": 230.92,
+        "end": 231.16,
+        "probability": 0.9970703125
+      },
+      {
+        "word": "a",
+        "start": 231.16,
+        "end": 231.32,
+        "probability": 0.98828125
+      },
+      {
+        "word": "lot",
+        "start": 231.32,
+        "end": 231.42,
+        "probability": 0.99853515625
+      },
+      {
+        "word": "of",
+        "start": 231.42,
+        "end": 231.58,
+        "probability": 0.99658203125
+      },
+      {
+        "word": "people.",
+        "start": 231.58,
+        "end": 232,
+        "probability": 0.9970703125
+      }
+    ],
+    "start": "00:03:48",
+    "end": "00:03:52",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 232.7,
+    "end_seconds": 236.46,
+    "text": "And that's a wrap-up for a short video of expanding our project.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "And",
+        "start": 232.7,
+        "end": 233.22,
+        "probability": 0.66259765625
+      },
+      {
+        "word": "that's",
+        "start": 233.22,
+        "end": 233.6,
+        "probability": 0.940185546875
+      },
+      {
+        "word": "a",
+        "start": 233.6,
+        "end": 233.7,
+        "probability": 0.97314453125
+      },
+      {
+        "word": "wrap",
+        "start": 233.7,
+        "end": 234,
+        "probability": 0.966796875
+      },
+      {
+        "word": "-up",
+        "start": 234,
+        "end": 234.14,
+        "probability": 0.7127685546875
+      },
+      {
+        "word": "for",
+        "start": 234.14,
+        "end": 234.32,
+        "probability": 0.97998046875
+      },
+      {
+        "word": "a",
+        "start": 234.32,
+        "end": 234.44,
+        "probability": 0.529296875
+      },
+      {
+        "word": "short",
+        "start": 234.44,
+        "end": 234.7,
+        "probability": 0.99267578125
+      },
+      {
+        "word": "video",
+        "start": 234.7,
+        "end": 235,
+        "probability": 0.99462890625
+      },
+      {
+        "word": "of",
+        "start": 235,
+        "end": 235.28,
+        "probability": 0.83447265625
+      },
+      {
+        "word": "expanding",
+        "start": 235.28,
+        "end": 235.74,
+        "probability": 0.5146484375
+      },
+      {
+        "word": "our",
+        "start": 235.74,
+        "end": 235.98,
+        "probability": 0.9716796875
+      },
+      {
+        "word": "project.",
+        "start": 235.98,
+        "end": 236.46,
+        "probability": 0.98876953125
+      }
+    ],
+    "start": "00:03:52",
+    "end": "00:03:56",
+    "sentiment": "neutral"
+  },
+  {
+    "start_seconds": 237.18,
+    "end_seconds": 238.8,
+    "text": "Hopefully, we'll see you in Hackfish.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Hopefully,",
+        "start": 237.18,
+        "end": 237.7,
+        "probability": 0.9814453125
+      },
+      {
+        "word": "we'll",
+        "start": 237.84,
+        "end": 237.92,
+        "probability": 0.94921875
+      },
+      {
+        "word": "see",
+        "start": 237.92,
+        "end": 238.06,
+        "probability": 0.998046875
+      },
+      {
+        "word": "you",
+        "start": 238.06,
+        "end": 238.18,
+        "probability": 0.99072265625
+      },
+      {
+        "word": "in",
+        "start": 238.18,
+        "end": 238.3,
+        "probability": 0.95458984375
+      },
+      {
+        "word": "Hackfish.",
+        "start": 238.3,
+        "end": 238.8,
+        "probability": 0.78466796875
+      }
+    ],
+    "start": "00:03:57",
+    "end": "00:03:58",
+    "sentiment": "positive"
+  },
+  {
+    "start_seconds": 239.18,
+    "end_seconds": 240.14,
+    "text": "Goodbye for now.",
+    "speaker": "Unknown",
+    "words": [
+      {
+        "word": "Goodbye",
+        "start": 239.18,
+        "end": 239.7,
+        "probability": 0.86474609375
+      },
+      {
+        "word": "for",
+        "start": 239.7,
+        "end": 239.96,
+        "probability": 0.95361328125
+      },
+      {
+        "word": "now.",
+        "start": 239.96,
+        "end": 240.14,
+        "probability": 0.9990234375
+      }
+    ],
+    "start": "00:03:59",
+    "end": "00:04:00",
     "sentiment": "neutral"
   }
 ]

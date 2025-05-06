@@ -48,6 +48,7 @@ async function findPythonExecutable(): Promise<string> {
 export async function POST(request: NextRequest) {
   let tempFilePath: string | null = null;
   let outputJsonPath: string | null = null;
+  const apiRequestStartTime = Date.now(); // Record API request start time
 
   try {
     const formData = await request.formData();
@@ -120,11 +121,14 @@ export async function POST(request: NextRequest) {
     console.log(`Executing command: ${command.replace(hfToken ?? "dummy-token", "[HF_TOKEN_HIDDEN]")}`); // Hide token in logs
 
     // Execute the Python script
+    const scriptStartTime = Date.now(); // Record script execution start time
     try {
         const { stdout, stderr } = await execPromise(command, {
             timeout: 600000, // 10 minute timeout
             maxBuffer: 10 * 1024 * 1024 // 10MB buffer
         });
+        const scriptEndTime = Date.now(); // Record script execution end time
+        const scriptDuration = ((scriptEndTime - scriptStartTime) / 1000).toFixed(2); // Calculate duration in seconds
 
         if (stderr) {
             console.warn('Python script stderr:', stderr); // Log stderr as warning
@@ -140,27 +144,50 @@ export async function POST(request: NextRequest) {
 
         // Read the transcription result from the JSON file
         const transcriptionResult = await readFile(outputJsonPath, 'utf-8');
-        const transcriptionData = JSON.parse(transcriptionResult);
+        const resultData = JSON.parse(transcriptionResult); // Parse the whole object
 
-        // Return the transcription data
-        return NextResponse.json({ transcription: transcriptionData });
+        // Add script execution time to metrics
+        const executionTimeMetric = `Total Script Execution Time: ${scriptDuration} seconds`;
+        if (resultData.metrics && Array.isArray(resultData.metrics)) {
+            resultData.metrics.push(executionTimeMetric);
+        } else {
+            resultData.metrics = [executionTimeMetric];
+        }
+
+        // Check if the script wrote an error into the JSON
+        if (resultData.error) {
+            console.error('Transcription script reported an error:', resultData.error);
+            return NextResponse.json({ error: `Transcription failed: ${resultData.error}`, metrics: resultData.metrics || [] }, { status: 500 });
+        }
+
+        // Return the full data (including transcription and metrics)
+        return NextResponse.json(resultData); // Return the whole object { transcription: [...], metrics: [...] }
 
     } catch (execError: any) {
+        const scriptEndTime = Date.now(); // Record script execution end time even on error
+        const scriptDuration = ((scriptEndTime - scriptStartTime) / 1000).toFixed(2);
         console.error('Error executing Python script:', execError);
         // Try to read output JSON even if exec failed, might contain partial results or error info
         let errorDetails = execError.stderr || execError.stdout || execError.message || 'Unknown execution error';
+        let metricsOnError: string[] = [];
         if (fs.existsSync(outputJsonPath)) {
              try {
-                 const partialResult = await readFile(outputJsonPath, 'utf-8');
-                 errorDetails += `\nPartial output: ${partialResult}`;
+                 const partialResultJson = await readFile(outputJsonPath, 'utf-8');
+                 const partialResultData = JSON.parse(partialResultJson);
+                 errorDetails += `\nPartial output: ${JSON.stringify(partialResultData.transcription || partialResultJson)}`;
+                 metricsOnError = partialResultData.metrics || []; // Get metrics even on error
              } catch (readErr) { /* ignore read error */ }
         }
-        return NextResponse.json({ error: 'Failed to execute transcription script.', details: errorDetails }, { status: 500 });
+        // Add script execution time to metrics even on error
+        metricsOnError.push(`Total Script Execution Time: ${scriptDuration} seconds (Failed)`);
+        return NextResponse.json({ error: 'Failed to execute transcription script.', details: errorDetails, metrics: metricsOnError }, { status: 500 });
     }
 
   } catch (error: any) {
     console.error('API Error:', error);
-    return NextResponse.json({ error: 'An unexpected error occurred.', details: error.message || String(error) }, { status: 500 });
+    const apiRequestEndTime = Date.now();
+    const apiDuration = ((apiRequestEndTime - apiRequestStartTime) / 1000).toFixed(2);
+    return NextResponse.json({ error: 'An unexpected error occurred.', details: error.message || String(error), metrics: [`API Request Duration: ${apiDuration} seconds (Failed)`] }, { status: 500 });
   } finally {
     // Clean up temporary files
     if (tempFilePath && fs.existsSync(tempFilePath)) {

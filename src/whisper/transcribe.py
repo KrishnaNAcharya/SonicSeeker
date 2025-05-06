@@ -10,9 +10,20 @@ import logging
 from pathlib import Path
 import pprint # For pretty printing the diarization object
 import torch # Import torch
+from io import StringIO # Import StringIO
+import time # Import time
+import numpy as np # Import numpy for averaging
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+log_stream = StringIO()
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(), # Keep logging to console
+        logging.StreamHandler(log_stream) # Add handler to capture logs
+    ]
+)
 
 # --- Argument Parsing ---
 parser = argparse.ArgumentParser(description='Transcribe audio/video file using Whisper and optionally perform speaker diarization.')
@@ -103,6 +114,7 @@ def run_whisper(input_path):
         segments_gen, info = model.transcribe(input_path, beam_size=5, word_timestamps=True)
 
         segments = []
+        word_probabilities = [] # List to store word probabilities
         for segment in segments_gen:
             segment_dict = {
                 "start": segment.start,
@@ -116,9 +128,17 @@ def run_whisper(input_path):
                         "word": word.word.strip(),
                         "start": word.start,
                         "end": word.end,
-                        # "probability": word.probability # Optional
+                        "probability": word.probability # Include probability
                     })
+                    word_probabilities.append(word.probability) # Collect word probability
             segments.append(segment_dict)
+
+        # Calculate average word confidence
+        if word_probabilities:
+            average_confidence = np.mean(word_probabilities)
+            logging.info(f"Average Word Confidence: {average_confidence:.3f}") # Log the average confidence
+        else:
+            logging.info("Word probabilities not available in transcription result.")
 
         logging.info(f"Whisper transcription finished. Detected language: {info.language}")
         return segments
@@ -341,10 +361,15 @@ def main():
                 "words": seg.get("words", []) # Include word timestamps
             })
 
+        # --- Retrieve Captured Logs ---
+        log_stream.seek(0)
+        metrics = log_stream.read().splitlines()
+        # --- End Retrieve Captured Logs ---
+
         # 5. Save output JSON
         try:
             with open(output_json_file, 'w', encoding='utf-8') as f:
-                json.dump(output_data, f, indent=2, ensure_ascii=False)
+                json.dump({"transcription": output_data, "metrics": metrics}, f, indent=2, ensure_ascii=False)
             logging.info(f"Transcription saved to {output_json_file}")
         except Exception as e:
             logging.error(f"Failed to write output JSON: {e}")

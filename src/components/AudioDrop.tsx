@@ -12,7 +12,15 @@ import type Player from "video.js/dist/types/player";
 import WaveSurfer from 'wavesurfer.js';
 import { Loader2, Youtube } from "lucide-react"; // Import Youtube icon
 
-const AudioDrop = () => {
+// Add onHypothesisUpdate prop
+interface AudioDropProps {
+  onMetricsUpdate?: (metrics: any) => void;
+  onTranscriptionUpdate?: (segments: any[] | null, source: string | File | null, fullText: string | null) => void; // Combined update
+  onPlayerReady?: (player: Player | WaveSurfer) => void; // Callback for player instance
+  onHypothesisUpdate?: (text: string | null) => void;
+}
+
+const AudioDrop = ({ onMetricsUpdate, onTranscriptionUpdate, onPlayerReady, onHypothesisUpdate }: AudioDropProps) => {
   const [files, setFiles] = useState<File[]>([]);
   const [isRecording, setIsRecording] = useState(false);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -28,6 +36,7 @@ const AudioDrop = () => {
   const mediaPlayerRef = useRef<Player | WaveSurfer | null>(null);
   const [youtubeUrl, setYoutubeUrl] = useState(""); // State for YouTube URL input
   const [isFetchingYoutube, setIsFetchingYoutube] = useState(false); // State for YouTube fetch loading
+  const [hypothesisText, setHypothesisText] = useState<string | null>(null); // Add state to hold hypothesis text locally if needed
 
   const trackTranscriptionProgress = useCallback((file: File) => {
     const fileSizeInMB = file.size / (1024 * 1024);
@@ -125,18 +134,51 @@ const AudioDrop = () => {
     }
   };
 
+  // Helper to extract text from transcription result
+  const extractHypothesisText = (transcriptionResult: any): string => {
+    if (!transcriptionResult) return '';
+    
+    // If transcription is an array of segments with text
+    if (transcriptionResult.transcription && Array.isArray(transcriptionResult.transcription)) {
+        return transcriptionResult.transcription.map((seg: any) => seg.text).join(' ').trim();
+    }
+    
+    // If it's an array directly
+    if (Array.isArray(transcriptionResult) && transcriptionResult.every((seg: any) => typeof seg.text === 'string')) {
+        return transcriptionResult.map((seg: any) => seg.text).join(' ').trim();
+    }
+    
+    return '';
+  };
+
   const handleTranscribe = async () => {
     const fileToTranscribe = currentAudioSource instanceof File ? currentAudioSource : null;
-    if (!fileToTranscribe) {
-      toast.error("Please select or record an audio file first.");
-      return;
+    if (!fileToTranscribe && !youtubeUrl) { // Also check youtubeUrl
+       toast.error("Please select, record, or provide a YouTube URL first.");
+       return;
+     }
+
+    // If YouTube URL is present, use that flow instead
+    if (youtubeUrl && !fileToTranscribe) {
+        await handleFetchYouTubeTranscript();
+        return;
     }
+
+    // Proceed with file transcription if fileToTranscribe exists
+    if (!fileToTranscribe) {
+        toast.error("No file selected or recorded for transcription.");
+        return;
+    }
+
 
     setIsTranscribing(true);
     setTranscriptionError(null);
     setTranscription([]);
     setTranscriptionProgress(0);
     setActiveSegmentIndex(-1);
+    setHypothesisText(null); // Clear local hypothesis text
+    onMetricsUpdate?.(null); // Clear previous metrics
+    onTranscriptionUpdate?.(null, fileToTranscribe, null); // Notify parent: clearing transcription, but source is set
 
     const stopProgressTracking = trackTranscriptionProgress(fileToTranscribe);
 
@@ -176,6 +218,11 @@ const AudioDrop = () => {
 
       const data = await response.json();
 
+      // Call onMetricsUpdate if metrics are present in the response
+      if (data.metrics) {
+        onMetricsUpdate?.(data.metrics);
+      }
+
       if (data.transcription && Array.isArray(data.transcription)) {
         const processedSegments = data.transcription.map((segment: any, index: number) => {
           const startSeconds = segment.start_seconds ||
@@ -205,6 +252,13 @@ const AudioDrop = () => {
         const segmentsWithWordTimestamps = generateWordTimestampsForTranscript(processedSegments);
         setTranscription(segmentsWithWordTimestamps);
 
+        // --- Extract and update hypothesis text ---
+        const fullText = extractHypothesisText(data);
+        console.log("Extracted hypothesis text:", fullText.substring(0, 50) + "...");
+        onHypothesisUpdate?.(fullText); // Update parent with hypothesis text
+
+        onTranscriptionUpdate?.(segmentsWithWordTimestamps, fileToTranscribe, fullText);
+
         // Save transcription to database
         try {
           await saveTranscriptionToDB(segmentsWithWordTimestamps, fileToTranscribe);
@@ -224,6 +278,10 @@ const AudioDrop = () => {
       setTranscriptionError(message);
       toast.error(`Transcription failed: ${message}`);
       setTranscriptionProgress(0);
+      setHypothesisText(null); // Clear local hypothesis on error
+      onMetricsUpdate?.(null); // Clear metrics on error
+      onTranscriptionUpdate?.(null, fileToTranscribe, null); // Notify parent about error (clearing transcription)
+      onHypothesisUpdate?.(null); // Clear hypothesis text on error
     } finally {
       stopProgressTracking();
       setIsTranscribing(false);
@@ -262,9 +320,11 @@ const AudioDrop = () => {
     }
   }, [transcription, activeSegmentIndex]);
 
+  // Update handlePlayerReady to call the prop
   const handlePlayerReady = useCallback((playerInstance: Player | WaveSurfer) => {
     mediaPlayerRef.current = playerInstance;
-  }, []);
+    onPlayerReady?.(playerInstance); // Call the prop with the player instance
+  }, [onPlayerReady]); // Add onPlayerReady as dependency
 
   const handleWordClick = useCallback((timestamp: number) => {
     handleSeekTo(timestamp);
@@ -285,6 +345,8 @@ const AudioDrop = () => {
       setActiveSegmentIndex(-1);
       setCurrentPlaybackTime(0);
       mediaPlayerRef.current = null;
+      setYoutubeUrl(""); // Clear YouTube URL when a file is uploaded
+      onTranscriptionUpdate?.(null, firstMedia, null); // Notify parent about new source, clear transcription
     } else {
       setCurrentAudioSource(null);
       toast.error("Selected file is not a valid audio or video file");
@@ -299,6 +361,8 @@ const AudioDrop = () => {
     setActiveSegmentIndex(-1);
     setCurrentPlaybackTime(0);
     audioChunksRef.current = [];
+    setYoutubeUrl(""); // Clear YouTube URL when starting recording
+    onTranscriptionUpdate?.(null, null, null); // Clear transcription in parent
 
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -323,6 +387,7 @@ const AudioDrop = () => {
         setCurrentAudioSource(recordedFile);
         stream.getTracks().forEach(track => track.stop());
         toast.success("Recording finished.");
+        onTranscriptionUpdate?.(null, recordedFile, null); // Notify parent about new source
       };
 
       mediaRecorderRef.current.start();
@@ -390,9 +455,15 @@ const AudioDrop = () => {
     // --- End URL Cleaning ---
 
     setIsFetchingYoutube(true);
-    setIsTranscribing(true); // Use main loading indicator
-    setCurrentAudioSource(null); // Clear any selected file
-    setTranscription([]); // Clear previous transcription
+    setIsTranscribing(true);
+    setCurrentAudioSource(null);
+    setTranscription([]);
+    setTranscriptionError(null); // Clear previous errors
+    setTranscriptionProgress(5); // Initial progress indication
+    setActiveSegmentIndex(-1);
+    setHypothesisText(null); // Clear local hypothesis
+    onMetricsUpdate?.(null); // Clear metrics
+    onTranscriptionUpdate?.(null, cleanedUrl, null); // Notify parent: clearing transcription, source is URL
     toast.info("Fetching YouTube transcript...");
 
     try {
@@ -445,21 +516,42 @@ const AudioDrop = () => {
         };
       });
       const segmentsWithWordTimestamps = generateWordTimestampsForTranscript(processedSegments);
+
+      // --- Extract hypothesis text ---
+      const fullText = segmentsWithWordTimestamps.map(segment => segment.text).join(' ').trim();
+      console.log("Extracted YouTube hypothesis text:", fullText.substring(0, 50) + "...");
+      onHypothesisUpdate?.(fullText); // Update parent with hypothesis text
+      
       setTranscription(segmentsWithWordTimestamps);
+      // --- Call combined update handler ---
+      onTranscriptionUpdate?.(segmentsWithWordTimestamps, cleanedUrl, fullText);
+
+      setTranscription(segmentsWithWordTimestamps); // Update local transcription state
+      setCurrentAudioSource(cleanedUrl); // Set source to URL for potential playback/linking later
+
       toast.success("YouTube transcript fetched successfully!");
-      // Optionally, try to display video info or thumbnail if needed later
-      // For now, just clear the URL input after success
-      setYoutubeUrl("");
+      setYoutubeUrl(""); // Clear input on success
 
     } catch (error: any) {
       console.error("Fetching YouTube transcript failed:", error);
       toast.error(`Failed to fetch YouTube transcript: ${error.message}`);
       setTranscription([]);
+      setHypothesisText(null); // Clear hypothesis on error
+      onTranscriptionUpdate?.(null, cleanedUrl, null); // Notify parent about error
+      onHypothesisUpdate?.(null); // Clear hypothesis on error
     } finally {
       setIsFetchingYoutube(false);
       setIsTranscribing(false);
+      setTranscriptionProgress(0); // Reset progress
     }
-  }, [youtubeUrl]);
+  }, [youtubeUrl, onMetricsUpdate, onTranscriptionUpdate, onHypothesisUpdate]); // Add dependencies
+
+  // Add cleanup when component unmounts or on new upload
+  useEffect(() => {
+    return () => {
+      onHypothesisUpdate?.(null); // Clear hypothesis when component unmounts
+    };
+  }, [onHypothesisUpdate]);
 
   return (
     <>
@@ -530,9 +622,12 @@ const AudioDrop = () => {
               {currentAudioSource ? (
                 <div className="flex-grow min-h-0">
                   <MediaPlayer
-                    key={currentAudioSource instanceof File ? `${currentAudioSource.name}-${currentAudioSource.lastModified}` : currentAudioSource}
+                    // Update key to handle URL strings as well
+                    key={typeof currentAudioSource === 'string' ? currentAudioSource : `${currentAudioSource.name}-${currentAudioSource.lastModified}`}
                     mediaFile={currentAudioSource instanceof File ? currentAudioSource : null}
-                    onReady={handlePlayerReady}
+                    // Pass youtubeUrl if the source is a string (assuming it's a YT URL for now)
+                    youtubeUrl={typeof currentAudioSource === 'string' ? currentAudioSource : undefined}
+                    onReady={handlePlayerReady} // Pass the handler
                     onTimeUpdate={handleTimeUpdate}
                   />
                 </div>
@@ -546,24 +641,38 @@ const AudioDrop = () => {
         </div>
       </div>
 
-      {currentAudioSource && (
+      {/* Update Transcribe button disabled logic */}
+      {(currentAudioSource || youtubeUrl) && (
         <div className="flex justify-center items-center gap-4 px-10 py-6">
           <div className="flex items-center space-x-2">
-            <input type="checkbox" id="diarize-checkbox" checked={requestDiarization} onChange={(e) => setRequestDiarization(e.target.checked)} className="h-4 w-4 rounded border-border bg-input text-blue-600 focus:ring-blue-500" />
-            <label htmlFor="diarize-checkbox" className="text-sm font-medium text-muted-foreground">Identify Speakers (Diarize)</label>
+            <input
+              type="checkbox"
+              id="diarize-checkbox"
+              checked={requestDiarization}
+              onChange={(e) => setRequestDiarization(e.target.checked)}
+              className="h-4 w-4 rounded border-border bg-input text-blue-600 focus:ring-blue-500"
+            />
+            <label htmlFor="diarize-checkbox" className="text-sm font-medium text-muted-foreground">
+              Identify Speakers (Diarize)
+            </label>
           </div>
-          <Button onClick={handleTranscribe} disabled={isTranscribing || !currentAudioSource} className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-black font-medium disabled:opacity-50 disabled:cursor-not-allowed">
-            {isTranscribing ? 'Transcribing...' : 'Transcribe Media'}
+          <Button
+            onClick={handleTranscribe}
+            disabled={isTranscribing || (!currentAudioSource && !youtubeUrl)}
+            className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-black font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isTranscribing
+              ? 'Processing...'
+              : (youtubeUrl && !currentAudioSource ? 'Fetch & Transcribe YT' : 'Transcribe Media')}
           </Button>
         </div>
       )}
-
       {/* Transcription Results Section */}
       <div className="flex-grow border border-border rounded-lg bg-card flex flex-col min-h-[300px] mt-6">
         {/* Add padding (e.g., p-4 pb-0) to the title */}
-        <div className="h-full overflow-y-auto flex-grow"> 
+        <div className="h-full overflow-y-auto flex-grow">
           {isTranscribing ? (
-            <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-4"> {/* Added text-center class */}
+            <div className="flex flex-col items-center justify-center h-full text-center text-muted-foreground p-4">
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500 mb-4"></div>
               <p>Transcribing... {transcriptionProgress}%</p>
               <div className="w-full max-w-xs h-2 bg-muted rounded-full mt-2 overflow-hidden">
@@ -571,7 +680,7 @@ const AudioDrop = () => {
               </div>
             </div>
           ) : transcriptionError ? (
-            <div className="flex flex-col items-center justify-center h-full text-red-400 p-4"> {/* Add padding back here */}
+            <div className="flex flex-col items-center justify-center h-full text-red-400 p-4">
               <p>Error: {transcriptionError}</p>
               <p className="text-sm mt-2 text-red-300">
                 Try converting your file to MP3 or WAV format. If recording, ensure it's at least 1 second long.
@@ -587,8 +696,8 @@ const AudioDrop = () => {
             />
           ) : (
             // Placeholder shown when no transcription is available
-            <div className="flex flex-col items-center justify-center h-full text-muted-foreground p-32"> 
-              <p>Upload or record audio and click "Transcribe Media".</p> 
+            <div className="flex flex-col items-center justify-center h-full text-muted-foreground p-32">
+              <p>Upload or record audio and click "Transcribe Media".</p>
             </div>
           )}
         </div>
