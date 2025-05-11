@@ -1,131 +1,64 @@
 {
-  "topic": "Hackfish Project: AI Power Media Processing",
+  "topic": "Project Introduction",
+  "summary": "Presenting an AI-powered media processing tool for extracting key insights from audio and video content.",
   "children": [
     {
       "topic": "Problem Statement",
-      "summary": "Manually listening to audio or video files, taking notes, and searching for key points is time-consuming and inefficient.",
+      "summary": "Manual summarization of long discussions is inefficient, time-consuming, and frustrating.",
+      "children": []
+    },
+    {
+      "topic": "Solution",
+      "summary": "AI Power Media Processing tool: AI-powered subtitles for media files, with features like sentiment analysis, name detection, and interactive timestamp navigation.",
       "children": [
         {
-          "topic": "Time Consumption",
-          "summary": "Listening to an entire recording just to find one important moment is a huge waste of time.",
+          "topic": "Whisper AI",
+          "summary": "Accurate speech-to-text conversion, even with background noise or multiple accents.",
           "children": []
         },
         {
-          "topic": "Inefficiency",
-          "summary": "Manually summarizing long discussions and skipping through videos randomly hoping to find key parts is frustrating.",
+          "topic": "Interactive Features",
+          "summary": "Search for keywords, jump to important moments, and explore clickable timestamps.",
+          "children": [
+            {
+              "topic": "Quick Summary",
+              "summary": "AI-generated summary of key points, eliminating the need to watch or listen to the entire file.",
+              "children": []
+            }
+          ]
+        },
+        {
+          "topic": "Mind Map Feature",
+          "summary": "Virtual roadmap of the conversation, making it easier to understand key topics and connections.",
           "children": []
         }
       ]
     },
     {
-      "topic": "Solution: AI Power Media Processing",
-      "summary": "An AI-powered tool that makes audio and video files searchable, interactive, and insightful.",
-      "children": [
-        {
-          "topic": "Key Features",
-          "summary": "High-accuracy speech-to-text with background noise or multiple accents, sentiment analysis, name detection, key topic detection, and interactive features like keyword search and clickable timestamps.",
-          "children": [
-            {
-              "topic": "Speech-to-Text",
-              "summary": "High-accuracy transcription even with background noise or multiple accents.",
-              "children": []
-            },
-            {
-              "topic": "Sentiment Analysis",
-              "summary": "Detects emotions in speech, useful for analyzing customer calls, debates, or interviews.",
-              "children": []
-            },
-            {
-              "topic": "Name Detection and Key Topic Detection",
-              "summary": "Identifies names, places, and key topics in audio and video files.",
-              "children": []
-            },
-            {
-              "topic": "Interactive Features",
-              "summary": "Keyword search, clickable timestamps, and a mind map feature for easy navigation of the conversation.",
-              "children": [
-                {
-                  "topic": "Keyword Search",
-                  "summary": "Jump to an important moment by searching for a keyword.",
-                  "children": []
-                },
-                {
-                  "topic": "Clickable Timestamps",
-                  "summary": "Access specific moments in audio or video files with clickable timestamps.",
-                  "children": []
-                },
-                {
-                  "topic": "Mind Map Feature",
-                  "summary": "Visualize the conversation with a mind map, making it easier to understand key topics and connectors.",
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "topic": "Tech Stack",
-          "summary": "Using XJS, TypeScript, Node.js, express, OpenIS Whisper local model for transcription, VideoGS for sentiment analysis, and PostgreSQL with the possibility to scale to NeonDB.",
-          "children": [
-            {
-              "topic": "Frontend",
-              "summary": "Using XJS and TypeScript for a smooth user interface.",
-              "children": []
-            },
-            {
-              "topic": "Backend",
-              "summary": "Using Node.js and express for handling the backend.",
-              "children": []
-            },
-            {
-              "topic": "Transcription",
-              "summary": "Using OpenIS Whisper local model for transcription.",
-              "children": []
-            },
-            {
-              "topic": "Sentiment Analysis",
-              "summary": "Using VideoGS for sentiment analysis.",
-              "children": []
-            },
-            {
-              "topic": "Database",
-              "summary": "Using PostgreSQL with the possibility to scale to NeonDB for storing bookmarks and timestamps.",
-              "children": []
-            }
-          ]
-        }
-      ]
+      "topic": "Technical Stack",
+      "summary": "Using XJS, TypeScript, Node.js, Express, OpenIS Whisper, PostgreSQL, NeonDB, FFmpeg, VideoGS, and WaveCipherGS for seamless video processing.",
+      "children": []
     },
     {
       "topic": "Target Audience",
-      "summary": "Anyone who deals with audio or video content, including corporations, students, legal teams, content creators, and support teams.",
+      "summary": "Designed for anyone dealing with audio or video content, including corporations, students, legal teams, content creators, and support teams.",
       "children": [
         {
           "topic": "Corporations",
-          "summary": "Extract key decisions from long meetings, automate transcription for research purposes.",
+          "summary": "Extract key decisions from long meetings, improving productivity and decision-making.",
           "children": []
         },
         {
           "topic": "Students",
-          "summary": "Summarize lectures, study smart with automatic transcripts.",
-          "children": []
-        },
-        {
-          "topic": "Legal Teams",
-          "summary": "Generate automatic transcripts for key studies, analyze customer interactions.",
-          "children": []
-        },
-        {
-          "topic": "Content Creators",
-          "summary": "Repurpose the best moments from audio and video files.",
-          "children": []
-        },
-        {
-          "topic": "Support Teams",
-          "summary": "Analyze customer interactions for better service, summarize long conversations.",
+          "summary": "Summarize lectures, study smarter, and improve understanding of course materials.",
           "children": []
         }
       ]
+    },
+    {
+      "topic": "Conclusion",
+      "summary": "Believing AI can transform how we process audio and video content, making it more accessible, interactive, and intelligent.",
+      "children": []
     }
   ]
 }

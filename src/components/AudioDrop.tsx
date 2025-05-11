@@ -12,15 +12,14 @@ import type Player from "video.js/dist/types/player";
 import WaveSurfer from 'wavesurfer.js';
 import { Loader2, Youtube } from "lucide-react"; // Import Youtube icon
 
-// Add onHypothesisUpdate prop
+// Update onMetricsUpdate prop to make it optional
 interface AudioDropProps {
-  onMetricsUpdate?: (metrics: any) => void;
   onTranscriptionUpdate?: (segments: any[] | null, source: string | File | null, fullText: string | null) => void; // Combined update
   onPlayerReady?: (player: Player | WaveSurfer) => void; // Callback for player instance
   onHypothesisUpdate?: (text: string | null) => void;
 }
 
-const AudioDrop = ({ onMetricsUpdate, onTranscriptionUpdate, onPlayerReady, onHypothesisUpdate }: AudioDropProps) => {
+const AudioDrop = ({ onTranscriptionUpdate, onPlayerReady, onHypothesisUpdate }: AudioDropProps) => {
   const [files, setFiles] = useState<File[]>([]);
   const [isRecording, setIsRecording] = useState(false);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -177,7 +176,7 @@ const AudioDrop = ({ onMetricsUpdate, onTranscriptionUpdate, onPlayerReady, onHy
     setTranscriptionProgress(0);
     setActiveSegmentIndex(-1);
     setHypothesisText(null); // Clear local hypothesis text
-    onMetricsUpdate?.(null); // Clear previous metrics
+    onHypothesisUpdate?.(null); // Notify parent: clearing hypothesis text
     onTranscriptionUpdate?.(null, fileToTranscribe, null); // Notify parent: clearing transcription, but source is set
 
     const stopProgressTracking = trackTranscriptionProgress(fileToTranscribe);
@@ -218,11 +217,8 @@ const AudioDrop = ({ onMetricsUpdate, onTranscriptionUpdate, onPlayerReady, onHy
 
       const data = await response.json();
 
-      // Call onMetricsUpdate if metrics are present in the response
-      if (data.metrics) {
-        onMetricsUpdate?.(data.metrics);
-      }
-
+      // Remove metrics handling
+      
       if (data.transcription && Array.isArray(data.transcription)) {
         const processedSegments = data.transcription.map((segment: any, index: number) => {
           const startSeconds = segment.start_seconds ||
@@ -279,7 +275,6 @@ const AudioDrop = ({ onMetricsUpdate, onTranscriptionUpdate, onPlayerReady, onHy
       toast.error(`Transcription failed: ${message}`);
       setTranscriptionProgress(0);
       setHypothesisText(null); // Clear local hypothesis on error
-      onMetricsUpdate?.(null); // Clear metrics on error
       onTranscriptionUpdate?.(null, fileToTranscribe, null); // Notify parent about error (clearing transcription)
       onHypothesisUpdate?.(null); // Clear hypothesis text on error
     } finally {
@@ -462,7 +457,6 @@ const AudioDrop = ({ onMetricsUpdate, onTranscriptionUpdate, onPlayerReady, onHy
     setTranscriptionProgress(5); // Initial progress indication
     setActiveSegmentIndex(-1);
     setHypothesisText(null); // Clear local hypothesis
-    onMetricsUpdate?.(null); // Clear metrics
     onTranscriptionUpdate?.(null, cleanedUrl, null); // Notify parent: clearing transcription, source is URL
     toast.info("Fetching YouTube transcript...");
 
@@ -544,7 +538,7 @@ const AudioDrop = ({ onMetricsUpdate, onTranscriptionUpdate, onPlayerReady, onHy
       setIsTranscribing(false);
       setTranscriptionProgress(0); // Reset progress
     }
-  }, [youtubeUrl, onMetricsUpdate, onTranscriptionUpdate, onHypothesisUpdate]); // Add dependencies
+  }, [youtubeUrl, onTranscriptionUpdate, onHypothesisUpdate]); // Remove onMetricsUpdate
 
   // Add cleanup when component unmounts or on new upload
   useEffect(() => {
