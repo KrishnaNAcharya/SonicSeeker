@@ -1,63 +1,46 @@
 {
-  "topic": "Project Introduction",
-  "summary": "Presenting an AI-powered media processing tool for extracting key insights from audio and video content.",
+  "topic": "Sassy Orders Team 56: Track Open Innovation",
   "children": [
     {
       "topic": "Problem Statement",
-      "summary": "Manual summarization of long discussions is inefficient, time-consuming, and frustrating.",
+      "summary": "Manual and inefficient process of extracting useful information from recorded content, meetings, interviews, lectures, podcasts.",
       "children": []
     },
     {
-      "topic": "Solution",
-      "summary": "AI Power Media Processing tool: AI-powered subtitles for media files, with features like sentiment analysis, name detection, and interactive timestamp navigation.",
+      "topic": "Solution Overview",
+      "summary": "Platform transforms media into searchable, interactive content using OpenAI Whisper for transcription, Facebook Bird for summarization, and Pinode.audio for speaker identification.",
       "children": [
         {
-          "topic": "Whisper AI",
-          "summary": "Accurate speech-to-text conversion, even with background noise or multiple accents.",
+          "topic": "Technical Stack",
+          "summary": "Built on Next.js with TypeScript, ShatScene for frontend, Wavesurfer.js for visualization, Video.js for playback, Nerd.js and Express for backend processes, Media with FFM MPEG, Compromise.js for entity recognition, Sentiment.js for emotional content analysis.",
           "children": []
         },
         {
-          "topic": "Interactive Features",
-          "summary": "Search for keywords, jump to important moments, and explore clickable timestamps.",
-          "children": [
-            {
-              "topic": "Quick Summary",
-              "summary": "AI-generated summary of key points, eliminating the need to watch or listen to the entire file.",
-              "children": []
-            }
-          ]
-        },
-        {
-          "topic": "Mind Map Feature",
-          "summary": "Virtual roadmap of the conversation, making it easier to understand key topics and connections.",
+          "topic": "Transcript Generation",
+          "summary": "Uses YouTube URL to generate transcripts, also recognizes speaker 1 and speaker 0.",
           "children": []
         }
       ]
     },
     {
-      "topic": "Technical Stack",
-      "summary": "Using XJS, TypeScript, Node.js, Express, OpenIS Whisper, PostgreSQL, NeonDB, FFmpeg, VideoGS, and WaveCipherGS for seamless video processing.",
-      "children": []
-    },
-    {
-      "topic": "Target Audience",
-      "summary": "Designed for anyone dealing with audio or video content, including corporations, students, legal teams, content creators, and support teams.",
+      "topic": "Product Demo",
+      "summary": "Shows main page for uploading audio, recording, and waveform visualization; demonstrates transcription, mind map generation, and sentiment analysis features.",
       "children": [
         {
-          "topic": "Corporations",
-          "summary": "Extract key decisions from long meetings, improving productivity and decision-making.",
+          "topic": "Transcription Feature",
+          "summary": "Generates transcript from uploaded audio or YouTube URL link.",
           "children": []
         },
         {
-          "topic": "Students",
-          "summary": "Summarize lectures, study smarter, and improve understanding of course materials.",
+          "topic": "Mind Map Generation",
+          "summary": "Creates mind map from transcripts, with timestamped words and waveform visualization.",
           "children": []
         }
       ]
     },
     {
-      "topic": "Conclusion",
-      "summary": "Believing AI can transform how we process audio and video content, making it more accessible, interactive, and intelligent.",
+      "topic": "Future Development",
+      "summary": "Mentor showed interest in collaborating to make project open source; discussed potential for full-fledged premium product with enough funding.",
       "children": []
     }
   ]
