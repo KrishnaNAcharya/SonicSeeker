@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 .glass-card {
   background: rgba(24, 24, 27, 0.5);
   backdrop-filter: blur(10px);
@@ -91,5 +92,43 @@
   }
   body {
     @apply bg-background text-foreground;
+=======
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-opacity-30 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(10px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glass-card {
+    background: rgba(24, 24, 27, 0.3);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+>>>>>>> 441d1ad2e6f7aa065c38bf9ca9c46dfad7683d47
   }
 }
