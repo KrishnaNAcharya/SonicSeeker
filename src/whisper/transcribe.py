@@ -280,6 +280,30 @@ def assign_speakers(diarization, segments):
     print("--- Finished Speaker Assignment ---", file=sys.stderr)
     return segments
 
+def check_pyannote_gpu_usage():
+    """Check if pyannote.audio can use GPU"""
+    import torch
+    import logging
+    
+    # Check if CUDA is available
+    cuda_available = torch.cuda.is_available()
+    device_count = torch.cuda.device_count() if cuda_available else 0
+    
+    logging.info(f"PyAnnote GPU Check: CUDA available: {cuda_available}")
+    logging.info(f"PyAnnote GPU Check: CUDA device count: {device_count}")
+    
+    if cuda_available:
+        for i in range(device_count):
+            device_name = torch.cuda.get_device_name(i)
+            logging.info(f"PyAnnote GPU Check: CUDA device {i}: {device_name}")
+    
+    # Return the preferred device
+    if cuda_available:
+        return "cuda:0"
+    else:
+        logging.warning("PyAnnote GPU Check: No GPU available, using CPU")
+        return "cpu"
+
 # --- Main Execution ---
 def main():
     input_file = args.input

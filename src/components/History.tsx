@@ -74,6 +74,24 @@ export default function History() {
             return false;
         });
 
+    const getMediaUrl = (entry: Transcription) => {
+        // Check if we have a mediaFileId (preferred approach)
+        if (entry.mediaFileId) {
+            return `/api/media/${entry.mediaFileId}`;
+        }
+        // Fallback to base64 if available (legacy approach)
+        else if (entry.mediaBase64) {
+            // Determine the correct MIME type
+            const mimeType = entry.mimeType || 
+                           (entry.fileType === "video" ? "video/mp4" : 
+                            entry.fileType === "audio" ? "audio/mpeg" : 
+                            "application/octet-stream");
+            return `data:${mimeType};base64,${entry.mediaBase64}`;
+        } 
+        // Return null if no media is available
+        return null;
+    };
+
     if (loading) {
         return (
             <div className="flex items-center justify-center h-64">
@@ -166,15 +184,14 @@ export default function History() {
             ) : (
                 <div className="space-y-4">
                     {filteredTranscriptions.map(entry => {
-                        const mimeType =
-                            entry.fileType === "video"
-                                ? "video/mp4"
-                                : entry.fileType === "audio"
-                                    ? "audio/mpeg"
-                                    : "application/octet-stream";
-
-                        const mediaUrl = `data:${mimeType};base64,${entry.mediaBase64}`;
+                        const mediaUrl = getMediaUrl(entry);
                         const isExpanded = expandedItems[entry._id] || false;
+                        
+                        // Determine the correct MIME type
+                        const mimeType = entry.mimeType || 
+                                       (entry.fileType === "video" ? "video/mp4" : 
+                                        entry.fileType === "audio" ? "audio/mpeg" : 
+                                        "application/octet-stream");
 
                         return (
                             <div key={entry._id} className="border rounded-xl shadow-sm bg-gray-300 overflow-hidden">
@@ -209,12 +226,24 @@ export default function History() {
 
                                     <div className="mt-4">
                                         {entry.fileType === "video" ? (
-                                            <video controls className="w-full rounded-md">
-                                                <source src={mediaUrl} />
-                                            </video>
+                                            <div className="relative w-full aspect-video bg-black">
+                                                <video 
+                                                    controls 
+                                                    className="w-full h-full"
+                                                    preload="metadata"
+                                                >
+                                                    {mediaUrl && <source src={mediaUrl} type={mimeType} />}
+                                                    {!mediaUrl && <p className="p-4 text-center text-red-500">Video unavailable</p>}
+                                                </video>
+                                            </div>
                                         ) : (
-                                            <audio controls className="w-full">
-                                                <source src={mediaUrl} />
+                                            <audio 
+                                                controls 
+                                                className="w-full" 
+                                                preload="metadata"
+                                            >
+                                                {mediaUrl && <source src={mediaUrl} type={mimeType} />}
+                                                {!mediaUrl && <p className="p-2 text-center text-red-500">Audio unavailable</p>}
                                             </audio>
                                         )}
                                     </div>

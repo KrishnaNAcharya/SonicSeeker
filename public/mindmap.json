@@ -1,43 +1,31 @@
 {
-  "topic": "Good Health",
+  "topic": "AI Power Media Processing",
   "children": [
     {
-      "topic": "Assessing Current Health",
-      "summary": "One friend reports feeling weak and not fine, while the other is fine.",
+      "topic": "Problem Statement",
+      "summary": "Manual summarization of long discussions and searching for key points is inefficient and frustrating.",
       "children": []
     },
     {
-      "topic": "Importance of Physical Exercise",
-      "summary": "Regular physical exercise is crucial for staying fit and avoiding idleness.",
+      "topic": "Solution: AI Power Media Processing",
+      "summary": "A tool that makes AI and video files searchable, interactive, and insightful using Whisper AI technology.",
       "children": [
         {
-          "topic": "Consequences of Lack of Physical Exercise",
-          "summary": "Not taking physical exercise regularly can lead to poor health and inability to perform daily tasks.",
+          "topic": "Features",
+          "summary": "Automatic speech-to-text with high accuracy, sentiment analysis, name detection, key topic detection, and interactive features such as searching, clickable timestamps, and quick summaries.",
+          "children": []
+        },
+        {
+          "topic": "Technical Stack",
+          "summary": "Using XJS, TypeScript, Node.js, Express, OpenIS Whisper local model, PostgreSQL, NeonDB, FFmpeg, VideoGS, and WaveCipherGS for seamless playback.",
           "children": []
         }
       ]
     },
     {
-      "topic": "Balanced Diet for Good Health",
-      "summary": "A balanced diet, with the right proportion of necessary ingredients, is essential for overall well-being.",
-      "children": [
-        {
-          "topic": "Defining a Balanced Diet",
-          "summary": "A balanced diet means taking regular food that contains all necessary ingredients needed for health in right proportion.",
-          "children": []
-        }
-      ]
-    },
-    {
-      "topic": "Practical Advice for Good Health",
-      "summary": "The friend suggests taking physical exercise regularly and eating a balanced diet to stay fit and healthy.",
-      "children": [
-        {
-          "topic": "Following the Advice",
-          "summary": "The friends encourage each other to follow the advice and take care of their health.",
-          "children": []
-        }
-      ]
+      "topic": "Use Cases",
+      "summary": "Designed for anyone dealing with audio or video content; can be used in corporations, education, law, and content creation to extract key decisions, summarize lectures, generate automatic transcripts, repurpose moments, and analyze customer interactions.",
+      "children": []
     }
   ]
 }

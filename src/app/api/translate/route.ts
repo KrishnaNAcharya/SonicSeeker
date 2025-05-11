@@ -28,31 +28,47 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'No target language specified' }, { status: 400 });
     }
 
-    // Find the correct Python executable
-    let pythonPath = process.platform === 'win32' 
-      ? path.join(os.homedir(), 'AppData', 'Local', 'Microsoft', 'WindowsApps', 'python3.12.exe')
-      : 'python3';
-
-    // Try alternative Python locations on Windows if the default doesn't exist
-    if (process.platform === 'win32' && !fs.existsSync(pythonPath)) {
-      const alternatives = [
-        'python',
-        'python3',
-        path.join(os.homedir(), 'AppData', 'Local', 'Programs', 'Python', 'Python312', 'python.exe'),
-        'C:\\Python312\\python.exe',
-        'C:\\Python311\\python.exe',
-        'C:\\Python310\\python.exe',
-        'C:\\Python39\\python.exe',
-      ];
-      
-      for (const alt of alternatives) {
+    // Find the correct Python executable using environment variables first
+    let pythonPath = 'python3'; // Default for non-Windows
+    
+    if (process.platform === 'win32') {
+      // Try to use the path from environment variable first
+      const envPythonPath = process.env.PYTHON_PATH_WIN;
+      if (envPythonPath) {
+        // Replace ~ with the user's home directory if present
+        const resolvedPath = envPythonPath.replace(/^~/, os.homedir());
+        
         try {
-          await execPromise(`"${alt}" --version`);
-          pythonPath = alt;
-          console.log(`Found Python at: ${alt}`);
-          break;
+          await execPromise(`"${resolvedPath}" --version`);
+          pythonPath = resolvedPath;
+          console.log(`Using Python from PYTHON_PATH_WIN: ${pythonPath}`);
         } catch (e) {
-          // Try next alternative
+          console.warn(`Python at PYTHON_PATH_WIN (${resolvedPath}) not found or not working, falling back to alternatives`);
+        }
+      }
+      
+      // If environment variable path doesn't work, try alternatives
+      if (pythonPath === 'python3') {
+        const alternatives = [
+          path.join(os.homedir(), 'AppData', 'Local', 'Microsoft', 'WindowsApps', 'python3.12.exe'),
+          'python',
+          'python3',
+          path.join(os.homedir(), 'AppData', 'Local', 'Programs', 'Python', 'Python312', 'python.exe'),
+          'C:\\Python312\\python.exe',
+          'C:\\Python311\\python.exe',
+          'C:\\Python310\\python.exe',
+          'C:\\Python39\\python.exe',
+        ];
+        
+        for (const alt of alternatives) {
+          try {
+            await execPromise(`"${alt}" --version`);
+            pythonPath = alt;
+            console.log(`Found Python at alternative path: ${alt}`);
+            break;
+          } catch (e) {
+            // Try next alternative
+          }
         }
       }
     }

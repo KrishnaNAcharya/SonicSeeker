@@ -15,4 +15,6 @@ export interface Transcription {
     file?: Buffer;
     uploadDate?: Date;
     transcript?: TranscriptSegment[];
+    mediaBase64?: string;  // Legacy: Base64 encoded media
+    mediaFileId?: string;  // New: Reference to media file stored separately
 }
